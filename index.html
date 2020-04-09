@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>harpsichordpoint</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <script src="js/three.js"></script>
+    <script src="js/MTLLoader.js"></script>
+    <script src="js/OBJLoader.js"></script>
+    <script>
+        var scene, camera, renderer, mesh, 
+        objLoader, mtlLoader, GLTFLoader, keyLight, 
+        fillLight, backLight, testLight, testLight1, 
+        light1, sphereGeometry, sphereMaterial, 
+        sphere, planeGeometry, planeMaterial, plane, textureloader, loader ;
+        
+
+        var meshFloor;
+
+        var keyboard = {};
+        var player = { height:450, speed:5, turnSpeed:Math.PI*0.01 };
+        var USE_WIREFRAME = false;
+
+        function init(){
+            scene = new THREE.Scene();
+            camera = new THREE.PerspectiveCamera( 60, window.innerWidth / window.innerHeight, 0.1, 3000 );
+          
+            
+            testLight = new THREE.PointLight(0xffffff, 1, 750);
+            testLight.position.set(-200,450,200);
+            testLight.castShadow = true;
+            testLight.shadow.camera.near = 100;
+            testLight.shadow.camera.far = 1000;
+
+            scene.add(testLight);
+
+            testLight1 = new THREE.PointLight(0xffffff, 1, 750);
+            testLight1.position.set(200,450,0);
+            testLight1.castShadow = true;
+            testLight1.shadow.camera.near = 100;
+            testLight1.shadow.camera.far = 1000;
+
+            scene.add(testLight1);
+
+            mtlLoader = new THREE.MTLLoader();
+
+            textureLoader = new THREE.TextureLoader();
+            var wartex = textureLoader.load('assets/waxworkrecords-03.jpg');
+            var floortex = textureLoader.load('assets/bar_newfloor.jpg');
+            var walltex = textureLoader.load('assets/WallsSurface_color.png');
+            
+            /*mtlLoader.load("assets/bar_floor10.mtl", function(materials3){
+                
+                materials3.preload();
+
+                objLoader = new THREE.OBJLoader();
+                objLoader.setMaterials(materials3);
+                objLoader = new THREE.OBJLoader();
+        
+                objLoader.load('assets/bar_floor10.obj', function(object){
+                    object.position.y = 300;
+
+                    object.traverse( function(child) {
+                        if (child instanceof THREE.Mesh) {
+
+                            child.receiveShadow = true;
+                        }
+                    })
+                    scene.add(object);
+                });
+            });*/
+
+            mtlLoader = new THREE.MTLLoader();
+            mtlLoader.load("assets/warriorcube.mtl", function(materials){
+                    
+                materials.preload();
+                objLoader = new THREE.OBJLoader();
+                objLoader.setMaterials(materials);
+                    
+                objLoader.load("assets/warriorcube.obj", function(mesh){
+                    
+                    mesh.traverse(function(node){
+                        if( node instanceof THREE.Mesh ){
+                            node.castShadow = true;
+                            node.receiveShadow = true;
+                        }
+                    });
+                    mesh.rotation.y = 70;
+                    mesh.scale.set(0.25,0.25,0.25);
+                    mesh.position.set(-350,420,320); 
+                        
+                    colourcube = mesh;
+                    scene.add(colourcube);
+
+
+                });
+                    
+            });
+
+
+
+            // Create a material
+            var floormtl = new THREE.MeshPhongMaterial({map: wartex});
+
+            loader = new THREE.OBJLoader();
+            loader.load( 'assets/bar_floor10.obj', function ( object3 ) {
+
+                // For any meshes in the model, add our material.
+                object3.traverse( function ( node ) {
+
+                    if ( node.isMesh ) node.material = floormtl;
+
+            } );
+
+            // Add the model to the scene.
+            object3.position.y = 300;
+            scene.add( object3 );
+            });
+
+                        // Create a material
+                        var material3 = new THREE.MeshPhongMaterial({map: wartex});
+
+                        loader = new THREE.OBJLoader();
+                        loader.load( 'assets/Walls.obj', function ( object3 ) {
+
+                            // For any meshes in the model, add our material.
+                            object3.traverse( function ( node ) {
+
+                                if ( node.isMesh ) node.material = material3;
+
+                        } );
+
+                        // Add the model to the scene.
+                        object3.position.y = 300;
+                        scene.add( object3 );
+                        });
+            
+            camera.position.set(-500, player.height, -5);
+            camera.lookAt(new THREE.Vector3(0,player.height,0));
+            
+            renderer = new THREE.WebGLRenderer({ antialias: true });
+            
+            renderer.shadowMap.enabled = true;
+            renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+            
+            renderer.setSize( window.innerWidth, window.innerHeight );
+            
+            document.body.appendChild(renderer.domElement);
+            
+            animate();
+        };
+
+        function animate(){
+            requestAnimationFrame(animate);
+
+            colourcube.rotation.x += 0.01;
+            colourcube.rotation.y += 0.01;
+            
+            // Keyboard movement inputs
+            if(keyboard[87]){ // W key
+                camera.position.x -= Math.sin(camera.rotation.y) * player.speed;
+                camera.position.z -= -Math.cos(camera.rotation.y) * player.speed;
+            }
+            if(keyboard[83]){ // S key
+                camera.position.x += Math.sin(camera.rotation.y) * player.speed;
+                camera.position.z += -Math.cos(camera.rotation.y) * player.speed;
+            }
+            if(keyboard[65]){ // A key
+                // Redirect motion by 90 degrees
+                camera.position.x += Math.sin(camera.rotation.y + Math.PI/2) * player.speed;
+                camera.position.z += -Math.cos(camera.rotation.y + Math.PI/2) * player.speed;
+            }
+            if(keyboard[68]){ // D key
+                camera.position.x += Math.sin(camera.rotation.y - Math.PI/2) * player.speed;
+                camera.position.z += -Math.cos(camera.rotation.y - Math.PI/2) * player.speed;
+            }
+            
+            // Keyboard turn inputs
+            if(keyboard[37]){ // left arrow key
+                camera.rotation.y -= player.turnSpeed;
+            }
+            if(keyboard[39]){ // right arrow key
+                camera.rotation.y += player.turnSpeed;
+            }
+            
+            renderer.render(scene, camera);
+        }
+
+        function keyDown(event){
+            keyboard[event.keyCode] = true;
+        }
+
+        function keyUp(event){
+            keyboard[event.keyCode] = false;
+        }
+
+        window.addEventListener('keydown', keyDown);
+        window.addEventListener('keyup', keyUp);
+
+        window.onload = init;
+        
+
+    </script>
+</body>
+</html>
