@@ -46,22 +46,31 @@
             scene.add(testLight1);
 
             //barleft
-            testLight2 = new THREE.PointLight(0xffffff, 3, 350);//750
-            testLight2.position.set(100,520,490);
-            testLight2.castShadow = true;
-            testLight2.shadow.camera.near = 100;
-            testLight2.shadow.camera.far = 1000;
+            testLight3 = new THREE.PointLight(0xffffff, 3, 350);//750
+            testLight3.position.set(100,520,490);
+            testLight3.castShadow = true;
+            testLight3.shadow.camera.near = 100;
+            testLight3.shadow.camera.far = 1000;
 
-            scene.add(testLight2);
+            scene.add(testLight3);
 
             //harpright
-            testLight2 = new THREE.PointLight(0xffffff, 3, 350);//750
-            testLight2.position.set(-540,520,110);
-            testLight2.castShadow = true;
-            testLight2.shadow.camera.near = 100;
-            testLight2.shadow.camera.far = 1000;
+            testLight4 = new THREE.PointLight(0xffffff, 3, 350);//750
+            testLight4.position.set(-540,520,110);
+            testLight4.castShadow = true;
+            testLight4.shadow.camera.near = 100;
+            testLight4.shadow.camera.far = 1000;
 
-            scene.add(testLight2);
+            scene.add(testLight4);
+
+            //barwall
+            testLight5 = new THREE.PointLight(0xffffff, 3, 350);//750
+            testLight5.position.set(480,520,-165);
+            testLight5.castShadow = true;
+            testLight5.shadow.camera.near = 100;
+            testLight5.shadow.camera.far = 1000;
+
+            scene.add(testLight5);
 
             mtlLoader = new THREE.MTLLoader();
 
@@ -71,10 +80,14 @@
             var floordis = textureLoader.load('assets/floor_dis2.jpg');
             var walltex = textureLoader.load('assets/wall_tex2.jpg');
             var ceilingtex = textureLoader.load('assets/ceilingtex.jpg');
+            var stagetex = textureLoader.load('assets/stagetex.jpg');
 
             walltex.wrapS = THREE.RepeatWrapping;
             walltex.wrapT = THREE.RepeatWrapping;
-            walltex.repeat.set(1,1);
+            walltex.repeat.set(2,2);
+            stagetex.wrapS = THREE.RepeatWrapping;
+            stagetex.wrapT = THREE.RepeatWrapping;
+            stagetex.repeat.set(2,2);
             
             /*mtlLoader.load("assets/bar_floor10.mtl", function(materials3){
                 
@@ -126,7 +139,7 @@
             var plane = new THREE.PlaneGeometry(1200,1200,10,10);
             var floormtl = new THREE.MeshStandardMaterial();
             floormtl.map = floortex;
-            floormtl.colour = 0x181818;
+            floormtl.colour = 0x000000;
             floormtl.displacementMap = floordis;
             floormtl.displacementScale = 3;
             floormtl.displacementBias = 1;
@@ -404,10 +417,14 @@
                 discoballmesh.position.y = 300;
                 scene.add( discoballmesh );
             });  
-            var harpsichordmtl = new THREE.MeshPhongMaterial({
+            var harpsichordmtl = new THREE.MeshStandardMaterial({
                 //map : ceilingtex,
-                shininess : 0,
-                color: 0x1c1c1c,
+                //envMap : ceilingtex,
+                roughness : 0,
+                metalness : 1,
+                color: 0xffffff,
+                shininess : 1,
+                //refractionRatio : 0.5,
                 //emissiveIntensity: 100
 
             });
@@ -478,7 +495,7 @@
             });  
 
             var stagemtl = new THREE.MeshPhongMaterial({
-            //map : ceilingtex,
+            //map : stagetex
             //shininess : 0,
             color: 0x1c1c1c,
             //emissiveIntensity: 100
