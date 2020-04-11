@@ -23,13 +23,14 @@
         var keyboard = {};
         var player = { height:450, speed:5, turnSpeed:Math.PI*0.01 };
         var USE_WIREFRAME = false;
+        var lightColour = 0x8a6222;
 
         function init(){
             scene = new THREE.Scene();
             camera = new THREE.PerspectiveCamera( 60, window.innerWidth / window.innerHeight, 0.1, 3000 );
           
             //barright
-            testLight = new THREE.PointLight(0xffffff, 3, 350);//1, 750
+            testLight = new THREE.PointLight(lightColour, 3, 350);//1, 750
             testLight.position.set(480,520,90);
             testLight.castShadow = true;
             testLight.shadow.camera.near = 100;
@@ -37,7 +38,7 @@
 
             scene.add(testLight);
             //harpright
-            testLight1 = new THREE.PointLight(0xffffff, 3, 350);//750
+            testLight1 = new THREE.PointLight(lightColour, 3, 350);//750
             testLight1.position.set(-140,520,490);
             testLight1.castShadow = true;
             testLight1.shadow.camera.near = 100;
@@ -46,7 +47,7 @@
             scene.add(testLight1);
 
             //barleft
-            testLight3 = new THREE.PointLight(0xffffff, 3, 350);//750
+            testLight3 = new THREE.PointLight(lightColour, 3, 350);//750
             testLight3.position.set(100,520,490);
             testLight3.castShadow = true;
             testLight3.shadow.camera.near = 100;
@@ -55,7 +56,7 @@
             scene.add(testLight3);
 
             //harpright
-            testLight4 = new THREE.PointLight(0xffffff, 3, 350);//750
+            testLight4 = new THREE.PointLight(lightColour, 3, 350);//750
             testLight4.position.set(-540,520,110);
             testLight4.castShadow = true;
             testLight4.shadow.camera.near = 100;
@@ -64,7 +65,7 @@
             scene.add(testLight4);
 
             //barwall
-            testLight5 = new THREE.PointLight(0xffffff, 3, 350);//750
+            testLight5 = new THREE.PointLight(lightColour, 3, 350);//750
             testLight5.position.set(480,520,-165);
             testLight5.castShadow = true;
             testLight5.shadow.camera.near = 100;
