@@ -24,54 +24,70 @@
         var player = { height:450, speed:5, turnSpeed:Math.PI*0.01 };
         var USE_WIREFRAME = false;
         var lightColour = 0x8a6222;
+        var lightDistance = 3;
+        var lightDecay = 350;
 
         function init(){
             scene = new THREE.Scene();
             camera = new THREE.PerspectiveCamera( 60, window.innerWidth / window.innerHeight, 0.1, 3000 );
           
             //barright
-            testLight = new THREE.PointLight(lightColour, 3, 350);//1, 750
+            testLight = new THREE.PointLight(lightColour, lightDistance, lightDecay);//1, 750
             testLight.position.set(480,520,90);
-            testLight.castShadow = true;
+            //testLight.castShadow = true;
             testLight.shadow.camera.near = 100;
             testLight.shadow.camera.far = 1000;
 
             scene.add(testLight);
             //harpright
-            testLight1 = new THREE.PointLight(lightColour, 3, 350);//750
+            testLight1 = new THREE.PointLight(lightColour, lightDistance, lightDecay);//750
             testLight1.position.set(-140,520,490);
-            testLight1.castShadow = true;
+            //testLight1.castShadow = true;
             testLight1.shadow.camera.near = 100;
             testLight1.shadow.camera.far = 1000;
 
             scene.add(testLight1);
 
             //barleft
-            testLight3 = new THREE.PointLight(lightColour, 3, 350);//750
+            testLight3 = new THREE.PointLight(lightColour, lightDistance, lightDecay);//750
             testLight3.position.set(100,520,490);
-            testLight3.castShadow = true;
+            //testLight3.castShadow = true;
             testLight3.shadow.camera.near = 100;
             testLight3.shadow.camera.far = 1000;
 
             scene.add(testLight3);
 
             //harpright
-            testLight4 = new THREE.PointLight(lightColour, 3, 350);//750
+            testLight4 = new THREE.PointLight(lightColour, lightDistance, lightDecay);//750
             testLight4.position.set(-540,520,110);
-            testLight4.castShadow = true;
+            //testLight4.castShadow = true;
             testLight4.shadow.camera.near = 100;
             testLight4.shadow.camera.far = 1000;
 
             scene.add(testLight4);
 
             //barwall
-            testLight5 = new THREE.PointLight(lightColour, 3, 350);//750
+            testLight5 = new THREE.PointLight(lightColour, lightDistance, lightDecay);//750
             testLight5.position.set(480,520,-165);
-            testLight5.castShadow = true;
+            //testLight5.castShadow = true;
             testLight5.shadow.camera.near = 100;
             testLight5.shadow.camera.far = 1000;
 
             scene.add(testLight5);
+
+            var spotLight = new THREE.SpotLight(0xffffff, 1);
+            //spotLight.intensity = 0.7;
+            spotlight.distance = 300;
+            //spotlight.angle = Math.PI/4;
+            //spotlight.penumbra = 300;
+            //spotlight.distance = 0.5;
+            //spotLight.decay = 2;
+            //spotLight.position.set(0,580,0);
+            //spotLight.rotation.z = 1;
+            scene.add(spotLight);
+            lightHelper = new THREE.SpotLightHelper( spotLight );
+			scene.add( lightHelper );
+
 
             mtlLoader = new THREE.MTLLoader();
 
@@ -449,7 +465,7 @@
                 var curtainmtl = new THREE.MeshStandardMaterial({
                 map : ceilingtex,
                 metalness: 0,
-                roughness : 0.8,
+                roughness : 1,
                 color: 0x4B0000,
                 //emissiveIntensity: 100
 
