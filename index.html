@@ -28,29 +28,53 @@
             scene = new THREE.Scene();
             camera = new THREE.PerspectiveCamera( 60, window.innerWidth / window.innerHeight, 0.1, 3000 );
           
-            
-            testLight = new THREE.PointLight(0xffffff, 1, 750);
-            testLight.position.set(-200,450,200);
+            //barright
+            testLight = new THREE.PointLight(0xffffff, 3, 350);//1, 750
+            testLight.position.set(480,520,90);
             testLight.castShadow = true;
             testLight.shadow.camera.near = 100;
             testLight.shadow.camera.far = 1000;
 
             scene.add(testLight);
-
-            testLight1 = new THREE.PointLight(0xffffff, 1, 750);
-            testLight1.position.set(200,450,0);
+            //harpright
+            testLight1 = new THREE.PointLight(0xffffff, 3, 350);//750
+            testLight1.position.set(-140,520,490);
             testLight1.castShadow = true;
             testLight1.shadow.camera.near = 100;
             testLight1.shadow.camera.far = 1000;
 
             scene.add(testLight1);
 
+            //barleft
+            testLight2 = new THREE.PointLight(0xffffff, 3, 350);//750
+            testLight2.position.set(100,520,490);
+            testLight2.castShadow = true;
+            testLight2.shadow.camera.near = 100;
+            testLight2.shadow.camera.far = 1000;
+
+            scene.add(testLight2);
+
+            //harpright
+            testLight2 = new THREE.PointLight(0xffffff, 3, 350);//750
+            testLight2.position.set(-540,520,110);
+            testLight2.castShadow = true;
+            testLight2.shadow.camera.near = 100;
+            testLight2.shadow.camera.far = 1000;
+
+            scene.add(testLight2);
+
             mtlLoader = new THREE.MTLLoader();
 
             textureLoader = new THREE.TextureLoader();
             var wartex = textureLoader.load('assets/waxworkrecords-03.jpg');
-            var floortex = textureLoader.load('assets/bar_newfloor.jpg');
-            var walltex = textureLoader.load('assets/WallsSurface_color.png');
+            var floortex = textureLoader.load('assets/floor_tex.jpg');
+            var floordis = textureLoader.load('assets/floor_dis2.jpg');
+            var walltex = textureLoader.load('assets/wall_tex2.jpg');
+            var ceilingtex = textureLoader.load('assets/ceilingtex.jpg');
+
+            walltex.wrapS = THREE.RepeatWrapping;
+            walltex.wrapT = THREE.RepeatWrapping;
+            walltex.repeat.set(1,1);
             
             /*mtlLoader.load("assets/bar_floor10.mtl", function(materials3){
                 
@@ -93,50 +117,391 @@
                     mesh.position.set(-350,420,320); 
                         
                     colourcube = mesh;
-                    scene.add(colourcube);
+                    //scene.add(colourcube);
 
 
                 });
                     
             });
+            var plane = new THREE.PlaneGeometry(1200,1200,10,10);
+            var floormtl = new THREE.MeshStandardMaterial();
+            floormtl.map = floortex;
+            floormtl.colour = 0x181818;
+            floormtl.displacementMap = floordis;
+            floormtl.displacementScale = 3;
+            floormtl.displacementBias = 1;
+            floormtl.metalness = 0.3;
+            floormtl.roughness = 1;
+            var floorplane = new THREE.Mesh(plane, floormtl);
+            floorplane.position.y = 300;  
+            floorplane.rotation.x = -Math.PI/2; 
+            floorplane.receiveShadow = true;
+            scene.add(floorplane);         
+            
 
 
 
-            // Create a material
+            /*// Create a material
             var floormtl = new THREE.MeshPhongMaterial({map: wartex});
 
             loader = new THREE.OBJLoader();
             loader.load( 'assets/bar_floor10.obj', function ( object3 ) {
 
+
                 // For any meshes in the model, add our material.
                 object3.traverse( function ( node ) {
 
                     if ( node.isMesh ) node.material = floormtl;
+                    
 
             } );
 
             // Add the model to the scene.
             object3.position.y = 300;
             scene.add( object3 );
+            });*/
+
+            // Create a material
+            var wallmtl = new THREE.MeshPhongMaterial({
+                map : walltex,
+                shininess : 0,
+                color: 0x191919
+
             });
 
-                        // Create a material
-                        var material3 = new THREE.MeshPhongMaterial({map: wartex});
+            loader = new THREE.OBJLoader();
+            loader.load( 'assets/walls1.obj', function ( wallsmesh ) {
+                            
 
-                        loader = new THREE.OBJLoader();
-                        loader.load( 'assets/Walls.obj', function ( object3 ) {
+                // For any meshes in the model, add our material.
+                wallsmesh.traverse( function ( node ) {
 
-                            // For any meshes in the model, add our material.
-                            object3.traverse( function ( node ) {
+                    if ( node.isMesh ) node.material = wallmtl;             
+                    node.castShadow = true;                       
+                    node.receiveShadow = true;
+                } );
 
-                                if ( node.isMesh ) node.material = material3;
+                // Add the model to the scene.
+                wallsmesh.position.y = 300;
+                scene.add( wallsmesh );
+            });
 
-                        } );
+            var tableschairsmtl = new THREE.MeshPhongMaterial({
+                //map : walltex,
+                shininess : 40,
+                color: 0x332000,
+                //emissiveIntensity: 100
 
-                        // Add the model to the scene.
-                        object3.position.y = 300;
-                        scene.add( object3 );
-                        });
+            });
+
+            loader = new THREE.OBJLoader();
+            loader.load( 'assets/tableschairs2.obj', function ( tableschairsmesh ) {
+                            
+
+                // For any meshes in the model, add our material.
+                tableschairsmesh.traverse( function ( node ) {
+
+                    if ( node.isMesh ) node.material = tableschairsmtl;             
+                    node.castShadow = true;
+                } );
+
+                // Add the model to the scene.
+                tableschairsmesh.position.y = 290;
+                scene.add( tableschairsmesh );
+            });
+
+            var ceilingmtl = new THREE.MeshPhongMaterial({
+                map : ceilingtex,
+                shininess : 0,
+                color: 0x1c1c1c,
+                //emissiveIntensity: 100
+
+            });
+
+            loader = new THREE.OBJLoader();
+            loader.load( 'assets/ceiling4.obj', function ( ceilingmesh ) {
+                            
+
+                // For any meshes in the model, add our material.
+                ceilingmesh.traverse( function ( node ) {
+
+                    if ( node.isMesh ) node.material = ceilingmtl;             
+
+                } );
+
+                // Add the model to the scene.
+                ceilingmesh.position.y = 300;
+                scene.add( ceilingmesh );
+            });
+
+            var fixturemtl = new THREE.MeshPhongMaterial({
+                map : ceilingtex,
+                shininess : 0,
+                color: 0x1c1c1c,
+                //emissiveIntensity: 100
+
+            });
+
+            loader = new THREE.OBJLoader();
+            loader.load( 'assets/fixtures.obj', function ( fixturemesh ) {
+                            
+
+                // For any meshes in the model, add our material.
+                fixturemesh.traverse( function ( node ) {
+
+                    if ( node.isMesh ) node.material = fixturemtl;             
+
+                } );
+
+                // Add the model to the scene.
+                fixturemesh.position.y = 300;
+                scene.add( fixturemesh );
+            });
+
+
+
+                        var barfixturesmtl = new THREE.MeshPhongMaterial({
+                map : ceilingtex,
+                shininess : 0,
+                color: 0x1c1c1c,
+                //emissiveIntensity: 100
+
+            });
+
+            loader = new THREE.OBJLoader();
+            loader.load( 'assets/barfixtures.obj', function ( barfixturesmesh ) {
+                            
+
+                // For any meshes in the model, add our material.
+                barfixturesmesh.traverse( function ( node ) {
+
+                    if ( node.isMesh ) node.material = barfixturesmtl;             
+
+                } );
+
+                // Add the model to the scene.
+                barfixturesmesh.position.y = 300;
+                scene.add( barfixturesmesh );
+            }); 
+
+                var bartopmtl = new THREE.MeshPhongMaterial({
+                map : ceilingtex,
+                shininess : 0,
+                color: 0x1c1c1c,
+                //emissiveIntensity: 100
+
+            });
+
+            loader = new THREE.OBJLoader();
+            loader.load( 'assets/bartop.obj', function ( bartopmesh ) {
+                            
+
+                // For any meshes in the model, add our material.
+                bartopmesh.traverse( function ( node ) {
+
+                    if ( node.isMesh ) node.material = bartopmtl;             
+
+                } );
+
+                // Add the model to the scene.
+                bartopmesh.position.y = 300;
+                scene.add( bartopmesh );
+            }); 
+
+                var lighttopsmtl = new THREE.MeshPhongMaterial({
+                map : ceilingtex,
+                shininess : 0,
+                color: 0x1c1c1c,
+                //emissiveIntensity: 100
+
+            });
+
+            loader = new THREE.OBJLoader();
+            loader.load( 'assets/lighttops.obj', function ( lighttopsmesh ) {
+                            
+
+                // For any meshes in the model, add our material.
+                lighttopsmesh.traverse( function ( node ) {
+
+                    if ( node.isMesh ) node.material = lighttopsmtl;             
+                    node.castShadow = true;
+                    node.receiveShadow = true;
+                } );
+
+                // Add the model to the scene.
+                lighttopsmesh.position.y = 300;
+                scene.add( lighttopsmesh );
+            });
+
+                var mirrorsmtl = new THREE.MeshPhongMaterial({
+                map : ceilingtex,
+                shininess : 0,
+                color: 0x1c1c1c,
+                //emissiveIntensity: 100
+
+            });
+
+            loader = new THREE.OBJLoader();
+            loader.load( 'assets/mirrors.obj', function ( mirrorsmesh ) {
+                            
+
+                // For any meshes in the model, add our material.
+                mirrorsmesh.traverse( function ( node ) {
+
+                    if ( node.isMesh ) node.material = mirrorsmtl;             
+
+                } );
+
+                // Add the model to the scene.
+                mirrorsmesh.position.y = 300;
+                scene.add( mirrorsmesh );
+            });  
+
+                var lightfittingsmtl = new THREE.MeshPhongMaterial({
+                map : ceilingtex,
+                shininess : 0,
+                color: 0x1c1c1c,
+                //emissiveIntensity: 100
+
+            });
+
+            loader = new THREE.OBJLoader();
+            loader.load( 'assets/lightfittings.obj', function ( lightfittingsmesh ) {
+                            
+
+                // For any meshes in the model, add our material.
+                lightfittingsmesh.traverse( function ( node ) {
+
+                    if ( node.isMesh ) node.material = lightfittingsmtl;             
+
+                } );
+
+                // Add the model to the scene.
+                lightfittingsmesh.position.y = 300;
+                scene.add( lightfittingsmesh );
+            });  
+
+                var discoballmtl = new THREE.MeshPhongMaterial({
+                map : ceilingtex,
+                shininess : 0,
+                color: 0x1c1c1c,
+                //emissiveIntensity: 100
+
+            });
+
+            loader = new THREE.OBJLoader();
+            loader.load( 'assets/discoball.obj', function ( discoballmesh ) {
+                            
+
+                // For any meshes in the model, add our material.
+                discoballmesh.traverse( function ( node ) {
+
+                    if ( node.isMesh ) node.material = discoballmtl;             
+
+                } );
+
+                // Add the model to the scene.
+                discoballmesh.position.y = 300;
+                scene.add( discoballmesh );
+            });  
+            var harpsichordmtl = new THREE.MeshPhongMaterial({
+                //map : ceilingtex,
+                shininess : 0,
+                color: 0x1c1c1c,
+                //emissiveIntensity: 100
+
+            });
+
+            loader = new THREE.OBJLoader();
+            loader.load( 'assets/harpsichord.obj', function ( harpsichordmesh ) {
+                            
+
+                // For any meshes in the model, add our material.
+                harpsichordmesh.traverse( function ( node ) {
+
+                    if ( node.isMesh ) node.material = harpsichordmtl;             
+
+                } );
+
+                // Add the model to the scene.
+                harpsichordmesh.position.y = 300;
+                scene.add( harpsichordmesh );
+            });    
+
+                var curtainmtl = new THREE.MeshStandardMaterial({
+                map : ceilingtex,
+                metalness: 0,
+                roughness : 0.8,
+                color: 0x4B0000,
+                //emissiveIntensity: 100
+
+            });
+
+            loader = new THREE.OBJLoader();
+            loader.load( 'assets/curtain.obj', function ( curtainmesh ) {
+                            
+
+                // For any meshes in the model, add our material.
+                curtainmesh.traverse( function ( node ) {
+
+                    if ( node.isMesh ) node.material = curtainmtl;             
+
+                } );
+
+                // Add the model to the scene.
+                curtainmesh.position.y = 300;
+                scene.add( curtainmesh );
+            });  
+
+                var airconmtl = new THREE.MeshPhongMaterial({
+                map : ceilingtex,
+                shininess : 0,
+                color: 0x1c1c1c,
+                //emissiveIntensity: 100
+
+            });
+
+            loader = new THREE.OBJLoader();
+            loader.load( 'assets/aircon.obj', function ( airconmesh ) {
+                            
+
+                // For any meshes in the model, add our material.
+                airconmesh.traverse( function ( node ) {
+
+                    if ( node.isMesh ) node.material = airconmtl;             
+
+                } );
+
+                // Add the model to the scene.
+                airconmesh.position.y = 300;
+                scene.add( airconmesh );
+            });  
+
+            var stagemtl = new THREE.MeshPhongMaterial({
+            //map : ceilingtex,
+            //shininess : 0,
+            color: 0x1c1c1c,
+            //emissiveIntensity: 100
+
+            });
+
+            loader = new THREE.OBJLoader();
+            loader.load( 'assets/stage.obj', function ( stagemesh ) {
+                            
+
+                // For any meshes in the model, add our material.
+                stagemesh.traverse( function ( node ) {
+
+                    if ( node.isMesh ) node.material = stagemtl;             
+
+                } );
+
+                // Add the model to the scene.
+                stagemesh.position.y = 300;
+                scene.add( stagemesh );
+            });  
+
+          
             
             camera.position.set(-500, player.height, -5);
             camera.lookAt(new THREE.Vector3(0,player.height,0));
@@ -156,8 +521,8 @@
         function animate(){
             requestAnimationFrame(animate);
 
-            colourcube.rotation.x += 0.01;
-            colourcube.rotation.y += 0.01;
+            //colourcube.rotation.x += 0.01;
+            //colourcube.rotation.y += 0.01;
             
             // Keyboard movement inputs
             if(keyboard[87]){ // W key
