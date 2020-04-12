@@ -95,8 +95,8 @@
             spotLight.penumbra = 0.5;
             spotLight.distance = 0;
             spotLight.decay = 0;
-            spotLight.position.set(0,580,0);
-            spotLight.target.position.set(-900, 300, 900);
+            spotLight.position.set(0,700,0);
+            spotLight.target.position.set(-900, 0, 900);
             //spotlight.target.position.set(200,-130,400);
             scene.add(spotLight);
             scene.add(spotLight.target);
@@ -403,9 +403,9 @@
             });  
 
                 var lightfittingsmtl = new THREE.MeshPhongMaterial({
-                map : ceilingtex,
-                shininess : 0,
-                color: 0x1c1c1c,
+                //map : ceilingtex,
+                shininess : 30,
+                color: 0x404040,
                 //emissiveIntensity: 100
 
             });
@@ -427,15 +427,16 @@
             });  
 
                 var discoballmtl = new THREE.MeshPhongMaterial({
-                map : ceilingtex,
-                shininess : 0,
-                color: 0x1c1c1c,
+                shininess : 100,
+                
+                //roughness : 0,
+                color: 0x000000,
                 //emissiveIntensity: 100
 
             });
 
             loader = new THREE.OBJLoader();
-            loader.load( 'assets/discoball.obj', function ( discoballmesh ) {
+            loader.load( 'assets/discoball2.obj', function ( discoballmesh ) {
                             
 
                 // For any meshes in the model, add our material.
@@ -446,16 +447,19 @@
                 } );
 
                 // Add the model to the scene.
-                discoballmesh.position.y = 300;
-                scene.add( discoballmesh );
+                discoballmesh.position.set(-339, 586.2, 281);
+                discoball = discoballmesh;
+                scene.add( discoball );
             });  
-            var harpsichordmtl = new THREE.MeshStandardMaterial({
+            var harpsichordmtl = new THREE.MeshPhongMaterial({
                 //map : ceilingtex,
                 //envMap : ceilingtex,
-                roughness : 0.5,
-                metalness : 1,
+                //roughness : 0.5,
+                //metalness : 1,
                 color: 0x404040,
-                //shininess : 1,
+                shininess : 30, 
+                ambient: 0x030303, 
+                //specular: 0x009900,
                 //refractionRatio : 0.5,
                 //emissiveIntensity: 100
 
@@ -570,8 +574,7 @@
         function animate(){
             requestAnimationFrame(animate);
 
-            //colourcube.rotation.x += 0.01;
-            //colourcube.rotation.y += 0.01;
+            discoball.rotation.y += 0.005;
             
             // Keyboard movement inputs
             if(keyboard[87]){ // W key
