@@ -26,7 +26,15 @@
         var USE_WIREFRAME = false;
         var lightColour = 0x8a6222;
         var lightDistance = 5; //3
-        var lightDecay = 280; //350
+        var lightDecay = 280; //280
+        var StageLightColour = 0xc603fc;
+        var StageLightDistance = 4; //3
+        var StageLightDecay = 25; //350
+        var spotLightintensity = 2;
+        var spotLightangle = 0.3;
+        var spotLightpenumbra = 0.5;
+        var spotLightdistance = 0;
+        var spotLightdecay = 0;
 
         function init(){
             scene = new THREE.Scene();
@@ -86,11 +94,61 @@
 
             scene.add(testLight6);
 
+
+
+            //stageLight1 = new THREE.PointLight(StageLightColour, StageLightDistance, StageLightDecay);
+            //stageLight2 = new THREE.PointLight(StageLightColour, StageLightDistance, StageLightDecay);
+            //stageLight3 = new THREE.PointLight(StageLightColour, StageLightDistance, StageLightDecay);
+            //stageLight4 = new THREE.PointLight(StageLightColour, StageLightDistance, StageLightDecay);
+            //stageLight5 = new THREE.PointLight(StageLightColour, StageLightDistance, StageLightDecay);
+            //stageLight6 = new THREE.PointLight(StageLightColour, StageLightDistance, StageLightDecay);
+            //stageLight7 = new THREE.PointLight(StageLightColour, StageLightDistance, StageLightDecay);
+            //stageLight8 = new THREE.PointLight(StageLightColour, StageLightDistance, StageLightDecay);
+            //stageLight1.position.set(-498, 307, 100);
+            //stageLight2.position.set(-420, 307, 110);
+            //stageLight3.position.set(-346, 307, 138);
+            //stageLight4.position.set(-281, 307, 183);
+            //stageLight5.position.set(-229, 307, 242);
+            //stageLight6.position.set(-192, 307, 311);
+            //stageLight7.position.set(-173, 307, 388);
+            //stageLight8.position.set(-173, 307, 467);
+//
+            //
+            //scene.add(stageLight1, stageLight2, stageLight3, stageLight4, stageLight5, stageLight6, stageLight7, stageLight8); 
+            
+            //stageLight1 = new THREE.SpotLight(StageLightColour, spotLightintensity)//, StageLightDistance);
+            //stageLight2 = new THREE.SpotLight(StageLightColour, spotLightintensity)//, StageLightDistance);
+            //stageLight3 = new THREE.SpotLight(StageLightColour, spotLightintensity)//, StageLightDistance);
+            //stageLight4 = new THREE.SpotLight(StageLightColour, spotLightintensity)//, StageLightDistance);
+            //stageLight5 = new THREE.SpotLight(StageLightColour, spotLightintensity)//, StageLightDistance);
+            //stageLight6 = new THREE.SpotLight(StageLightColour, spotLightintensity)//, StageLightDistance);
+            //stageLight7 = new THREE.SpotLight(StageLightColour, spotLightintensity)//, StageLightDistance);
+            //stageLight8 = new THREE.SpotLight(StageLightColour, spotLightintensity)//, StageLightDistance);
+            //stageLight1.position.set(-498, 313, 100);
+            //stageLight2.position.set(-420, 313, 110);
+            //stageLight3.position.set(-346, 313, 138);
+            //stageLight4.position.set(-281, 313, 183);
+            //stageLight5.position.set(-229, 313, 242);
+            //stageLight6.position.set(-192, 313, 311);
+            //stageLight7.position.set(-173, 313, 388);
+            //stageLight8.position.set(-173, 313, 467);
+//
+            //scene.add(stageLight1, stageLight2, stageLight3, stageLight4, stageLight5, stageLight6, stageLight7, stageLight8);                      
+
+            //spotLight.intensity = 2;
+            //spotLight.angle = 0.3;
+            //spotLight.penumbra = 0.5;
+            //spotLight.distance = 0;
+            //spotLight.decay = 0;
+            //spotLight.target.position.set(-900, 0, 900);
+            //scene.add(spotLight);
+            //scene.add(spotLight.target);
+            //lightHelper = new THREE.SpotLightHelper( spotLight );
+			//scene.add( lightHelper );
    
 
-            var spotLight = new THREE.SpotLight(0xffffff, 2);
-            //spotLight.intensity = 0.7;
-            //spotlight.distance = 300;
+            var spotLight = new THREE.SpotLight(0xffffff);
+            spotLight.intensity = 2;
             spotLight.angle = 0.3;
             spotLight.penumbra = 0.5;
             spotLight.distance = 0;
@@ -113,13 +171,14 @@
             var walltex = textureLoader.load('assets/wall_tex2.jpg');
             var ceilingtex = textureLoader.load('assets/ceilingtex.jpg');
             var stagetex = textureLoader.load('assets/stagetex.jpg');
+            //var discoballreflec = textureLoader.load('assets/discoballreflec.jpg');
 
             walltex.wrapS = THREE.RepeatWrapping;
             walltex.wrapT = THREE.RepeatWrapping;
             walltex.repeat.set(2,2);
             stagetex.wrapS = THREE.RepeatWrapping;
             stagetex.wrapT = THREE.RepeatWrapping;
-            stagetex.repeat.set(2,2);
+            stagetex.repeat.set(40,40);
             
             /*mtlLoader.load("assets/bar_floor10.mtl", function(materials3){
                 
@@ -234,7 +293,7 @@
             var tableschairsmtl = new THREE.MeshPhongMaterial({
                 //map : walltex,
                 shininess : 40,
-                color: 0x331a00,
+                color: 0x1c0f00,
                 //emissiveIntensity: 100
 
             });
@@ -427,10 +486,11 @@
             });  
 
                 var discoballmtl = new THREE.MeshPhongMaterial({
-                shininess : 100,
-                
+                shininess : 500,
+
                 //roughness : 0,
-                color: 0x000000,
+                color: 0x7B7B7B,
+                specular: 0xffffff
                 //emissiveIntensity: 100
 
             });
@@ -456,8 +516,8 @@
                 //envMap : ceilingtex,
                 //roughness : 0.5,
                 //metalness : 1,
-                color: 0x404040,
-                shininess : 30, 
+                color: 0x000000,
+                shininess : 100, 
                 ambient: 0x030303, 
                 //specular: 0x009900,
                 //refractionRatio : 0.5,
@@ -466,7 +526,7 @@
             });
 
             loader = new THREE.OBJLoader();
-            loader.load( 'assets/harpsichord.obj', function ( harpsichordmesh ) {
+            loader.load( 'assets/harpnosweat.obj', function ( harpsichordmesh ) {
                             
 
                 // For any meshes in the model, add our material.
@@ -533,13 +593,13 @@
             var stagemtl = new THREE.MeshPhongMaterial({
             //map : stagetex
             //shininess : 0,
-            color: 0x1c1c1c,
+            color: 0x210003,
             //emissiveIntensity: 100
 
             });
 
             loader = new THREE.OBJLoader();
-            loader.load( 'assets/stage.obj', function ( stagemesh ) {
+            loader.load( 'assets/stagebottom.obj', function ( stagemesh ) {
                             
 
                 // For any meshes in the model, add our material.
@@ -552,11 +612,31 @@
                 // Add the model to the scene.
                 stagemesh.position.y = 300;
                 scene.add( stagemesh );
-            });  
+            });
+            var cylmtl1 = new THREE.MeshPhongMaterial( {color: 0x210003, map: stagetex} );
+            
+            var cylgeo1 = new THREE.CylinderGeometry( 292, 292, 3, 100 );
+            var stageTop = new THREE.Mesh( cylgeo1, cylmtl1 );
+            stageTop.position.set(-498,345,428);
+            scene.add( stageTop );
+
+            var cylgeo2 = new THREE.CylinderGeometry( 328, 328, 3, 100 );
+            var stageTop2 = new THREE.Mesh( cylgeo2, cylmtl1 );
+            stageTop2.position.set(-498,328,428);
+            scene.add( stageTop2 );
+
+            //stagelight
+            testLight7 = new THREE.PointLight(0xc603fc, 5, 300);//750
+            testLight7.position.set(-498,302,428);
+            //testLight6.castShadow = true;
+            //testLight7.shadow.camera.near = 100;
+            //testLight7.shadow.camera.far = 1000;
+
+            //scene.add(testLight7);
 
           
             
-            camera.position.set(-500, player.height, -5);
+            camera.position.set(400, player.height, -500);
             camera.lookAt(new THREE.Vector3(0,player.height,0));
             
             renderer = new THREE.WebGLRenderer({ antialias: true });
