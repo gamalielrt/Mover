@@ -43,7 +43,7 @@
         
 
         var meshFloor;
-        var onHandset = false;
+        var onHandset = true;
         var keyboard = {};
         var player = { height:450, speed:5, turnSpeed:Math.PI*0.01 };
         var USE_WIREFRAME = false;
@@ -62,13 +62,15 @@
 
         function init(){
 
-            window.addEventListener('touchstart', function() {
-                //the user touched the screen!
-                onHandset = true
-            })
+            //window.addEventListener('touchstart', function() {
+            //    //the user touched the screen!
+            //    onHandset = true
+            //})
 
 
-
+            //if (window.DeviceOrientationEvent) {
+            //onHandset = true
+            //}
 
             var overlay = document.getElementById( 'overlay' );
 			overlay.remove();
@@ -767,9 +769,13 @@
             //}
 
             if ( onHandset == true){
-                camera.position.set(400, 100, -500);
-                var controls = new THREE.OrbitControls( camera, renderer.domElement );
+                camera.position.set(600, 400, -500);
 
+                var controls = new THREE.OrbitControls( camera, renderer.domElement );
+                controls.target = new THREE.Vector3(0,440,0);
+                //controls.minDistance = 0;
+                controls.maxDistance = 300;
+                camera.lookAt(new THREE.Vector3(-400, 450, 300));
 
                 //controls.update() must be called after any manual changes to the camera's transform
                 //camera.position.set( 0, 20, 100 );
@@ -859,10 +865,7 @@
 
     var startButton = document.getElementById( 'startButton' );
 		startButton.addEventListener( 'click', function () {
-            //var gyroPresent = false;
-            //if (window.DeviceOrientationEvent) {
-            //gyroPresent = true
-            //}
+
 
 			init();
 			animate();
