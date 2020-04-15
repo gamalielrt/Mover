@@ -3,20 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>harpsichordpoint</title>
+    <title>sweatnet.net</title>
     <link rel="stylesheet" href="main.css">
+
 </head>
 <body>
+    <div id="overlay">
+        <div>
+            <button id="startButton">Click to Play</button>
+            <p>Video playback with audio requires user interaction.</p>
+        </div>
+    </div>
     <body style="background-color:#000000;">
     <script src="js/three.js"></script>
     <script src="js/MTLLoader.js"></script>
     <script src="js/OBJLoader.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/UAParser.js/0.7.19/ua-parser.min.js"></script>
+    <video id="videoalpha" loop crossOrigin="anonymous" playsinline style="display:none">
+        <source src="assets/shave1.webm" type='video/webm; codecs="vp8, vorbis"'>
+    </video>
+
+    <video id="video" loop crossOrigin="anonymous" playsinline style="display:none">
+        <source src="assets/shavevid.webm" type='video/webm; codecs="vp8, vorbis"'>
+    </video>
+
     <script>
+
+        var gyroPresent = false;
+        
+        if (window.DeviceOrientationEvent) {
+            gyroPresent = false
+
+        }
+
+        console.log(gyroPresent);
+
+
         var scene, camera, renderer, mesh, 
         objLoader, mtlLoader, GLTFLoader, keyLight, 
         fillLight, backLight, testLight, testLight1, 
         light1, sphereGeometry, sphereMaterial, 
-        sphere, planeGeometry, planeMaterial, plane, textureloader, loader ;
+        sphere, planeGeometry, planeMaterial, plane, textureloader, loader, fanblade ;
         
 
         var meshFloor;
@@ -24,11 +51,11 @@
         var keyboard = {};
         var player = { height:450, speed:5, turnSpeed:Math.PI*0.01 };
         var USE_WIREFRAME = false;
-        var lightColour = 0x8a6222;
-        var lightDistance = 5; //3
+        var lightColour = 0xD98400;
+        var lightDistance = 3; //3
         var lightDecay = 280; //280
         var StageLightColour = 0xc603fc;
-        var StageLightDistance = 4; //3
+        var StageLightDistance = 2; //3
         var StageLightDecay = 25; //350
         var spotLightintensity = 2;
         var spotLightangle = 0.3;
@@ -37,35 +64,45 @@
         var spotLightdecay = 0;
 
         function init(){
+            var overlay = document.getElementById( 'overlay' );
+			overlay.remove();
+
             scene = new THREE.Scene();
-            camera = new THREE.PerspectiveCamera( 60, window.innerWidth / window.innerHeight, 0.1, 3000 );
+            camera = new THREE.PerspectiveCamera( 40, window.innerWidth / window.innerHeight, 0.1, 3000 );
           
             //barright
             testLight = new THREE.PointLight(lightColour, lightDistance, lightDecay);//1, 750
-            testLight.position.set(450,520,90);
+            testLight.position.set(490,520,90);
             //testLight.castShadow = true;
             testLight.shadow.camera.near = 100;
             testLight.shadow.camera.far = 1000;
 
             scene.add(testLight);
+            var sphereSize = 40;
+            var pointLightHelper = new THREE.PointLightHelper( testLight, sphereSize );
+            //scene.add( pointLightHelper );
             
             //harpright
             testLight1 = new THREE.PointLight(lightColour, lightDistance, lightDecay);//750
-            testLight1.position.set(-140,520,460);
+            testLight1.position.set(-150,520,482);
             //testLight1.castShadow = true;
             testLight1.shadow.camera.near = 100;
             testLight1.shadow.camera.far = 1000;
 
             scene.add(testLight1);
 
+            
             //barleft
             testLight3 = new THREE.PointLight(lightColour, lightDistance, lightDecay);//750
-            testLight3.position.set(100,520,480);
+            testLight3.position.set(112,520,482);
             //testLight3.castShadow = true;
             testLight3.shadow.camera.near = 100;
             testLight3.shadow.camera.far = 1000;
 
             scene.add(testLight3);
+            var sphereSize = 40;
+            var pointLightHelper = new THREE.PointLightHelper( testLight3, sphereSize );
+            //scene.add( pointLightHelper );
 
             //harpleft
             testLight4 = new THREE.PointLight(lightColour, lightDistance, lightDecay);//750
@@ -75,25 +112,45 @@
             testLight4.shadow.camera.far = 1000;
 
             scene.add(testLight4);
+            var sphereSize = 40;
+            var pointLightHelper = new THREE.PointLightHelper( testLight4, sphereSize );
+            //scene.add( pointLightHelper );
 
             //barwall
             testLight5 = new THREE.PointLight(lightColour, lightDistance, lightDecay);//750
-            testLight5.position.set(450,520,-170);
+            testLight5.position.set(490,520,-160);
             //testLight5.castShadow = true;
             testLight5.shadow.camera.near = 100;
             testLight5.shadow.camera.far = 1000;
 
             scene.add(testLight5);
+            var sphereSize = 40;
+            var pointLightHelper = new THREE.PointLightHelper( testLight5, sphereSize );
+            //scene.add( pointLightHelper );
 
             //farwall
             testLight6 = new THREE.PointLight(lightColour, lightDistance, lightDecay);//750
-            testLight6.position.set(90,520,-510);
+            testLight6.position.set(100,520,-545);
             //testLight6.castShadow = true;
             testLight6.shadow.camera.near = 100;
             testLight6.shadow.camera.far = 1000;
 
             scene.add(testLight6);
+            var sphereSize = 40;
+            var pointLightHelper = new THREE.PointLightHelper( testLight6, sphereSize );
+            //scene.add( pointLightHelper );
 
+            //farwall
+            testLight7 = new THREE.PointLight(lightColour, 3, 100);//750
+            testLight7.position.set(-30,550,-50);
+            //testLight6.castShadow = true;
+            testLight7.shadow.camera.near = 100;
+            testLight7.shadow.camera.far = 1000;
+
+            scene.add(testLight7);
+            var sphereSize = 40;
+            var pointLightHelper = new THREE.PointLightHelper( testLight7, sphereSize );
+            //scene.add( pointLightHelper );
 
 
             //stageLight1 = new THREE.PointLight(StageLightColour, StageLightDistance, StageLightDecay);
@@ -151,7 +208,7 @@
             spotLight.intensity = 2;
             spotLight.angle = 0.3;
             spotLight.penumbra = 0.5;
-            spotLight.distance = 0;
+            spotLight.distance = 1;
             spotLight.decay = 0;
             spotLight.position.set(0,700,0);
             spotLight.target.position.set(-900, 0, 900);
@@ -170,63 +227,22 @@
             var floordis = textureLoader.load('assets/floor_dis2.jpg');
             var walltex = textureLoader.load('assets/wall_tex2.jpg');
             var ceilingtex = textureLoader.load('assets/ceilingtex.jpg');
+            var curtaintex = textureLoader.load('assets/ceilingtex.jpg');
             var stagetex = textureLoader.load('assets/stagetex.jpg');
+            var video;
             //var discoballreflec = textureLoader.load('assets/discoballreflec.jpg');
 
             walltex.wrapS = THREE.RepeatWrapping;
             walltex.wrapT = THREE.RepeatWrapping;
-            walltex.repeat.set(2,2);
+            walltex.repeat.set(40,40);
             stagetex.wrapS = THREE.RepeatWrapping;
             stagetex.wrapT = THREE.RepeatWrapping;
             stagetex.repeat.set(40,40);
+            ceilingtex.wrapS = THREE.RepeatWrapping;
+            ceilingtex.wrapT = THREE.RepeatWrapping;
+            ceilingtex.repeat.set(20,20);
             
-            /*mtlLoader.load("assets/bar_floor10.mtl", function(materials3){
-                
-                materials3.preload();
 
-                objLoader = new THREE.OBJLoader();
-                objLoader.setMaterials(materials3);
-                objLoader = new THREE.OBJLoader();
-        
-                objLoader.load('assets/bar_floor10.obj', function(object){
-                    object.position.y = 300;
-
-                    object.traverse( function(child) {
-                        if (child instanceof THREE.Mesh) {
-
-                            child.receiveShadow = true;
-                        }
-                    })
-                    scene.add(object);
-                });
-            });*/
-
-            mtlLoader = new THREE.MTLLoader();
-            mtlLoader.load("assets/warriorcube.mtl", function(materials){
-                    
-                materials.preload();
-                objLoader = new THREE.OBJLoader();
-                objLoader.setMaterials(materials);
-                    
-                objLoader.load("assets/warriorcube.obj", function(mesh){
-                    
-                    mesh.traverse(function(node){
-                        if( node instanceof THREE.Mesh ){
-                            node.castShadow = true;
-                            node.receiveShadow = true;
-                        }
-                    });
-                    mesh.rotation.y = 70;
-                    mesh.scale.set(0.25,0.25,0.25);
-                    mesh.position.set(-350,420,320); 
-                        
-                    colourcube = mesh;
-                    //scene.add(colourcube);
-
-
-                });
-                    
-            });
             var plane = new THREE.PlaneGeometry(1200,1200,10,10);
             var floormtl = new THREE.MeshStandardMaterial();
             floormtl.map = floortex;
@@ -240,41 +256,47 @@
             floorplane.position.y = 300;  
             floorplane.rotation.x = -Math.PI/2; 
             floorplane.receiveShadow = true;
-            scene.add(floorplane);         
+            scene.add(floorplane);    
+
             
+            
+            video = document.getElementById( 'video' );
+            video.load();
+			video.play();
+            var vidplane = new THREE.PlaneGeometry(300,300,10,10);
+            var vidtexture = new THREE.VideoTexture( video );
+
+            videoalpha = document.getElementById( 'videoalpha' );
+            videoalpha.load();
+			videoalpha.play();
+            var vidalphatexture = new THREE.VideoTexture( videoalpha );
+            
+            var vidplanemtl = new THREE.MeshStandardMaterial();
+            vidplanemtl.map = vidtexture;
+            vidplanemtl.alphaTest = 0.5;
+            vidplanemtl.alphaMap = vidalphatexture;
 
 
+            var vidplanemesh = new THREE.Mesh(vidplane, vidplanemtl);
+            vidplanemesh.position.set(-400, 450, 300);
+            vidplanemesh.rotation.y = 2.3;
+            scene.add(vidplanemesh);  
 
-            /*// Create a material
-            var floormtl = new THREE.MeshPhongMaterial({map: wartex});
+            var sphere = new THREE.SphereBufferGeometry();
+            var box = new THREE.BoxHelper( vidplanemesh, 0xffff00 );
+            //scene.add( box );
 
-            loader = new THREE.OBJLoader();
-            loader.load( 'assets/bar_floor10.obj', function ( object3 ) {
-
-
-                // For any meshes in the model, add our material.
-                object3.traverse( function ( node ) {
-
-                    if ( node.isMesh ) node.material = floormtl;
-                    
-
-            } );
-
-            // Add the model to the scene.
-            object3.position.y = 300;
-            scene.add( object3 );
-            });*/
 
             // Create a material
             var wallmtl = new THREE.MeshPhongMaterial({
-                map : walltex,
+                map : ceilingtex,
                 shininess : 0,
                 color: 0x191919
 
             });
 
             loader = new THREE.OBJLoader();
-            loader.load( 'assets/walls1.obj', function ( wallsmesh ) {
+            loader.load( 'assets/newwalls9.obj', function ( wallsmesh ) {
                             
 
                 // For any meshes in the model, add our material.
@@ -290,16 +312,17 @@
                 scene.add( wallsmesh );
             });
 
-            var tableschairsmtl = new THREE.MeshPhongMaterial({
+            var tableschairsmtl = new THREE.MeshStandardMaterial({
                 //map : walltex,
-                shininess : 40,
-                color: 0x1c0f00,
+                metalness : 3,
+                roughness : 0.6,
+                color: 0x6E6E6E,
                 //emissiveIntensity: 100
 
             });
 
             loader = new THREE.OBJLoader();
-            loader.load( 'assets/tableschairs2.obj', function ( tableschairsmesh ) {
+            loader.load( 'assets/tableschairs4.obj', function ( tableschairsmesh ) {
                             
 
                 // For any meshes in the model, add our material.
@@ -310,9 +333,10 @@
                 } );
 
                 // Add the model to the scene.
-                tableschairsmesh.position.y = 290;
+                tableschairsmesh.position.y = 297;
                 scene.add( tableschairsmesh );
             });
+            
 
             var ceilingmtl = new THREE.MeshPhongMaterial({
                 map : ceilingtex,
@@ -323,7 +347,7 @@
             });
 
             loader = new THREE.OBJLoader();
-            loader.load( 'assets/ceiling4.obj', function ( ceilingmesh ) {
+            loader.load( 'assets/ceiling2.obj', function ( ceilingmesh ) {
                             
 
                 // For any meshes in the model, add our material.
@@ -390,7 +414,7 @@
 
                 var bartopmtl = new THREE.MeshPhongMaterial({
                 map : ceilingtex,
-                shininess : 0,
+                shininess : 30,
                 color: 0x1c1c1c,
                 //emissiveIntensity: 100
 
@@ -413,15 +437,17 @@
             }); 
 
                 var lighttopsmtl = new THREE.MeshPhongMaterial({
-                map : ceilingtex,
+                //map : ceilingtex,
                 shininess : 0,
-                color: 0x1c1c1c,
+                transparent : true,
+                opacity : 1,
+                color: 0xFF9300,
                 //emissiveIntensity: 100
 
             });
 
             loader = new THREE.OBJLoader();
-            loader.load( 'assets/lighttops.obj', function ( lighttopsmesh ) {
+            loader.load( 'assets/lighttopsnew1.obj', function ( lighttopsmesh ) {
                             
 
                 // For any meshes in the model, add our material.
@@ -438,15 +464,16 @@
             });
 
                 var mirrorsmtl = new THREE.MeshPhongMaterial({
-                map : ceilingtex,
-                shininess : 0,
+                shininess : 10,
+                transparent : true,
+                opacity : 0.4,
                 color: 0x1c1c1c,
                 //emissiveIntensity: 100
 
             });
 
             loader = new THREE.OBJLoader();
-            loader.load( 'assets/mirrors.obj', function ( mirrorsmesh ) {
+            loader.load( 'assets/tabletops.obj', function ( mirrorsmesh ) {
                             
 
                 // For any meshes in the model, add our material.
@@ -463,20 +490,23 @@
 
                 var lightfittingsmtl = new THREE.MeshPhongMaterial({
                 //map : ceilingtex,
-                shininess : 30,
-                color: 0x404040,
+                shininess : 1,
+                color: 0x606060,
                 //emissiveIntensity: 100
 
             });
 
             loader = new THREE.OBJLoader();
-            loader.load( 'assets/lightfittings.obj', function ( lightfittingsmesh ) {
+            loader.load( 'assets/newlightfittings2.obj', function ( lightfittingsmesh ) {
                             
 
                 // For any meshes in the model, add our material.
                 lightfittingsmesh.traverse( function ( node ) {
 
-                    if ( node.isMesh ) node.material = lightfittingsmtl;             
+                    if ( node.isMesh ) node.material = lightfittingsmtl;
+                                 
+                    node.castShadow = true;
+                    node.receiveShadow = true;             
 
                 } );
 
@@ -509,7 +539,7 @@
                 // Add the model to the scene.
                 discoballmesh.position.set(-339, 586.2, 281);
                 discoball = discoballmesh;
-                scene.add( discoball );
+                //scene.add( discoball );
             });  
             var harpsichordmtl = new THREE.MeshPhongMaterial({
                 //map : ceilingtex,
@@ -538,11 +568,11 @@
 
                 // Add the model to the scene.
                 harpsichordmesh.position.y = 300;
-                scene.add( harpsichordmesh );
+                //scene.add( harpsichordmesh );
             });    
 
                 var curtainmtl = new THREE.MeshStandardMaterial({
-                map : ceilingtex,
+                map : curtaintex,
                 metalness: 0,
                 roughness : 1,
                 color: 0x4B0000,
@@ -588,7 +618,31 @@
                 // Add the model to the scene.
                 airconmesh.position.y = 300;
                 scene.add( airconmesh );
-            });  
+            }); 
+
+            var wiresmtl = new THREE.MeshPhongMaterial({
+            map : curtaintex,
+            shininess : 2,
+            color: 0x260000  ,
+            emissiveIntensity: 100
+
+            });
+
+            loader = new THREE.OBJLoader();
+            loader.load( 'assets/wires.obj', function ( wiresmesh ) {
+                            
+
+                // For any meshes in the model, add our material.
+                wiresmesh.traverse( function ( node ) {
+
+                    if ( node.isMesh ) node.material = wiresmtl;             
+
+                } );
+
+                // Add the model to the scene.
+                wiresmesh.position.y = 300;
+                scene.add( wiresmesh );
+            });
 
             var stagemtl = new THREE.MeshPhongMaterial({
             //map : stagetex
@@ -613,6 +667,59 @@
                 stagemesh.position.y = 300;
                 scene.add( stagemesh );
             });
+
+            var fancasemtl = new THREE.MeshStandardMaterial({
+            //map : stagetex
+            metalness : 50,
+            roughness : 0.2,
+            color: 0x999999,
+            //emissiveIntensity: 100
+
+            });
+
+            loader = new THREE.OBJLoader();
+            loader.load( 'assets/fancase.obj', function ( fancasemesh ) {
+                            
+
+                // For any meshes in the model, add our material.
+                fancasemesh.traverse( function ( node ) {
+
+                    if ( node.isMesh ) node.material = fancasemtl;             
+
+                } );
+
+                // Add the model to the scene.
+                fancasemesh.position.y = 300;
+                scene.add( fancasemesh );
+            });
+
+            var fanblademtl = new THREE.MeshStandardMaterial({
+            //map : stagetex
+            metalness : 50,
+            roughness : 0.2,
+            color: 0x999999,
+            //emissiveIntensity: 100
+
+            });
+
+            loader = new THREE.OBJLoader();
+            loader.load( 'assets/fanblades.obj', function ( fanblademesh ) {
+                            
+
+                // For any meshes in the model, add our material.
+                fanblademesh.traverse( function ( node ) {
+
+                    if ( node.isMesh ) node.material = fanblademtl;             
+
+                } );
+
+                // Add the model to the scene.
+                fanblademesh.position.set(-18,580,-43);
+                fanblade = fanblademesh;
+                scene.add( fanblade );
+            });
+
+
             var cylmtl1 = new THREE.MeshPhongMaterial( {color: 0x210003, map: stagetex} );
             
             var cylgeo1 = new THREE.CylinderGeometry( 292, 292, 3, 100 );
@@ -648,39 +755,64 @@
             
             document.body.appendChild(renderer.domElement);
             
-            animate();
+            //animate();
         };
 
         function animate(){
             requestAnimationFrame(animate);
 
-            discoball.rotation.y += 0.005;
-            
-            // Keyboard movement inputs
-            if(keyboard[87]){ // W key
-                camera.position.x -= Math.sin(camera.rotation.y) * player.speed;
-                camera.position.z -= -Math.cos(camera.rotation.y) * player.speed;
-            }
-            if(keyboard[83]){ // S key
-                camera.position.x += Math.sin(camera.rotation.y) * player.speed;
-                camera.position.z += -Math.cos(camera.rotation.y) * player.speed;
-            }
-            if(keyboard[65]){ // A key
-                // Redirect motion by 90 degrees
-                camera.position.x += Math.sin(camera.rotation.y + Math.PI/2) * player.speed;
-                camera.position.z += -Math.cos(camera.rotation.y + Math.PI/2) * player.speed;
-            }
-            if(keyboard[68]){ // D key
-                camera.position.x += Math.sin(camera.rotation.y - Math.PI/2) * player.speed;
-                camera.position.z += -Math.cos(camera.rotation.y - Math.PI/2) * player.speed;
-            }
-            
-            // Keyboard turn inputs
-            if(keyboard[37]){ // left arrow key
-                camera.rotation.y -= player.turnSpeed;
-            }
-            if(keyboard[39]){ // right arrow key
-                camera.rotation.y += player.turnSpeed;
+            fanblade.rotation.y += 0.01;
+
+            //var gyroPresent = false;
+            //window.addEventListener("devicemotion", function(event){
+            //    if(event.rotationRate.alpha || event.rotationRate.beta || event.rotationRate.gamma) {
+            //        gyroPresent = true
+            //    } 
+            //    else {gyroPresent = false};
+            //}
+            //);
+
+            //if (window.DeviceOrientationEvent) {
+            //    gyroPresent = true
+            //}
+
+            //var ua = new UAParser();
+            //var result = ua.getResult();
+            //console.log(result);
+//
+//
+            //console.log(result.browser);
+            //console.log(result.device);
+            //console.log(result.os);
+
+            if ( gyroPresent == false ) {
+                
+                // Keyboard movement inputs
+                if(keyboard[87]){ // W key
+                    camera.position.x -= Math.sin(camera.rotation.y) * player.speed;
+                    camera.position.z -= -Math.cos(camera.rotation.y) * player.speed;
+                }
+                if(keyboard[83]){ // S key
+                    camera.position.x += Math.sin(camera.rotation.y) * player.speed;
+                    camera.position.z += -Math.cos(camera.rotation.y) * player.speed;
+                }
+                if(keyboard[65]){ // A key
+                    // Redirect motion by 90 degrees
+                    camera.position.x += Math.sin(camera.rotation.y + Math.PI/2) * player.speed;
+                    camera.position.z += -Math.cos(camera.rotation.y + Math.PI/2) * player.speed;
+                }
+                if(keyboard[68]){ // D key
+                    camera.position.x += Math.sin(camera.rotation.y - Math.PI/2) * player.speed;
+                    camera.position.z += -Math.cos(camera.rotation.y - Math.PI/2) * player.speed;
+                }
+                
+                // Keyboard turn inputs
+                if(keyboard[37]){ // left arrow key
+                    camera.rotation.y -= player.turnSpeed;
+                }
+                if(keyboard[39]){ // right arrow key
+                    camera.rotation.y += player.turnSpeed;
+                }
             }
             
             renderer.render(scene, camera);
@@ -697,7 +829,21 @@
         window.addEventListener('keydown', keyDown);
         window.addEventListener('keyup', keyUp);
 
-        window.onload = init;
+        //window.onload = init;
+
+        var startButton = document.getElementById( 'startButton' );
+			startButton.addEventListener( 'click', function () {
+
+                //var gyroPresent = false;
+                //if (window.DeviceOrientationEvent) {
+                //gyroPresent = true
+                //}
+
+				init();
+				animate();
+
+
+			}, false );
         
 
     </script>
