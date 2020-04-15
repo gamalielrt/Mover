@@ -18,6 +18,7 @@
     <script src="js/three.js"></script>
     <script src="js/MTLLoader.js"></script>
     <script src="js/OBJLoader.js"></script>
+    <script src="js/OrbitControls.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/UAParser.js/0.7.19/ua-parser.min.js"></script>
     <video id="videoalpha" loop crossOrigin="anonymous" playsinline style="display:none">
         <source src="assets/shave1.webm" type='video/webm; codecs="vp8, vorbis"'>
@@ -29,14 +30,9 @@
 
     <script>
 
-        var gyroPresent = false;
         
-        if (window.DeviceOrientationEvent) {
-            gyroPresent = false
 
-        }
 
-        console.log(gyroPresent);
 
 
         var scene, camera, renderer, mesh, 
@@ -47,7 +43,7 @@
         
 
         var meshFloor;
-
+        var onHandset = false;
         var keyboard = {};
         var player = { height:450, speed:5, turnSpeed:Math.PI*0.01 };
         var USE_WIREFRAME = false;
@@ -63,7 +59,17 @@
         var spotLightdistance = 0;
         var spotLightdecay = 0;
 
+
         function init(){
+
+            //window.addEventListener('touchstart', function() {
+            // the user touched the screen!
+            //onHandset = false
+            //})
+
+
+
+
             var overlay = document.getElementById( 'overlay' );
 			overlay.remove();
 
@@ -514,7 +520,7 @@
                 scene.add( lightfittingsmesh );
             });  
 
-                var discoballmtl = new THREE.MeshPhongMaterial({
+                /*var discoballmtl = new THREE.MeshPhongMaterial({
                 shininess : 500,
 
                 //roughness : 0,
@@ -539,8 +545,8 @@
                 discoballmesh.position.set(-339, 586.2, 281);
                 discoball = discoballmesh;
                 //scene.add( discoball );
-            });  
-            var harpsichordmtl = new THREE.MeshPhongMaterial({
+            });  */
+            /*var harpsichordmtl = new THREE.MeshPhongMaterial({
                 //map : ceilingtex,
                 //envMap : ceilingtex,
                 //roughness : 0.5,
@@ -554,7 +560,7 @@
 
             });
 
-            loader = new THREE.OBJLoader();
+            /loader = new THREE.OBJLoader();
             loader.load( 'assets/harpnosweat.obj', function ( harpsichordmesh ) {
                             
 
@@ -568,7 +574,7 @@
                 // Add the model to the scene.
                 harpsichordmesh.position.y = 300;
                 //scene.add( harpsichordmesh );
-            });    
+            });   */ 
 
                 var curtainmtl = new THREE.MeshStandardMaterial({
                 map : curtaintex,
@@ -753,7 +759,25 @@
             renderer.setSize( window.innerWidth, window.innerHeight );
             
             document.body.appendChild(renderer.domElement);
-            
+
+            //var controls = new OrbitControls( camera, renderer.domElement );
+
+            if (window.DeviceOrientationEvent) {
+                onHandset = false //change
+            }
+
+            if ( onHandset == true){
+                camera.position.set(400, 600, -500);
+                var controls = new THREE.OrbitControls( camera, renderer.domElement );
+
+
+                //controls.update() must be called after any manual changes to the camera's transform
+                //camera.position.set( 0, 20, 100 );
+                //controls.update();
+
+            }
+
+            console.log(onHandset);
             //animate();
         };
 
@@ -784,7 +808,7 @@
             //console.log(result.device);
             //console.log(result.os);
 
-            if ( gyroPresent == false ) {
+            if ( onHandset == false ) {
                 
                 // Keyboard movement inputs
                 if(keyboard[87]){ // W key
@@ -812,6 +836,9 @@
                 if(keyboard[39]){ // right arrow key
                     camera.rotation.y += player.turnSpeed;
                 }
+            } else if ( onHandset == true) {
+                //controls.update();
+
             }
             
             renderer.render(scene, camera);
@@ -830,19 +857,18 @@
 
         //window.onload = init;
 
-        var startButton = document.getElementById( 'startButton' );
-			startButton.addEventListener( 'click', function () {
+    var startButton = document.getElementById( 'startButton' );
+		startButton.addEventListener( 'click', function () {
+            //var gyroPresent = false;
+            //if (window.DeviceOrientationEvent) {
+            //gyroPresent = true
+            //}
 
-                //var gyroPresent = false;
-                //if (window.DeviceOrientationEvent) {
-                //gyroPresent = true
-                //}
-
-				init();
-				animate();
+			init();
+			animate();
 
 
-			}, false );
+		}, false );
         
 
     </script>
