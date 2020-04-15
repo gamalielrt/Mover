@@ -62,10 +62,10 @@
 
         function init(){
 
-            //window.addEventListener('touchstart', function() {
-            // the user touched the screen!
-            //onHandset = false
-            //})
+            window.addEventListener('touchstart', function() {
+                //the user touched the screen!
+                onHandset = true
+            })
 
 
 
@@ -762,18 +762,18 @@
 
             //var controls = new OrbitControls( camera, renderer.domElement );
 
-            if (window.DeviceOrientationEvent) {
-                onHandset = false //change
-            }
+            //if (window.DeviceOrientationEvent) {
+                //onHandset = true //change
+            //}
 
             if ( onHandset == true){
-                camera.position.set(400, 600, -500);
+                camera.position.set(400, 100, -500);
                 var controls = new THREE.OrbitControls( camera, renderer.domElement );
 
 
                 //controls.update() must be called after any manual changes to the camera's transform
                 //camera.position.set( 0, 20, 100 );
-                //controls.update();
+                controls.update();
 
             }
 
