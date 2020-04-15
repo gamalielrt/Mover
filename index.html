@@ -775,6 +775,8 @@
                 controls.target = new THREE.Vector3(0,440,0);
                 //controls.minDistance = 0;
                 controls.maxDistance = 300;
+                controls.keyPanSpeed = 30;
+
                 camera.lookAt(new THREE.Vector3(-400, 450, 300));
 
                 //controls.update() must be called after any manual changes to the camera's transform
@@ -790,7 +792,7 @@
         function animate(){
             requestAnimationFrame(animate);
 
-            //fanblade.rotation.y += 0.01;
+            fanblade.rotation.y += 0.01;
 
             //var gyroPresent = false;
             //window.addEventListener("devicemotion", function(event){
