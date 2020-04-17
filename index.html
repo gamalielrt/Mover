@@ -19,14 +19,13 @@
     <script src="js/MTLLoader.js"></script>
     <script src="js/OBJLoader.js"></script>
     <script src="js/OrbitControls.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/UAParser.js/0.7.19/ua-parser.min.js"></script>
     <video id="videoalpha" loop crossOrigin="anonymous" playsinline style="display:none">
-        <source src="assets/shave1.webm" type='video/webm; codecs="vp8, vorbis"'>
+        <source src="assets/drinkdrivealpha.webm" type='video/webm; codecs="vp8, vorbis"'>
         <source src="assets/shave192alpha.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
     </video>
 
     <video id="video" loop crossOrigin="anonymous" playsinline style="display:none">
-        <source src="assets/shavevid.webm" type='video/webm; codecs="vp8, vorbis"'>
+        <source src="assets/drinkdrive.webm" type='video/webm; codecs="vp8, vorbis"'>
         <source src="assets/shave192.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
     </video>
 
@@ -51,7 +50,7 @@
         var USE_WIREFRAME = false;
         var lightColour = 0xD98400;
         var lightDistance = 3; //3
-        var lightDecay = 280; //280
+        var lightDecay = 700; //280
         var StageLightColour = 0xc603fc;
         var StageLightDistance = 2; //3
         var StageLightDecay = 25; //350
@@ -214,7 +213,7 @@
 			//scene.add( lightHelper );
    
 
-            var spotLight = new THREE.SpotLight(0xffffff);
+            var spotLight = new THREE.SpotLight(0x3333ff);
             spotLight.intensity = 2;
             spotLight.angle = 0.3;
             spotLight.penumbra = 0.5;
@@ -252,20 +251,20 @@
             ceilingtex.repeat.set(20,20);
             
 
-            var plane = new THREE.PlaneGeometry(1200,1200,10,10);
-            var floormtl = new THREE.MeshStandardMaterial();
-            floormtl.map = floortex;
-            floormtl.colour = 0x000000;
-            floormtl.displacementMap = floordis;
-            floormtl.displacementScale = 3;
-            floormtl.displacementBias = 1;
-            floormtl.metalness = 0.3;
-            floormtl.roughness = 1;
-            var floorplane = new THREE.Mesh(plane, floormtl);
-            floorplane.position.y = 300;  
-            floorplane.rotation.x = -Math.PI/2; 
-            floorplane.receiveShadow = true;
-            scene.add(floorplane);    
+            //var plane = new THREE.PlaneGeometry(1200,1200,10,10);
+            //var floormtl = new THREE.MeshStandardMaterial();
+            //floormtl.map = floortex;
+            //floormtl.colour = 0x000000;
+            //floormtl.displacementMap = floordis;
+            //floormtl.displacementScale = 3;
+            //floormtl.displacementBias = 1;
+            //floormtl.metalness = 0.3;
+            //floormtl.roughness = 1;
+            //var floorplane = new THREE.Mesh(plane, floormtl);
+            //floorplane.position.y = 300;  
+            //floorplane.rotation.x = -Math.PI/2; 
+            //floorplane.receiveShadow = true;
+            //scene.add(floorplane);    
 
             
             
@@ -287,7 +286,7 @@
 
 
             var vidplanemesh = new THREE.Mesh(vidplane, vidplanemtl);
-            vidplanemesh.position.set(-400, 450, 300);
+            vidplanemesh.position.set(-400, 600, 300);
             vidplanemesh.rotation.y = 2.3;
             scene.add(vidplanemesh);  
 
@@ -305,7 +304,7 @@
             });
 
             loader = new THREE.OBJLoader();
-            loader.load( 'assets/newwalls9.obj', function ( wallsmesh ) {
+            loader.load( 'assets/newroomtest.obj', function ( wallsmesh ) {
                             
 
                 // For any meshes in the model, add our material.
@@ -320,6 +319,7 @@
                 wallsmesh.position.y = 300;
                 scene.add( wallsmesh );
             });
+            /*
 
             var tableschairsmtl = new THREE.MeshStandardMaterial({
                 //map : walltex,
@@ -579,7 +579,7 @@
                 harpsichordmesh.position.y = 300;
                 //scene.add( harpsichordmesh );
             });   */ 
-
+            /*
                 var curtainmtl = new THREE.MeshStandardMaterial({
                 map : curtaintex,
                 metalness: 0,
@@ -740,9 +740,10 @@
             var stageTop2 = new THREE.Mesh( cylgeo2, cylmtl1 );
             stageTop2.position.set(-498,328,428);
             scene.add( stageTop2 );
+            */
 
             //stagelight
-            testLight7 = new THREE.PointLight(0xc603fc, 5, 300);//750
+            testLight7 = new THREE.PointLight(0x0000ff, 5, 700);//750
             testLight7.position.set(-498,302,428);
             //testLight6.castShadow = true;
             //testLight7.shadow.camera.near = 100;
@@ -794,7 +795,7 @@
         function animate(){
             requestAnimationFrame(animate);
 
-            fanblade.rotation.y += 0.01;
+            //fanblade.rotation.y += 0.01;
 
             //var gyroPresent = false;
             //window.addEventListener("devicemotion", function(event){
