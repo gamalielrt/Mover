@@ -8,10 +8,16 @@
 
 </head>
 <body>
+
     <div id="overlay">
         <div>
-            <button id="startButton">Click to Play</button>
-            <p>Video playback with audio requires user interaction.</p>
+          <p>
+            <label>Password</label>
+            <input type = "password"
+                    id = "myPwd"
+                    value = "" />
+          </p>
+        <button id="startButton">Enter</button>
         </div>
     </div>
     <body style="background-color:#000000;">
@@ -21,12 +27,12 @@
     <script src="js/OrbitControls.js"></script>
     <video id="videoalpha" loop crossOrigin="anonymous" playsinline style="display:none">
         <source src="assets/drinkdrivealpha.webm" type='video/webm; codecs="vp8, vorbis"'>
-        <source src="assets/shave192alpha.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+        <source src="assets/" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
     </video>
 
     <video id="video" loop crossOrigin="anonymous" playsinline style="display:none">
         <source src="assets/drinkdrive.webm" type='video/webm; codecs="vp8, vorbis"'>
-        <source src="assets/shave192.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+        <source src="assets/" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
     </video>
 
     <script>
@@ -43,6 +49,7 @@
         sphere, planeGeometry, planeMaterial, plane, textureloader, loader, fanblade ;
         
 
+        var password = "clubsweat";
         var meshFloor;
         var onHandset = true;
         var keyboard = {};
@@ -271,7 +278,7 @@
             video = document.getElementById( 'video' );
             video.load();
 			video.play();
-            var vidplane = new THREE.PlaneGeometry(300,300,10,10);
+            var vidplane = new THREE.PlaneGeometry(180,180,10,10);
             var vidtexture = new THREE.VideoTexture( video );
 
             videoalpha = document.getElementById( 'videoalpha' );
@@ -286,7 +293,7 @@
 
 
             var vidplanemesh = new THREE.Mesh(vidplane, vidplanemtl);
-            vidplanemesh.position.set(-400, 600, 300);
+            vidplanemesh.position.set(-260, 530, 220);
             vidplanemesh.rotation.y = 2.3;
             scene.add(vidplanemesh);  
 
@@ -870,12 +877,13 @@
 
     var startButton = document.getElementById( 'startButton' );
 		startButton.addEventListener( 'click', function () {
+                //var password = "hello";
+                var inputpassword = document.getElementById("myPwd").value;
+                if (inputpassword == password) {
+                    init();
+		            animate();
 
-
-			init();
-			animate();
-
-
+                };
 		}, false );
         
 
