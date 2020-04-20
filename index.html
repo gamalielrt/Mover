@@ -29,12 +29,12 @@
 
     <video id="videoalpha" loop crossOrigin="anonymous" playsinline style="display:none">
         <!--<source src="assets/drinkdrivealpha.webm" type='video/webm; codecs="vp8, vorbis"'>-->
-        <source src="assets/draft8alpha.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+        <source src="assets/draft9alpha.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
     </video>
 
     <video id="video" loop crossOrigin="anonymous" playsinline style="display:none">
         <!--<source src="assets/drinkdrive.webm" type='video/webm; codecs="vp8, vorbis"'>-->
-        <source src="assets/draft8.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+        <source src="assets/draft9.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
     </video>
 
     <video id="videoscreen" loop crossOrigin="anonymous" autoplay="false" playsinline style="display:none">
@@ -52,7 +52,8 @@
 
         var scene, camera, renderer, mesh, 
         objLoader, mtlLoader, GLTFLoader, keyLight, 
-        fillLight, backLight, testLight, testLight1, 
+        fillLight, backLight, testLight, testLight1, testLight2, testLight3,
+         testLight4, testLight5, testLight6, testLight7, testLight8,
         light1, sphereGeometry, sphereMaterial, 
         sphere, planeGeometry, planeMaterial, plane, textureloader, loader, fanblade ;
         
@@ -67,13 +68,14 @@
         var lightDistance = 10//10; //3
         var lightDecay = 700; //280
         var StageLightColour = 0x3333ff;
-        var StageLightDistance = 18; //3
+        var StageLightDistance = 9; //18
         var StageLightDecay = 450; //350
         var spotLightintensity = 2;
         var spotLightangle = 0.3;
         var spotLightpenumbra = 0.5;
         var spotLightdistance = 0;
         var spotLightdecay = 0;
+        var count1 = {var:0};
 
         var loadingScreen = {
             scene: new THREE.Scene(),
@@ -87,56 +89,9 @@
         var LOADING_MANAGER = null;
         var RESOURCES_LOADED = false;
 
-
-
-
-        function init(){
-
-            //window.addEventListener('touchstart', function() {
-            //    //the user touched the screen!
-            //    onHandset = true
-            //})
-
-
-            //if (window.DeviceOrientationEvent) {
-            //onHandset = true
-            //}
-
-            var overlay = document.getElementById( 'overlay' );
-			overlay.remove();
-
-            scene = new THREE.Scene();
-            camera = new THREE.PerspectiveCamera( 40, window.innerWidth / window.innerHeight, 0.1, 3000 );
+        function addLights() {            
             
-
-            loadingScreen.box.position.set(0,0,5);
-            loadingScreen.camera.lookAt(loadingScreen.box.position);
-            loadingScreen.scene.add(loadingScreen.box);
-
-            loadingManager = new THREE.LoadingManager();
-
-            loadingManager.onProgress = function(item,loaded,total){
-                console.log(item,loaded,total);
-            };
-
-            loadingManager.onLoad = function() {
-                console.log("loaded all resources");
-                RESOURCES_LOADED = true;
-                var tl = new TimelineMax();
-
-                //tl.to(mesh.scale, 5, {x: 5, ease: Expo.easeOut});
-//
-                ////tl.to(lightCount, 5, {var: 100, onUpdate: updateLights, ease: Expo.easeOut});
-                //tl.to(light, 5, {intensity: 1, ease: Expo.easeOut},0);
-//
-                //tl.to(mesh.position, .5, {x: 2, ease: Expo.easeOut});
-                //tl.to(mesh.rotation, .5, {y: Math.PI*.5, ease: Expo.easeOut}, "=-1.5");
-
-                videoalpha.play();
-                video.play();
-
-            }
-
+            
             //////////////// left light 1
 
             testLight = new THREE.PointLight(lightColour, lightDistance, lightDecay);//1, 750
@@ -150,8 +105,8 @@
             var pointLightHelper = new THREE.PointLightHelper( testLight, sphereSize );
             //scene.add( pointLightHelper );
 
-            
-            
+
+
             //////////////// left light 2
 
             testLight1 = new THREE.PointLight(lightColour, lightDistance, lightDecay);//750
@@ -163,7 +118,7 @@
             scene.add(testLight1);
 
 
-            
+
             //////////////// left light 3
 
             testLight3 = new THREE.PointLight(lightColour, lightDistance, lightDecay);//750
@@ -207,8 +162,8 @@
             var pointLightHelper = new THREE.PointLightHelper( testLight5, sphereSize );
             //scene.add( pointLightHelper );
 
-            
-            
+
+
             //////////////// stage light 1
 
             testLight6 = new THREE.PointLight(StageLightColour, StageLightDistance, StageLightDecay);//750
@@ -222,8 +177,8 @@
             //var pointLightHelper = new THREE.PointLightHelper( testLight6, sphereSize );
             //scene.add( pointLightHelper );
 
-            
-            
+
+
             //////////////// stage light 2
 
             testLight7 = new THREE.PointLight(StageLightColour, StageLightDistance, StageLightDecay);//750
@@ -248,16 +203,98 @@
             //testLight8.shadow.camera.far = 1000;
 
             scene.add(testLight8);
+        }
+
+        function startTimeline() {
+           var tl = new TimelineMax();
+           //tl.to(count1, 10, {var: 10, ease: Expo.easeOut});
+           //tl.to(lightCount, 5, {var: 100, onUpdate: updateLights, ease: Expo.easeOut});
+           tl.to(testLight, 5, {intensity: 1, ease: Expo.easeOut},8);
+           tl.to(testLight1, 5, {intensity: 1, onUpdate: playVideo(),ease: Expo.easeOut},8);
+           tl.to(testLight3, 5, {intensity: 1, ease: Expo.easeOut},8);
+           tl.to(testLight4, 5, {intensity: 1, ease: Expo.easeOut},8);
+           tl.to(testLight5, 5, {intensity: 1, ease: Expo.easeOut},8);
+           tl.to(testLight6, 7, {intensity: 18, ease: Expo.easeOut},8);
+           tl.to(testLight7, 7, {intensity: 18, ease: Expo.easeOut},8);
+           tl.to(testLight8, 7, {intensity: 18, ease: Expo.easeOut},8);
+
+           //tl.to(testLight5, 1, {intensity: 0, ease: Expo.easeOut},10);
+           //tl.to(testLight6, 1, {intensity: 0, ease: Expo.easeOut},0);
+           //tl.to(testLight7, 1, {intensity: 0, ease: Expo.easeOut},0);
+           //tl.to(testLight8, 1, {intensity: 0, ease: Expo.easeOut},0);
+
+        }
+
+        function playVideo() {
+            videoalpha.play();
+            video.play();
+        }
+
+
+
+
+
+        function init(){
+
+
+            //window.addEventListener('touchstart', function() {
+            //    //the user touched the screen!
+            //    onHandset = true
+            //})
+
+
+            //if (window.DeviceOrientationEvent) {
+            //onHandset = true
+            //}
+
+            var overlay = document.getElementById( 'overlay' );
+			overlay.remove();
+
+            scene = new THREE.Scene();
+            camera = new THREE.PerspectiveCamera( 40, window.innerWidth / window.innerHeight, 0.1, 3000 );
+            
+
+            loadingScreen.box.position.set(0,0,5);
+            loadingScreen.camera.lookAt(loadingScreen.box.position);
+            loadingScreen.scene.add(loadingScreen.box);
+
+            loadingManager = new THREE.LoadingManager();
+
+            loadingManager.onProgress = function(item,loaded,total){
+                console.log(item,loaded,total);
+            };
+
+            loadingManager.onLoad = function() {
+                console.log("loaded all resources");
+                RESOURCES_LOADED = true;
+                var count1 = { var : 0};
+
+
+
+                addLights();
+                startTimeline();
+
+//
+                //tl.to(mesh.position, .5, {x: 2, ease: Expo.easeOut});
+                //tl.to(mesh.rotation, .5, {y: Math.PI*.5, ease: Expo.easeOut}, "=-1.5");
+
+                //videoalpha.play();
+                //video.play();
+
+            }
+
             //var sphereSize = 40;
             //var pointLightHelper = new THREE.PointLightHelper( testLight7, sphereSize );
             //scene.add( pointLightHelper );
+
+            //startTimeline();
 
 
             
    
 
             var spotLight = new THREE.SpotLight(0x3333ff);
-            spotLight.intensity = 2;
+            spotLight.intensity = 1;
             spotLight.angle = 0.3;
             spotLight.penumbra = 0.5;
             spotLight.distance = 1;
@@ -265,7 +302,7 @@
             spotLight.position.set(0,700,0);
             spotLight.target.position.set(-900, 0, 900);
             //spotlight.target.position.set(200,-130,400);
-            scene.add(spotLight);
+            //scene.add(spotLight);
             scene.add(spotLight.target);
             lightHelper = new THREE.SpotLightHelper( spotLight );
 			//scene.add( lightHelper );
@@ -325,7 +362,7 @@
             video = document.getElementById( 'video' );
             video.load();
             
-            var vidplane = new THREE.PlaneGeometry(180,180,10,10);
+            var vidplane = new THREE.PlaneGeometry(193,193,10,10);
             var vidtexture = new THREE.VideoTexture( video );
 
             videoalpha = document.getElementById( 'videoalpha' );
@@ -339,7 +376,7 @@
             
             var vidplanemtl = new THREE.MeshStandardMaterial(loadingManager);
             vidplanemtl.map = vidtexture;
-            vidplanemtl.alphaTest = 0;
+            vidplanemtl.alphaTest = 0.5;
             vidplanemtl.alphaMap = vidalphatexture;
             vidplanemtl.transparent = true;
             vidplanemtl.opacity = 0.7;
@@ -444,7 +481,7 @@
             });
 
             loader = new THREE.OBJLoader(loadingManager);
-            loader.load( 'assets/newstoolstables.obj', function ( stoolstablesmesh ) {
+            loader.load( 'assets/newstoolstables1.obj', function ( stoolstablesmesh ) {
                             
 
                 stoolstablesmesh.traverse( function ( node ) {
@@ -664,7 +701,7 @@
             });
 
             loader = new THREE.OBJLoader(loadingManager);
-            loader.load( 'assets/newcables.obj', function ( cablesmesh ) {
+            loader.load( 'assets/newcables1.obj', function ( cablesmesh ) {
                             
 
                 cablesmesh.traverse( function ( node ) {
