@@ -25,6 +25,8 @@
     <script src="js/MTLLoader.js"></script>
     <script src="js/OBJLoader.js"></script>
     <script src="js/OrbitControls.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+
     <video id="videoalpha" loop crossOrigin="anonymous" playsinline style="display:none">
         <!--<source src="assets/drinkdrivealpha.webm" type='video/webm; codecs="vp8, vorbis"'>-->
         <source src="assets/draft8alpha.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
@@ -62,11 +64,11 @@
         var player = { height:450, speed:5, turnSpeed:Math.PI*0.01 };
         var USE_WIREFRAME = false;
         var lightColour = 0xD98400; //D98400
-        var lightDistance = 3; //3
+        var lightDistance = 10; //3
         var lightDecay = 700; //280
         var StageLightColour = 0x3333ff;
-        var StageLightDistance = 10; //3
-        var StageLightDecay = 100; //350
+        var StageLightDistance = 18; //3
+        var StageLightDecay = 450; //350
         var spotLightintensity = 2;
         var spotLightangle = 0.3;
         var spotLightpenumbra = 0.5;
@@ -263,16 +265,26 @@
             //var floordis = textureLoader.load('assets/floor_dis2.jpg');
             var walltex = textureLoader.load('assets/wall_tex2.jpg');
             var ceilingtex = textureLoader.load('assets/ceilingtex.jpg');
-            var curtaintex = textureLoader.load('assets/ceilingtex.jpg');
+            var curtaintex = textureLoader.load('assets/noisetex.jpg');
+            var curtainnormaltex = textureLoader.load('assets/leathernormaltex.jpg');
+            var stagetex = textureLoader.load('assets/noisenormaltex.jpg');
+
+
             //var stagetex = textureLoader.load('assets/stagetex.jpg');
             var video;
 
             walltex.wrapS = THREE.RepeatWrapping;
             walltex.wrapT = THREE.RepeatWrapping;
             walltex.repeat.set(40,40);
-            //stagetex.wrapS = THREE.RepeatWrapping;
-            //stagetex.wrapT = THREE.RepeatWrapping;
-            //stagetex.repeat.set(40,40);
+
+            curtaintex.wrapS = THREE.RepeatWrapping;
+            curtaintex.wrapT = THREE.RepeatWrapping;
+            curtaintex.repeat.set(3,7.5);
+
+            curtainnormaltex.wrapS = THREE.RepeatWrapping;
+            curtainnormaltex.wrapT = THREE.RepeatWrapping;
+            curtainnormaltex.repeat.set(3,7.5);
+
             ceilingtex.wrapS = THREE.RepeatWrapping;
             ceilingtex.wrapT = THREE.RepeatWrapping;
             ceilingtex.repeat.set(2,2);
@@ -299,13 +311,17 @@
             
             video = document.getElementById( 'video' );
             video.load();
-			video.play();
+            
             var vidplane = new THREE.PlaneGeometry(180,180,10,10);
             var vidtexture = new THREE.VideoTexture( video );
 
             videoalpha = document.getElementById( 'videoalpha' );
             videoalpha.load();
-			videoalpha.play();
+			
+            
+            videoalpha.play();
+            video.play();
+
             var vidalphatexture = new THREE.VideoTexture( videoalpha );
             
             var vidplanemtl = new THREE.MeshStandardMaterial(loadingManager);
@@ -314,6 +330,7 @@
             vidplanemtl.alphaMap = vidalphatexture;
             vidplanemtl.transparent = true;
             vidplanemtl.opacity = 0.7;
+
 
 
             var vidplanemesh = new THREE.Mesh(vidplane, vidplanemtl);
@@ -382,8 +399,8 @@
             var wallscentremtl = new THREE.MeshLambertMaterial({
                 map : ceilingtex,
                 //shininess : 0,
-                color: 0x191919
-
+                color: 0x191919,
+                normalMap: curtainnormaltex,
             });
 
             loader = new THREE.OBJLoader(loadingManager);
@@ -409,6 +426,7 @@
                 roughness : 0.2,
                 color: 0x1c1c1c,
                 //emissiveIntensity: 100
+                
 
             });
 
@@ -428,14 +446,23 @@
 
             ////////////////////   chair tops
 
-            var chairtopmtl = new THREE.MeshLambertMaterial({
-                map : ceilingtex,
-                //shininess : 0,
-                //roughness : 10,
-                color: 0x1a000d,
+            var chairtopmtl = new THREE.MeshStandardMaterial({
+                map : curtaintex,
+                metalness : 0.5,
+                roughness : 0.5,
+                color: 0x000000,
+                emissive: 0x800080,
                 //emissiveIntensity: 100
+                emissiveMap: curtainnormaltex,
+                emissiveIntensity : 0.1,
+                normalMap: curtainnormaltex,
+                normalScale: new THREE.Vector2( 0, 0.5 )
 
             });
+
+            //chairtopmtl.normalMap = curtainnormaltex;
+
+
 
             loader = new THREE.OBJLoader(loadingManager);
             loader.load( 'assets/newchairtops.obj', function ( chairtopmesh ) {
@@ -640,11 +667,14 @@
             ////////////////////   stage surface
             
             var stagesurfacemtl = new THREE.MeshStandardMaterial({
-                map : curtaintex,
+                //map : curtaintex,
                 metalness: 0,
                 roughness : 1,
-                color: 0x4B0000,
-                //emissiveIntensity: 100
+                color: 0x000000,
+                emissiveMap: vidscreentexture,
+                emissiveIntensity: 1,
+                emissive: 0x1a1aff,
+
 
             });
 
