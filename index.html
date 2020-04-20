@@ -26,14 +26,20 @@
     <script src="js/OBJLoader.js"></script>
     <script src="js/OrbitControls.js"></script>
     <video id="videoalpha" loop crossOrigin="anonymous" playsinline style="display:none">
-        <source src="assets/drinkdrivealpha.webm" type='video/webm; codecs="vp8, vorbis"'>
-        <source src="assets/" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+        <!--<source src="assets/drinkdrivealpha.webm" type='video/webm; codecs="vp8, vorbis"'>-->
+        <source src="assets/draft8alpha.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
     </video>
 
     <video id="video" loop crossOrigin="anonymous" playsinline style="display:none">
-        <source src="assets/drinkdrive.webm" type='video/webm; codecs="vp8, vorbis"'>
-        <source src="assets/" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+        <!--<source src="assets/drinkdrive.webm" type='video/webm; codecs="vp8, vorbis"'>-->
+        <source src="assets/draft8.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
     </video>
+
+    <video id="videoscreen" loop crossOrigin="anonymous" playsinline style="display:none">
+        <!--<source src="assets/drinkdrive.webm" type='video/webm; codecs="vp8, vorbis"'>-->
+        <source src="assets/draft8screens.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+    </video>
+
 
     <script>
 
@@ -49,23 +55,37 @@
         sphere, planeGeometry, planeMaterial, plane, textureloader, loader, fanblade ;
         
 
-        var password = "clubsweat";
+        var password = "";
         var meshFloor;
         var onHandset = true;
         var keyboard = {};
         var player = { height:450, speed:5, turnSpeed:Math.PI*0.01 };
         var USE_WIREFRAME = false;
-        var lightColour = 0xD98400;
+        var lightColour = 0xD98400; //D98400
         var lightDistance = 3; //3
         var lightDecay = 700; //280
-        var StageLightColour = 0xc603fc;
-        var StageLightDistance = 2; //3
-        var StageLightDecay = 25; //350
+        var StageLightColour = 0x3333ff;
+        var StageLightDistance = 10; //3
+        var StageLightDecay = 100; //350
         var spotLightintensity = 2;
         var spotLightangle = 0.3;
         var spotLightpenumbra = 0.5;
         var spotLightdistance = 0;
         var spotLightdecay = 0;
+
+        var loadingScreen = {
+            scene: new THREE.Scene(),
+            camera: new THREE.PerspectiveCamera(90, 1280/720,0.1,100),
+            box: new THREE.Mesh(
+                new THREE.BoxGeometry(0.5,0.5,0.5),
+                new THREE.MeshBasicMaterial({ color: 0x4444ff})
+            )
+        };
+
+        var LOADING_MANAGER = null;
+        var RESOURCES_LOADED = false;
+
+
 
 
         function init(){
@@ -85,32 +105,54 @@
 
             scene = new THREE.Scene();
             camera = new THREE.PerspectiveCamera( 40, window.innerWidth / window.innerHeight, 0.1, 3000 );
-          
-            //barright
+            
+
+            loadingScreen.box.position.set(0,0,5);
+            loadingScreen.camera.lookAt(loadingScreen.box.position);
+            loadingScreen.scene.add(loadingScreen.box);
+
+            loadingManager = new THREE.LoadingManager();
+
+            loadingManager.onProgress = function(item,loaded,total){
+                console.log(item,loaded,total);
+            };
+
+            loadingManager.onLoad = function() {
+                console.log("loaded all resources");
+                RESOURCES_LOADED = true;
+            }
+
+            //////////////// left light 1
+
             testLight = new THREE.PointLight(lightColour, lightDistance, lightDecay);//1, 750
-            testLight.position.set(490,520,90);
+            testLight.position.set(351,602,471);
             //testLight.castShadow = true;
             testLight.shadow.camera.near = 100;
             testLight.shadow.camera.far = 1000;
 
             scene.add(testLight);
-            var sphereSize = 40;
+            var sphereSize = 9;
             var pointLightHelper = new THREE.PointLightHelper( testLight, sphereSize );
             //scene.add( pointLightHelper );
+
             
-            //harpright
+            
+            //////////////// left light 2
+
             testLight1 = new THREE.PointLight(lightColour, lightDistance, lightDecay);//750
-            testLight1.position.set(-150,520,482);
+            testLight1.position.set(9,626,834);
             //testLight1.castShadow = true;
             testLight1.shadow.camera.near = 100;
             testLight1.shadow.camera.far = 1000;
 
             scene.add(testLight1);
 
+
             
-            //barleft
+            //////////////// left light 3
+
             testLight3 = new THREE.PointLight(lightColour, lightDistance, lightDecay);//750
-            testLight3.position.set(112,520,482);
+            testLight3.position.set(-414,618,884);
             //testLight3.castShadow = true;
             testLight3.shadow.camera.near = 100;
             testLight3.shadow.camera.far = 1000;
@@ -120,9 +162,12 @@
             var pointLightHelper = new THREE.PointLightHelper( testLight3, sphereSize );
             //scene.add( pointLightHelper );
 
-            //harpleft
+
+
+            //////////////// left light 4
+
             testLight4 = new THREE.PointLight(lightColour, lightDistance, lightDecay);//750
-            testLight4.position.set(-540,520,110);
+            testLight4.position.set(-821,625,601);
             //testLight4.castShadow = true;
             testLight4.shadow.camera.near = 100;
             testLight4.shadow.camera.far = 1000;
@@ -132,9 +177,12 @@
             var pointLightHelper = new THREE.PointLightHelper( testLight4, sphereSize );
             //scene.add( pointLightHelper );
 
-            //barwall
+
+
+            //////////////// right light 1
+
             testLight5 = new THREE.PointLight(lightColour, lightDistance, lightDecay);//750
-            testLight5.position.set(490,520,-160);
+            testLight5.position.set(127,522,-297);
             //testLight5.castShadow = true;
             testLight5.shadow.camera.near = 100;
             testLight5.shadow.camera.far = 1000;
@@ -144,80 +192,53 @@
             var pointLightHelper = new THREE.PointLightHelper( testLight5, sphereSize );
             //scene.add( pointLightHelper );
 
-            //farwall
-            testLight6 = new THREE.PointLight(lightColour, lightDistance, lightDecay);//750
-            testLight6.position.set(100,520,-545);
+            
+            
+            //////////////// stage light 1
+
+            testLight6 = new THREE.PointLight(StageLightColour, StageLightDistance, StageLightDecay);//750
+            testLight6.position.set(-116,737,202);
             //testLight6.castShadow = true;
-            testLight6.shadow.camera.near = 100;
-            testLight6.shadow.camera.far = 1000;
+            //testLight6.shadow.camera.near = 100;
+            //testLight6.shadow.camera.far = 1000;
 
             scene.add(testLight6);
-            var sphereSize = 40;
-            var pointLightHelper = new THREE.PointLightHelper( testLight6, sphereSize );
+            //var sphereSize = 40;
+            //var pointLightHelper = new THREE.PointLightHelper( testLight6, sphereSize );
             //scene.add( pointLightHelper );
 
-            //farwall
-            testLight7 = new THREE.PointLight(lightColour, 3, 100);//750
-            testLight7.position.set(-30,550,-50);
+            
+            
+            //////////////// stage light 2
+
+            testLight7 = new THREE.PointLight(StageLightColour, StageLightDistance, StageLightDecay);//750
+            testLight7.position.set(-378,737,138);
             //testLight6.castShadow = true;
-            testLight7.shadow.camera.near = 100;
-            testLight7.shadow.camera.far = 1000;
+            //testLight7.shadow.camera.near = 100;
+            //testLight7.shadow.camera.far = 1000;
 
             scene.add(testLight7);
-            var sphereSize = 40;
-            var pointLightHelper = new THREE.PointLightHelper( testLight7, sphereSize );
+            //var sphereSize = 40;
+            //var pointLightHelper = new THREE.PointLightHelper( testLight7, sphereSize );
             //scene.add( pointLightHelper );
 
 
-            //stageLight1 = new THREE.PointLight(StageLightColour, StageLightDistance, StageLightDecay);
-            //stageLight2 = new THREE.PointLight(StageLightColour, StageLightDistance, StageLightDecay);
-            //stageLight3 = new THREE.PointLight(StageLightColour, StageLightDistance, StageLightDecay);
-            //stageLight4 = new THREE.PointLight(StageLightColour, StageLightDistance, StageLightDecay);
-            //stageLight5 = new THREE.PointLight(StageLightColour, StageLightDistance, StageLightDecay);
-            //stageLight6 = new THREE.PointLight(StageLightColour, StageLightDistance, StageLightDecay);
-            //stageLight7 = new THREE.PointLight(StageLightColour, StageLightDistance, StageLightDecay);
-            //stageLight8 = new THREE.PointLight(StageLightColour, StageLightDistance, StageLightDecay);
-            //stageLight1.position.set(-498, 307, 100);
-            //stageLight2.position.set(-420, 307, 110);
-            //stageLight3.position.set(-346, 307, 138);
-            //stageLight4.position.set(-281, 307, 183);
-            //stageLight5.position.set(-229, 307, 242);
-            //stageLight6.position.set(-192, 307, 311);
-            //stageLight7.position.set(-173, 307, 388);
-            //stageLight8.position.set(-173, 307, 467);
-//
-            //
-            //scene.add(stageLight1, stageLight2, stageLight3, stageLight4, stageLight5, stageLight6, stageLight7, stageLight8); 
-            
-            //stageLight1 = new THREE.SpotLight(StageLightColour, spotLightintensity)//, StageLightDistance);
-            //stageLight2 = new THREE.SpotLight(StageLightColour, spotLightintensity)//, StageLightDistance);
-            //stageLight3 = new THREE.SpotLight(StageLightColour, spotLightintensity)//, StageLightDistance);
-            //stageLight4 = new THREE.SpotLight(StageLightColour, spotLightintensity)//, StageLightDistance);
-            //stageLight5 = new THREE.SpotLight(StageLightColour, spotLightintensity)//, StageLightDistance);
-            //stageLight6 = new THREE.SpotLight(StageLightColour, spotLightintensity)//, StageLightDistance);
-            //stageLight7 = new THREE.SpotLight(StageLightColour, spotLightintensity)//, StageLightDistance);
-            //stageLight8 = new THREE.SpotLight(StageLightColour, spotLightintensity)//, StageLightDistance);
-            //stageLight1.position.set(-498, 313, 100);
-            //stageLight2.position.set(-420, 313, 110);
-            //stageLight3.position.set(-346, 313, 138);
-            //stageLight4.position.set(-281, 313, 183);
-            //stageLight5.position.set(-229, 313, 242);
-            //stageLight6.position.set(-192, 313, 311);
-            //stageLight7.position.set(-173, 313, 388);
-            //stageLight8.position.set(-173, 313, 467);
-//
-            //scene.add(stageLight1, stageLight2, stageLight3, stageLight4, stageLight5, stageLight6, stageLight7, stageLight8);                      
 
-            //spotLight.intensity = 2;
-            //spotLight.angle = 0.3;
-            //spotLight.penumbra = 0.5;
-            //spotLight.distance = 0;
-            //spotLight.decay = 0;
-            //spotLight.target.position.set(-900, 0, 900);
-            //scene.add(spotLight);
-            //scene.add(spotLight.target);
-            //lightHelper = new THREE.SpotLightHelper( spotLight );
-			//scene.add( lightHelper );
+            //////////////// stage light 3
+
+            testLight8 = new THREE.PointLight(StageLightColour, StageLightDistance, StageLightDecay);//750
+            testLight8.position.set(-227,737,367);
+            //testLight6.castShadow = true;
+            //testLight8.shadow.camera.near = 100;
+            //testLight8.shadow.camera.far = 1000;
+
+            scene.add(testLight8);
+            //var sphereSize = 40;
+            //var pointLightHelper = new THREE.PointLightHelper( testLight7, sphereSize );
+            //scene.add( pointLightHelper );
+
+
+            
    
 
             var spotLight = new THREE.SpotLight(0x3333ff);
@@ -235,9 +256,9 @@
 			//scene.add( lightHelper );
 
 
-            mtlLoader = new THREE.MTLLoader();
+            mtlLoader = new THREE.MTLLoader(loadingManager);
 
-            textureLoader = new THREE.TextureLoader();
+            textureLoader = new THREE.TextureLoader(loadingManager);
             var floortex = textureLoader.load('assets/floor_tex.jpg');
             var floordis = textureLoader.load('assets/floor_dis2.jpg');
             var walltex = textureLoader.load('assets/wall_tex2.jpg');
@@ -245,7 +266,6 @@
             var curtaintex = textureLoader.load('assets/ceilingtex.jpg');
             var stagetex = textureLoader.load('assets/stagetex.jpg');
             var video;
-            //var discoballreflec = textureLoader.load('assets/discoballreflec.jpg');
 
             walltex.wrapS = THREE.RepeatWrapping;
             walltex.wrapT = THREE.RepeatWrapping;
@@ -255,7 +275,7 @@
             stagetex.repeat.set(40,40);
             ceilingtex.wrapS = THREE.RepeatWrapping;
             ceilingtex.wrapT = THREE.RepeatWrapping;
-            ceilingtex.repeat.set(20,20);
+            ceilingtex.repeat.set(2,2);
             
 
             //var plane = new THREE.PlaneGeometry(1200,1200,10,10);
@@ -274,6 +294,8 @@
             //scene.add(floorplane);    
 
             
+
+            ////////////// hologram
             
             video = document.getElementById( 'video' );
             video.load();
@@ -286,278 +308,308 @@
 			videoalpha.play();
             var vidalphatexture = new THREE.VideoTexture( videoalpha );
             
-            var vidplanemtl = new THREE.MeshStandardMaterial();
+            var vidplanemtl = new THREE.MeshStandardMaterial(loadingManager);
             vidplanemtl.map = vidtexture;
-            vidplanemtl.alphaTest = 0.5;
+            vidplanemtl.alphaTest = 0;
             vidplanemtl.alphaMap = vidalphatexture;
+            vidplanemtl.transparent = true;
+            vidplanemtl.opacity = 0.7;
 
 
             var vidplanemesh = new THREE.Mesh(vidplane, vidplanemtl);
             vidplanemesh.position.set(-260, 530, 220);
             vidplanemesh.rotation.y = 2.3;
-            scene.add(vidplanemesh);  
+            scene.add(vidplanemesh); 
+            
+            
+            /////////////////// tv screens
+
+            videoscreen = document.getElementById( 'videoscreen' );
+            videoscreen.load();
+			videoscreen.play();
+            var vidscreenplane = new THREE.PlaneGeometry(60,60,10,10);
+            var vidscreentexture = new THREE.VideoTexture( videoscreen );
+            
+            var vidscreenplanemtl = new THREE.MeshStandardMaterial(loadingManager);
+            vidscreenplanemtl.map = vidscreentexture;
+            vidscreenplanemtl.alphaTest = 0;
+            vidscreenplanemtl.transparent = true;
+            vidscreenplanemtl.opacity = 0.3;
+            //vidscreenplanemtl.emissive = 0x3333ff;
+            //vidscreenplanemtl.map = ceilingtex;
+            //vidscreenplanemtl.emissiveIntensity = 4;
+
+
+
+
+            var vidscreenplanemesh = new THREE.Mesh(vidscreenplane, vidscreenplanemtl);
+            vidscreenplanemesh.position.set/*(-100,500,0); //*/(-829, 413, 899);
+            vidscreenplanemesh.rotation.set(0.3,2.5,-1.7)//(-0.663, 3.333, -1.57);
+            //scene.add(vidscreenplanemesh);  
+
 
             var sphere = new THREE.SphereBufferGeometry();
-            var box = new THREE.BoxHelper( vidplanemesh, 0xffff00 );
+            var box = new THREE.BoxHelper( vidscreenplanemesh, 0xffff00 );
             //scene.add( box );
 
 
-            // Create a material
-            var wallmtl = new THREE.MeshPhongMaterial({
+            ////////////////////   floor
+
+            var floormtl = new THREE.MeshLambertMaterial({
                 map : ceilingtex,
-                shininess : 0,
-                color: 0x191919
+                color: 0x0d0d0d
 
             });
 
-            loader = new THREE.OBJLoader();
-            loader.load( 'assets/newroomtest.obj', function ( wallsmesh ) {
+            loader = new THREE.OBJLoader(loadingManager);
+            loader.load( 'assets/newfloor.obj', function ( floormesh ) {
                             
 
-                // For any meshes in the model, add our material.
-                wallsmesh.traverse( function ( node ) {
+                floormesh.traverse( function ( node ) {
 
-                    if ( node.isMesh ) node.material = wallmtl;             
+                    if ( node.isMesh ) node.material = floormtl;             
                     node.castShadow = true;                       
                     node.receiveShadow = true;
                 } );
 
-                // Add the model to the scene.
-                wallsmesh.position.y = 300;
-                scene.add( wallsmesh );
-            });
-            /*
-
-            var tableschairsmtl = new THREE.MeshStandardMaterial({
-                //map : walltex,
-                metalness : 3,
-                roughness : 0.6,
-                color: 0x6E6E6E,
-                //emissiveIntensity: 100
-
+                floormesh.position.y = 300;
+                scene.add( floormesh );
             });
 
-            loader = new THREE.OBJLoader();
-            loader.load( 'assets/tableschairs4.obj', function ( tableschairsmesh ) {
+            ////////////////////   walls + centre
+            
+
+            var wallscentremtl = new THREE.MeshLambertMaterial({
+                map : ceilingtex,
+                //shininess : 0,
+                color: 0x191919
+
+            });
+
+            loader = new THREE.OBJLoader(loadingManager);
+            loader.load( 'assets/newwallscentre.obj', function ( wallscentremesh ) {
                             
 
-                // For any meshes in the model, add our material.
-                tableschairsmesh.traverse( function ( node ) {
+                wallscentremesh.traverse( function ( node ) {
 
-                    if ( node.isMesh ) node.material = tableschairsmtl;             
+                    if ( node.isMesh ) node.material = wallscentremtl;             
                     node.castShadow = true;
                 } );
 
-                // Add the model to the scene.
-                tableschairsmesh.position.y = 297;
-                scene.add( tableschairsmesh );
+                wallscentremesh.position.y = 297;
+                scene.add( wallscentremesh );
             });
+
+            ////////////////////   stools + tables
             
 
-            var ceilingmtl = new THREE.MeshPhongMaterial({
-                map : ceilingtex,
-                shininess : 0,
+            var stoolstablesmtl = new THREE.MeshStandardMaterial({
+                //map : ceilingtex,
+                metalness : 0.8,
+                roughness : 0.2,
                 color: 0x1c1c1c,
                 //emissiveIntensity: 100
 
             });
 
-            loader = new THREE.OBJLoader();
-            loader.load( 'assets/ceiling2.obj', function ( ceilingmesh ) {
+            loader = new THREE.OBJLoader(loadingManager);
+            loader.load( 'assets/newstoolstables.obj', function ( stoolstablesmesh ) {
                             
 
-                // For any meshes in the model, add our material.
-                ceilingmesh.traverse( function ( node ) {
+                stoolstablesmesh.traverse( function ( node ) {
 
-                    if ( node.isMesh ) node.material = ceilingmtl;             
+                    if ( node.isMesh ) node.material = stoolstablesmtl;             
 
                 } );
 
-                // Add the model to the scene.
-                ceilingmesh.position.y = 300;
-                scene.add( ceilingmesh );
+                stoolstablesmesh.position.y = 300;
+                scene.add( stoolstablesmesh );
             });
 
-            var fixturemtl = new THREE.MeshPhongMaterial({
+            ////////////////////   chair tops
+
+            var chairtopmtl = new THREE.MeshLambertMaterial({
                 map : ceilingtex,
-                shininess : 0,
-                color: 0x1c1c1c,
+                //shininess : 0,
+                //roughness : 10,
+                color: 0x1a000d,
                 //emissiveIntensity: 100
 
             });
 
-            loader = new THREE.OBJLoader();
-            loader.load( 'assets/fixtures.obj', function ( fixturemesh ) {
+            loader = new THREE.OBJLoader(loadingManager);
+            loader.load( 'assets/newchairtops.obj', function ( chairtopmesh ) {
                             
 
-                // For any meshes in the model, add our material.
-                fixturemesh.traverse( function ( node ) {
+                chairtopmesh.traverse( function ( node ) {
 
-                    if ( node.isMesh ) node.material = fixturemtl;             
+                    if ( node.isMesh ) node.material = chairtopmtl;             
 
                 } );
 
-                // Add the model to the scene.
-                fixturemesh.position.y = 300;
-                scene.add( fixturemesh );
+                chairtopmesh.position.y = 300;
+                scene.add( chairtopmesh );
             });
 
+            ////////////////////   bar
 
-
-                        var barfixturesmtl = new THREE.MeshPhongMaterial({
-                map : ceilingtex,
-                shininess : 0,
-                color: 0x1c1c1c,
+            var barmtl = new THREE.MeshStandardMaterial({
+                //map : ceilingtex,
+                metalness : 1,
+                roughness : 1,
+                color: 0x8c8c8c,
                 //emissiveIntensity: 100
 
             });
 
-            loader = new THREE.OBJLoader();
-            loader.load( 'assets/barfixtures.obj', function ( barfixturesmesh ) {
+            loader = new THREE.OBJLoader(loadingManager);
+            loader.load( 'assets/newbar.obj', function ( barmesh ) {
                             
 
-                // For any meshes in the model, add our material.
-                barfixturesmesh.traverse( function ( node ) {
+                barmesh.traverse( function ( node ) {
 
-                    if ( node.isMesh ) node.material = barfixturesmtl;             
+                    if ( node.isMesh ) node.material = barmtl;             
 
                 } );
 
-                // Add the model to the scene.
-                barfixturesmesh.position.y = 300;
-                scene.add( barfixturesmesh );
+                barmesh.position.y = 300;
+                scene.add( barmesh );
             }); 
 
-                var bartopmtl = new THREE.MeshPhongMaterial({
+            ////////////////////   metal
+
+                var metalmtl = new THREE.MeshPhongMaterial({
                 map : ceilingtex,
                 shininess : 30,
-                color: 0x1c1c1c,
+                color: 0x404040,
                 //emissiveIntensity: 100
 
             });
 
-            loader = new THREE.OBJLoader();
-            loader.load( 'assets/bartop.obj', function ( bartopmesh ) {
+            loader = new THREE.OBJLoader(loadingManager);
+            loader.load( 'assets/newmetal.obj', function ( metalmesh ) {
                             
 
-                // For any meshes in the model, add our material.
-                bartopmesh.traverse( function ( node ) {
+                metalmesh.traverse( function ( node ) {
 
-                    if ( node.isMesh ) node.material = bartopmtl;             
+                    if ( node.isMesh ) node.material = metalmtl;             
 
                 } );
 
-                // Add the model to the scene.
-                bartopmesh.position.y = 300;
-                scene.add( bartopmesh );
+                metalmesh.position.y = 300;
+                scene.add( metalmesh );
             }); 
 
-                var lighttopsmtl = new THREE.MeshPhongMaterial({
+            ////////////////////   speakers    
+            
+            var speakersmtl = new THREE.MeshPhongMaterial({
                 //map : ceilingtex,
-                shininess : 0,
-                transparent : true,
-                opacity : 1,
-                color: 0xFF9300,
+                shininess : 15,
+                color: 0x000000,
                 //emissiveIntensity: 100
 
             });
 
-            loader = new THREE.OBJLoader();
-            loader.load( 'assets/lighttopsnew1.obj', function ( lighttopsmesh ) {
+            loader = new THREE.OBJLoader(loadingManager);
+            loader.load( 'assets/newspeakers.obj', function ( speakersmesh ) {
                             
 
-                // For any meshes in the model, add our material.
-                lighttopsmesh.traverse( function ( node ) {
+                speakersmesh.traverse( function ( node ) {
 
-                    if ( node.isMesh ) node.material = lighttopsmtl;             
+                    if ( node.isMesh ) node.material = speakersmtl;             
                     node.castShadow = true;
                     node.receiveShadow = true;
                 } );
 
-                // Add the model to the scene.
-                lighttopsmesh.position.y = 300;
-                scene.add( lighttopsmesh );
+                speakersmesh.position.y = 300;
+                scene.add( speakersmesh );
             });
 
-                var mirrorsmtl = new THREE.MeshPhongMaterial({
-                shininess : 10,
-                transparent : true,
-                opacity : 0.4,
-                color: 0x1c1c1c,
+            ////////////////////   tv + light metal
+
+            var tvlightsmtl = new THREE.MeshStandardMaterial({
+                map : ceilingtex,
+                metalness : 0.5,
+                color: 0x595959,
                 //emissiveIntensity: 100
 
             });
 
-            loader = new THREE.OBJLoader();
-            loader.load( 'assets/tabletops.obj', function ( mirrorsmesh ) {
+            loader = new THREE.OBJLoader(loadingManager);
+            loader.load( 'assets/newtvlightmetal.obj', function ( tvlightsmesh ) {
                             
 
-                // For any meshes in the model, add our material.
-                mirrorsmesh.traverse( function ( node ) {
+                tvlightsmesh.traverse( function ( node ) {
 
-                    if ( node.isMesh ) node.material = mirrorsmtl;             
+                    if ( node.isMesh ) node.material = tvlightsmtl;             
 
                 } );
 
-                // Add the model to the scene.
-                mirrorsmesh.position.y = 300;
-                scene.add( mirrorsmesh );
+                tvlightsmesh.position.y = 300;
+                scene.add( tvlightsmesh );
             });  
 
-                var lightfittingsmtl = new THREE.MeshPhongMaterial({
+            ////////////////////   light tops
+
+            var lighttopsmtl = new THREE.MeshStandardMaterial({
                 //map : ceilingtex,
-                shininess : 1,
-                color: 0x606060,
+                transparent : true,
+                opacity : 0.68,
+                metalness : 0.6,
+                roughness : 0.2,
+                color: 0xff6600,
                 //emissiveIntensity: 100
 
             });
 
-            loader = new THREE.OBJLoader();
-            loader.load( 'assets/newlightfittings2.obj', function ( lightfittingsmesh ) {
+            loader = new THREE.OBJLoader(loadingManager);
+            loader.load( 'assets/newlighttops.obj', function ( lighttopsmesh ) {
                             
 
-                // For any meshes in the model, add our material.
-                lightfittingsmesh.traverse( function ( node ) {
+                lighttopsmesh.traverse( function ( node ) {
 
-                    if ( node.isMesh ) node.material = lightfittingsmtl;
+                    if ( node.isMesh ) node.material = lighttopsmtl;
                                  
                     node.castShadow = true;
                     node.receiveShadow = true;             
 
                 } );
 
-                // Add the model to the scene.
-                lightfittingsmesh.position.y = 300;
-                scene.add( lightfittingsmesh );
+                lighttopsmesh.position.y = 300;
+                scene.add( lighttopsmesh );
             });  
 
-                /*var discoballmtl = new THREE.MeshPhongMaterial({
-                shininess : 500,
+            ////////////////////   tv screens
+
+            var tvscreensmtl = new THREE.MeshPhongMaterial({
+                shininess : 30,
 
                 //roughness : 0,
-                color: 0x7B7B7B,
-                specular: 0xffffff
+                color: 0x000000,
+                //specular: 0x000000
                 //emissiveIntensity: 100
 
             });
 
-            loader = new THREE.OBJLoader();
-            loader.load( 'assets/discoball2.obj', function ( discoballmesh ) {
+            loader = new THREE.OBJLoader(loadingManager);
+            loader.load( 'assets/newtvscreens.obj', function ( tvscreensmesh ) {
                             
 
-                // For any meshes in the model, add our material.
-                discoballmesh.traverse( function ( node ) {
+                tvscreensmesh.traverse( function ( node ) {
 
-                    if ( node.isMesh ) node.material = discoballmtl;             
+                    if ( node.isMesh ) node.material = tvscreensmtl;             
 
                 } );
 
                 // Add the model to the scene.
-                discoballmesh.position.set(-339, 586.2, 281);
-                discoball = discoballmesh;
-                //scene.add( discoball );
-            });  */
-            /*var harpsichordmtl = new THREE.MeshPhongMaterial({
+                tvscreensmesh.position.y = 300;
+                scene.add( tvscreensmesh );
+            });  
+
+            ////////////////////   cables
+
+
+            var cablesmtl = new THREE.MeshPhongMaterial({
                 //map : ceilingtex,
                 //envMap : ceilingtex,
                 //roughness : 0.5,
@@ -571,23 +623,23 @@
 
             });
 
-            /loader = new THREE.OBJLoader();
-            loader.load( 'assets/harpnosweat.obj', function ( harpsichordmesh ) {
+            loader = new THREE.OBJLoader(loadingManager);
+            loader.load( 'assets/newcables.obj', function ( cablesmesh ) {
                             
 
-                // For any meshes in the model, add our material.
-                harpsichordmesh.traverse( function ( node ) {
+                cablesmesh.traverse( function ( node ) {
 
-                    if ( node.isMesh ) node.material = harpsichordmtl;             
+                    if ( node.isMesh ) node.material = cablesmtl;             
 
                 } );
 
-                // Add the model to the scene.
-                harpsichordmesh.position.y = 300;
-                //scene.add( harpsichordmesh );
-            });   */ 
-            /*
-                var curtainmtl = new THREE.MeshStandardMaterial({
+                cablesmesh.position.y = 300;
+                scene.add( cablesmesh );
+            });  
+
+            ////////////////////   stage surface
+            
+            var stagesurfacemtl = new THREE.MeshStandardMaterial({
                 map : curtaintex,
                 metalness: 0,
                 roughness : 1,
@@ -596,167 +648,107 @@
 
             });
 
-            loader = new THREE.OBJLoader();
-            loader.load( 'assets/curtain.obj', function ( curtainmesh ) {
+            loader = new THREE.OBJLoader(loadingManager);
+            loader.load( 'assets/newstagesurface.obj', function ( stagesurfacemesh ) {
                             
 
-                // For any meshes in the model, add our material.
-                curtainmesh.traverse( function ( node ) {
+                stagesurfacemesh.traverse( function ( node ) {
 
-                    if ( node.isMesh ) node.material = curtainmtl;             
+                    if ( node.isMesh ) node.material = stagesurfacemtl;             
 
                 } );
 
-                // Add the model to the scene.
-                curtainmesh.position.y = 300;
-                scene.add( curtainmesh );
+                stagesurfacemesh.position.y = 300;
+                scene.add( stagesurfacemesh );
             });  
 
-                var airconmtl = new THREE.MeshPhongMaterial({
+            ////////////////////   fan cases
+
+            var fancasemtl = new THREE.MeshPhongMaterial({
                 map : ceilingtex,
-                shininess : 0,
-                color: 0x1c1c1c,
+                shininess : 20,
+                color: 0xbfbfbf,
                 //emissiveIntensity: 100
 
             });
 
-            loader = new THREE.OBJLoader();
-            loader.load( 'assets/aircon.obj', function ( airconmesh ) {
+            loader = new THREE.OBJLoader(loadingManager);
+            loader.load( 'assets/newfancases.obj', function ( fancasemesh ) {
                             
 
-                // For any meshes in the model, add our material.
-                airconmesh.traverse( function ( node ) {
-
-                    if ( node.isMesh ) node.material = airconmtl;             
-
-                } );
-
-                // Add the model to the scene.
-                airconmesh.position.y = 300;
-                scene.add( airconmesh );
-            }); 
-
-            var wiresmtl = new THREE.MeshPhongMaterial({
-            map : curtaintex,
-            shininess : 2,
-            color: 0x260000  ,
-            emissiveIntensity: 100
-
-            });
-
-            loader = new THREE.OBJLoader();
-            loader.load( 'assets/wires.obj', function ( wiresmesh ) {
-                            
-
-                // For any meshes in the model, add our material.
-                wiresmesh.traverse( function ( node ) {
-
-                    if ( node.isMesh ) node.material = wiresmtl;             
-
-                } );
-
-                // Add the model to the scene.
-                wiresmesh.position.y = 300;
-                scene.add( wiresmesh );
-            });
-
-            var stagemtl = new THREE.MeshPhongMaterial({
-            //map : stagetex
-            //shininess : 0,
-            color: 0x210003,
-            //emissiveIntensity: 100
-
-            });
-
-            loader = new THREE.OBJLoader();
-            loader.load( 'assets/stagebottom.obj', function ( stagemesh ) {
-                            
-
-                // For any meshes in the model, add our material.
-                stagemesh.traverse( function ( node ) {
-
-                    if ( node.isMesh ) node.material = stagemtl;             
-
-                } );
-
-                // Add the model to the scene.
-                stagemesh.position.y = 300;
-                scene.add( stagemesh );
-            });
-
-            var fancasemtl = new THREE.MeshStandardMaterial({
-            //map : stagetex
-            metalness : 50,
-            roughness : 0.2,
-            color: 0x999999,
-            //emissiveIntensity: 100
-
-            });
-
-            loader = new THREE.OBJLoader();
-            loader.load( 'assets/fancase.obj', function ( fancasemesh ) {
-                            
-
-                // For any meshes in the model, add our material.
                 fancasemesh.traverse( function ( node ) {
 
                     if ( node.isMesh ) node.material = fancasemtl;             
 
                 } );
 
-                // Add the model to the scene.
                 fancasemesh.position.y = 300;
                 scene.add( fancasemesh );
+            }); 
+
+            ////////////////////   fan1
+
+            var fan1mtl = new THREE.MeshPhongMaterial({
+                map : ceilingtex,
+                shininess : 20,
+                color: 0xbfbfbf,
+                //emissiveIntensity: 100
+
             });
 
-            var fanblademtl = new THREE.MeshStandardMaterial({
-            //map : stagetex
-            metalness : 50,
-            roughness : 0.2,
-            color: 0x999999,
-            //emissiveIntensity: 100
-
-            });
-
-            loader = new THREE.OBJLoader();
-            loader.load( 'assets/fanblades.obj', function ( fanblademesh ) {
+            loader = new THREE.OBJLoader(loadingManager);
+            loader.load( 'assets/newfan1.obj', function ( fan1mesh ) {
                             
 
-                // For any meshes in the model, add our material.
-                fanblademesh.traverse( function ( node ) {
+                fan1mesh.traverse( function ( node ) {
 
-                    if ( node.isMesh ) node.material = fanblademtl;             
+                    if ( node.isMesh ) node.material = fan1mtl;             
 
                 } );
 
-                // Add the model to the scene.
-                fanblademesh.position.set(-18,580,-43);
-                fanblade = fanblademesh;
-                scene.add( fanblade );
+                fan1mesh.position.set(0,300,0);
+
+                //fan1mesh.position.set(-317,585,516);
+                //fan1mesh.rotation.set(1.6219,2.0266,0.7611);
+
+                fan1 = fan1mesh;
+
+                scene.add( fan1 );
+            });
+
+            
+            ////////////////////  fan2
+
+            var fan2mtl = new THREE.MeshPhongMaterial({
+                map : ceilingtex,
+                shininess : 20,
+                color: 0xbfbfbf,
+                //emissiveIntensity: 100
+
+            });
+
+            loader = new THREE.OBJLoader(loadingManager);
+            loader.load( 'assets/newfan2.obj', function ( fan2mesh ) {
+                            
+
+                fan2mesh.traverse( function ( node ) {
+
+                    if ( node.isMesh ) node.material = fan2mtl;             
+
+                } );
+
+                fan2mesh.position.set(0,300,0);
+
+                //fan2mesh.position.set(-58,501,1);
+                //fan2mesh.rotation.set(0.1905,2.0607,0.4307);
+
+                fan2 = fan2mesh;
+                scene.add( fan2 );
             });
 
 
-            var cylmtl1 = new THREE.MeshPhongMaterial( {color: 0x210003, map: stagetex} );
-            
-            var cylgeo1 = new THREE.CylinderGeometry( 292, 292, 3, 100 );
-            var stageTop = new THREE.Mesh( cylgeo1, cylmtl1 );
-            stageTop.position.set(-498,345,428);
-            scene.add( stageTop );
 
-            var cylgeo2 = new THREE.CylinderGeometry( 328, 328, 3, 100 );
-            var stageTop2 = new THREE.Mesh( cylgeo2, cylmtl1 );
-            stageTop2.position.set(-498,328,428);
-            scene.add( stageTop2 );
-            */
 
-            //stagelight
-            testLight7 = new THREE.PointLight(0x0000ff, 5, 700);//750
-            testLight7.position.set(-498,302,428);
-            //testLight6.castShadow = true;
-            //testLight7.shadow.camera.near = 100;
-            //testLight7.shadow.camera.far = 1000;
-
-            //scene.add(testLight7);
 
           
             
@@ -779,15 +771,20 @@
             //}
 
             if ( onHandset == true){
-                camera.position.set(600, 400, -500);
 
                 var controls = new THREE.OrbitControls( camera, renderer.domElement );
-                controls.target = new THREE.Vector3(0,440,0);
                 //controls.minDistance = 0;
+                controls.enableDamping = true;
                 controls.maxDistance = 300;
-                controls.keyPanSpeed = 30;
+                controls.keyPanSpeed = 50;
+                controls.PanSpeed = 50;
+                controls.dampingFactor = 0.1;
 
-                camera.lookAt(new THREE.Vector3(-400, 450, 300));
+
+                controls.target = new THREE.Vector3(700,498,50);
+                camera.position.set(900, 498, -20);
+
+                //camera.lookAt(new THREE.Vector3(-269, 343, 228));
 
                 //controls.update() must be called after any manual changes to the camera's transform
                 //camera.position.set( 0, 20, 100 );
@@ -800,9 +797,24 @@
         };
 
         function animate(){
+
+            if (RESOURCES_LOADED == false){
+                requestAnimationFrame(animate);
+
+                loadingScreen.box.rotation.x -= 0.05;
+                loadingScreen.box.rotation.y -= 0.05;
+                loadingScreen.box.position.y = Math.sin(loadingScreen.box.position.x);
+                if (loadingScreen.box.position.x < -10 ) loadingScreen.box.position.x = 10;
+
+                renderer.render(loadingScreen.scene, loadingScreen.camera);
+                return;
+            }
+
             requestAnimationFrame(animate);
 
-            //fanblade.rotation.y += 0.01;
+            //fan1.rotation.y += 0.01;
+            //fan2.rotation.y += 0.015;
+
 
             //var gyroPresent = false;
             //window.addEventListener("devicemotion", function(event){
