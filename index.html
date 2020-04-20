@@ -75,9 +75,9 @@
 
         var loadingScreen = {
             scene: new THREE.Scene(),
-            camera: new THREE.PerspectiveCamera(90, 1280/720,0.1,100),
+            camera: new THREE.PerspectiveCamera( 40, window.innerWidth / window.innerHeight, 0.1, 3000 ),
             box: new THREE.Mesh(
-                new THREE.BoxGeometry(0.5,0.5,0.5),
+                new THREE.BoxGeometry(100,100,100),
                 new THREE.MeshBasicMaterial({ color: 0x4444ff})
             )
         };
