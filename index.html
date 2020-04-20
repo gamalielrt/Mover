@@ -55,7 +55,7 @@
         sphere, planeGeometry, planeMaterial, plane, textureloader, loader, fanblade ;
         
 
-        var password = "1";
+        var password = "";
         var meshFloor;
         var onHandset = true;
         var keyboard = {};
@@ -259,20 +259,20 @@
             mtlLoader = new THREE.MTLLoader(loadingManager);
 
             textureLoader = new THREE.TextureLoader(loadingManager);
-            var floortex = textureLoader.load('assets/floor_tex.jpg');
-            var floordis = textureLoader.load('assets/floor_dis2.jpg');
+            //var floortex = textureLoader.load('assets/floor_tex.jpg');
+            //var floordis = textureLoader.load('assets/floor_dis2.jpg');
             var walltex = textureLoader.load('assets/wall_tex2.jpg');
             var ceilingtex = textureLoader.load('assets/ceilingtex.jpg');
             var curtaintex = textureLoader.load('assets/ceilingtex.jpg');
-            var stagetex = textureLoader.load('assets/stagetex.jpg');
+            //var stagetex = textureLoader.load('assets/stagetex.jpg');
             var video;
 
             walltex.wrapS = THREE.RepeatWrapping;
             walltex.wrapT = THREE.RepeatWrapping;
             walltex.repeat.set(40,40);
-            stagetex.wrapS = THREE.RepeatWrapping;
-            stagetex.wrapT = THREE.RepeatWrapping;
-            stagetex.repeat.set(40,40);
+            //stagetex.wrapS = THREE.RepeatWrapping;
+            //stagetex.wrapT = THREE.RepeatWrapping;
+            //stagetex.repeat.set(40,40);
             ceilingtex.wrapS = THREE.RepeatWrapping;
             ceilingtex.wrapT = THREE.RepeatWrapping;
             ceilingtex.repeat.set(2,2);
@@ -773,13 +773,18 @@
             if ( onHandset == true){
 
                 var controls = new THREE.OrbitControls( camera, renderer.domElement );
+                controls.enableDamping = false;
+                controls.dampingFactor = 0.1;
+
                 //controls.minDistance = 0;
-                controls.enableDamping = true;
-                //controls.maxDistance = 300;
+                //controls.maxDistance = 3000;
+
                 controls.maxPolarAngle = 2;
-                controls.keyPanSpeed = 500;
-                controls.PanSpeed = 5000;
-                //controls.dampingFactor = 0.1;
+                controls.minPolarAngle = -2;
+
+                controls.keyPanSpeed = 50;
+                controls.PanSpeed = 50;
+                //controls.zoomSpeed = 50;
 
 
                 controls.target = new THREE.Vector3(700,498,50);
@@ -871,6 +876,8 @@
                 //controls.update();
 
             }
+
+            //contols.update();
             
             renderer.render(scene, camera);
         }
@@ -890,7 +897,6 @@
 
     var startButton = document.getElementById( 'startButton' );
 		startButton.addEventListener( 'click', function () {
-                //var password = "hello";
                 var inputpassword = document.getElementById("myPwd").value;
                 if (inputpassword == password) {
                     init();
