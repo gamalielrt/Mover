@@ -55,7 +55,7 @@
         sphere, planeGeometry, planeMaterial, plane, textureloader, loader, fanblade ;
         
 
-        var password = "";
+        var password = "1";
         var meshFloor;
         var onHandset = true;
         var keyboard = {};
@@ -75,9 +75,9 @@
 
         var loadingScreen = {
             scene: new THREE.Scene(),
-            camera: new THREE.PerspectiveCamera( 40, window.innerWidth / window.innerHeight, 0.1, 3000 ),
+            camera: new THREE.PerspectiveCamera(40, window.innerWidth / window.innerHeight, 0.1,100),
             box: new THREE.Mesh(
-                new THREE.BoxGeometry(100,100,100),
+                new THREE.BoxGeometry(0.5,0.5,0.5),
                 new THREE.MeshBasicMaterial({ color: 0x4444ff})
             )
         };
@@ -776,9 +776,9 @@
                 //controls.minDistance = 0;
                 controls.enableDamping = true;
                 controls.maxDistance = 300;
-                controls.keyPanSpeed = 50;
-                controls.PanSpeed = 300;
-                controls.dampingFactor = 0.1;
+                controls.keyPanSpeed = 500;
+                controls.PanSpeed = 500;
+                //controls.dampingFactor = 0.1;
 
 
                 controls.target = new THREE.Vector3(700,498,50);
