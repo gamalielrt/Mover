@@ -228,6 +228,8 @@
         function playVideo() {
             videoalpha.play();
             video.play();
+            videoscreen.play();
+
         }
 
 
@@ -393,7 +395,6 @@
 
             videoscreen = document.getElementById( 'videoscreen' );
             videoscreen.load();
-			videoscreen.play();
             var vidscreenplane = new THREE.PlaneGeometry(60,60,10,10);
             var vidscreentexture = new THREE.VideoTexture( videoscreen );
             
