@@ -55,7 +55,9 @@
         fillLight, backLight, testLight, testLight1, testLight2, testLight3,
          testLight4, testLight5, testLight6, testLight7, testLight8,
         light1, sphereGeometry, sphereMaterial, 
-        sphere, planeGeometry, planeMaterial, plane, textureloader, loader, fanblade ;
+        sphere, planeGeometry, planeMaterial, plane, textureloader, loader, 
+        stageSpot, stageSpot1, stageSpot2, stageSpot3,stagesurfacemtl,
+        pivot, fancase1mtl, fancase1mesh, fan1mtl, fan1mesh, fan1;
         
 
         var password = "";
@@ -88,6 +90,16 @@
 
         var LOADING_MANAGER = null;
         var RESOURCES_LOADED = false;
+
+        function detectTouch() {
+            window.addEventListener('touchstart', function() {
+                //the user touched the screen!
+                onHandset = true
+                console.log("On touchscreen = ", onHandset);
+
+            })
+
+        }
 
         function addLights() {            
             
@@ -163,10 +175,25 @@
             //scene.add( pointLightHelper );
 
 
+            ////////////////// bar light
+
+            testLight2 = new THREE.PointLight(lightColour,3, lightDecay);//750
+            testLight2.position.set(-747,531,-211);
+            //testLight5.castShadow = true;
+            testLight2.shadow.camera.near = 100;
+            testLight2.shadow.camera.far = 1000;
+
+            scene.add(testLight2);
+            var sphereSize = 300;
+            var pointLightHelper = new THREE.PointLightHelper( testLight2, sphereSize );
+            //scene.add( pointLightHelper );
+
+
+
 
             //////////////// stage light 1
 
-            testLight6 = new THREE.PointLight(StageLightColour, StageLightDistance, StageLightDecay);//750
+            testLight6 = new THREE.PointLight("rgb(26%, 26%, 225%)", StageLightDistance, StageLightDecay);//750
             testLight6.position.set(-116,737,202);
             //testLight6.castShadow = true;
             //testLight6.shadow.camera.near = 100;
@@ -181,7 +208,7 @@
 
             //////////////// stage light 2
 
-            testLight7 = new THREE.PointLight(StageLightColour, StageLightDistance, StageLightDecay);//750
+            testLight7 = new THREE.PointLight("rgb(26%, 26%, 225%)", StageLightDistance, StageLightDecay);//750
             testLight7.position.set(-378,737,138);
             //testLight6.castShadow = true;
             //testLight7.shadow.camera.near = 100;
@@ -196,13 +223,83 @@
 
             //////////////// stage light 3
 
-            testLight8 = new THREE.PointLight(StageLightColour, StageLightDistance, StageLightDecay);//750
+            testLight8 = new THREE.PointLight("rgb(26%, 26%, 225%)", StageLightDistance, StageLightDecay);//750
             testLight8.position.set(-227,737,367);
             //testLight6.castShadow = true;
             //testLight8.shadow.camera.near = 100;
             //testLight8.shadow.camera.far = 1000;
 
             scene.add(testLight8);
+
+
+
+            ////////////////// stage spot 1
+
+            stageSpot = new THREE.SpotLight(0xffffff,0);
+            stageSpot.intensity = 0;
+            stageSpot.angle = 0.5;
+            stageSpot.penumbra = 1;
+            stageSpot.distance = 1;
+            stageSpot.decay = 0;
+            stageSpot.position.set(-86,529,10);
+            stageSpot.target.position.set(-704, 300, 682)//-704, 300, 682);
+            //spotlight.target.position.set(200,-130,400);
+            scene.add(stageSpot);
+            scene.add(stageSpot.target);
+            //lightHelper = new THREE.SpotLightHelper( stageSpot );
+			//scene.add( lightHelper );
+
+            ////////////////// stage spot 2
+
+            stageSpot1 = new THREE.SpotLight(0xffffff,0);
+            stageSpot1.intensity = 0;
+            stageSpot1.angle = 0.5;
+            stageSpot1.penumbra = 1;
+            stageSpot1.distance = 1;
+            stageSpot1.decay = 0;
+            stageSpot1.position.set(-452,527,-1);
+            stageSpot1.target.position.set(130, 300, 748);
+            //spotlight.target.position.set(200,-130,400);
+            scene.add(stageSpot1);
+            scene.add(stageSpot1.target);
+            //lightHelper = new THREE.SpotLightHelper( stageSpot );
+			//scene.add( lightHelper );
+
+
+            ////////////////// stage spot 3
+
+            stageSpot2 = new THREE.SpotLight(0xffffff,0);
+            //stageSpot2.intensity = 0;
+            stageSpot2.angle = 0.5;
+            stageSpot2.penumbra = 1;
+            stageSpot2.distance = 1;
+            stageSpot2.decay = 0;
+            stageSpot2.position.set(-326,527,501);
+            stageSpot2.target.position.set(148, 300, -286);
+            //spotlight.target.position.set(200,-130,400);
+            scene.add(stageSpot2);
+            scene.add(stageSpot2.target);
+            //lightHelper = new THREE.SpotLightHelper( stageSpot );
+			//scene.add( lightHelper );
+
+            
+            ////////////////// stage spot 4
+
+            stageSpot3 = new THREE.SpotLight(0xffffff,0);
+            //stageSpot3.intensity = 0;
+            stageSpot3.angle = 0.5;
+            stageSpot3.penumbra = 1;
+            stageSpot3.distance = 1;
+            stageSpot3.decay = 0;
+            stageSpot3.position.set(-49,528,388);
+            stageSpot3.target.position.set(-766, 300, -409);
+            //spotlight.target.position.set(200,-130,400);
+            scene.add(stageSpot3);
+            scene.add(stageSpot3.target);
+            //lightHelper = new THREE.SpotLightHelper( stageSpot );
+			//scene.add( lightHelper );
+
+
         }
 
         function startTimeline() {
@@ -214,14 +311,260 @@
            tl.to(testLight3, 5, {intensity: 1, ease: Expo.easeOut},8);
            tl.to(testLight4, 5, {intensity: 1, ease: Expo.easeOut},8);
            tl.to(testLight5, 5, {intensity: 1, ease: Expo.easeOut},8);
+           tl.to(testLight2, 5, {intensity: 1, onUpdate: playVideo(),ease: Expo.easeOut},8);
+
            tl.to(testLight6, 7, {intensity: 18, ease: Expo.easeOut},8);
            tl.to(testLight7, 7, {intensity: 18, ease: Expo.easeOut},8);
            tl.to(testLight8, 7, {intensity: 18, ease: Expo.easeOut},8);
 
-           //tl.to(testLight5, 1, {intensity: 0, ease: Expo.easeOut},10);
-           //tl.to(testLight6, 1, {intensity: 0, ease: Expo.easeOut},0);
-           //tl.to(testLight7, 1, {intensity: 0, ease: Expo.easeOut},0);
-           //tl.to(testLight8, 1, {intensity: 0, ease: Expo.easeOut},0);
+           //tl.to(testLight9, 7, {intensity: 50, ease: Expo.easeOut},8);
+
+
+
+
+           tl.to(testLight6.color, 3, {r: 1, g:0.1, b:0.1, ease: Expo.easeOut},40);
+           tl.to(testLight7.color, 3, {r: 1, g:0.1, b:0.1, ease: Expo.easeOut},40);
+           tl.to(testLight8.color, 3, {r: 1, g:0.1, b:0.1, ease: Expo.easeOut},40);
+           tl.to(stagesurfacemtl.emissive, 3, {r: 1, g:0.1, b:0.1, ease: Expo.easeOut},40);
+
+           tl.to(testLight6.color, 3, {r: 0.1, g:0.1, b:1, ease: Expo.easeOut},54);
+           tl.to(testLight7.color, 3, {r: 0.1, g:0.1, b:1, ease: Expo.easeOut},54);
+           tl.to(testLight8.color, 3, {r: 0.1, g:0.1, b:1, ease: Expo.easeOut},54);
+           tl.to(stagesurfacemtl.emissive, 3, {r: 0.1, g:0.1, b:1, ease: Expo.easeOut},54);
+
+
+           tl.to(stageSpot, 0.001, {intensity: 30, ease:Linear.easeNone},72);
+           tl.to(stageSpot, 0.001, {intensity: 0, ease:Linear.easeNone},72.05);
+           tl.to(stageSpot1, 0.001, {intensity: 30, ease:Linear.easeNone},72.05);
+           tl.to(stageSpot1, 0.001, {intensity: 0, ease:Linear.easeNone},72.1);
+           tl.to(stageSpot2, 0.001, {intensity: 30, ease:Linear.easeNone},72.1);
+           tl.to(stageSpot2, 0.001, {intensity: 0, ease:Linear.easeNone},72.15);
+           tl.to(stageSpot3, 0.001, {intensity: 30, ease:Linear.easeNone},72.15);
+           tl.to(stageSpot3, 0.001, {intensity: 0, ease:Linear.easeNone},72.2);
+
+
+           tl.to(testLight6.color, 3, {r: 1, g:0.1, b:0.1, ease: Expo.easeOut},91);
+           tl.to(testLight7.color, 3, {r: 1, g:0.1, b:0.1, ease: Expo.easeOut},91);
+           tl.to(testLight8.color, 3, {r: 1, g:0.1, b:0.1, ease: Expo.easeOut},91);
+           tl.to(stagesurfacemtl.emissive, 3, {r: 1, g:0.1, b:0.1, ease: Expo.easeOut},91);
+
+           tl.to(testLight6.color, 3, {r: 0.1, g:0.1, b:1, ease: Expo.easeOut},100);
+           tl.to(testLight7.color, 3, {r: 0.1, g:0.1, b:1, ease: Expo.easeOut},100);
+           tl.to(testLight8.color, 3, {r: 0.1, g:0.1, b:1, ease: Expo.easeOut},100);
+           tl.to(stagesurfacemtl.emissive, 3, {r: 0.1, g:0.1, b:1, ease: Expo.easeOut},100);
+
+           tl.to(testLight6.color, 3, {r: 1, g:0.1, b:0.1, ease: Expo.easeOut},131);
+           tl.to(testLight7.color, 3, {r: 1, g:0.1, b:0.1, ease: Expo.easeOut},131);
+           tl.to(testLight8.color, 3, {r: 1, g:0.1, b:0.1, ease: Expo.easeOut},131);
+           tl.to(stagesurfacemtl.emissive, 3, {r: 1, g:0.1, b:0.1, ease: Expo.easeOut},131);
+
+
+
+
+
+           
+
+
+           tl.to(testLight6, 15, {intensity: 0, ease: Expo.easeOut},155);
+           tl.to(testLight7, 15, {intensity: 0, ease: Expo.easeOut},155);
+           tl.to(testLight8, 15, {intensity: 0, ease: Expo.easeOut},155);
+           tl.to(stagesurfacemtl.emissive, 15, {r: 0, g:0, b:0, ease: Expo.easeOut},155);
+/* 
+           tl.to(stageSpot, 0.001, {intensity: 1, ease:Linear.easeNone},171);
+           tl.to(stageSpot, 0.001, {intensity: 0, ease:Linear.easeNone},"+=0.08");
+           tl.to(stageSpot1, 0.001, {intensity: 1, ease:Linear.easeNone},);
+           tl.to(stageSpot1, 0.001, {intensity: 0, ease:Linear.easeNone},"+=0.08");
+           tl.to(stageSpot2, 0.001, {intensity: 1, ease:Linear.easeNone},);
+           tl.to(stageSpot2, 0.001, {intensity: 0, ease:Linear.easeNone},"+=0.05");
+           tl.to(stageSpot3, 0.001, {intensity: 1, ease:Linear.easeNone},);
+           tl.to(stageSpot3, 0.001, {intensity: 0, ease:Linear.easeNone},"+=0.05");
+
+
+           tl.to(stageSpot, 0.001, {intensity: 1, ease:Linear.easeNone},176);
+           tl.to(stageSpot, 0.001, {intensity: 0, ease:Linear.easeNone},"+=0.08");
+           tl.to(stageSpot1, 0.001, {intensity: 1, ease:Linear.easeNone},);
+           tl.to(stageSpot1, 0.001, {intensity: 0, ease:Linear.easeNone},"+=0.08");
+           tl.to(stageSpot2, 0.001, {intensity: 1, ease:Linear.easeNone},);
+           tl.to(stageSpot2, 0.001, {intensity: 0, ease:Linear.easeNone},"+=0.08");
+           tl.to(stageSpot3, 0.001, {intensity: 1, ease:Linear.easeNone},);
+           tl.to(stageSpot3, 0.001, {intensity: 0, ease:Linear.easeNone},"+=0.08");
+
+
+           tl.to(stageSpot, 0.001, {intensity: 1, ease:Linear.easeNone},183);
+           tl.to(stageSpot, 0.001, {intensity: 0, ease:Linear.easeNone},"+=0.08");
+           tl.to(stageSpot1, 0.001, {intensity: 1, ease:Linear.easeNone},);
+           tl.to(stageSpot1, 0.001, {intensity: 0, ease:Linear.easeNone},"+=0.05");
+           tl.to(stageSpot2, 0.001, {intensity: 1, ease:Linear.easeNone},);
+           tl.to(stageSpot2, 0.001, {intensity: 0, ease:Linear.easeNone},"+=0.05");
+           tl.to(stageSpot3, 0.001, {intensity: 1, ease:Linear.easeNone},);
+           tl.to(stageSpot3, 0.001, {intensity: 0, ease:Linear.easeNone},"+=0.05");
+
+
+           tl.to(stageSpot, 0.001, {intensity: 1, ease:Linear.easeNone},186);
+           tl.to(stageSpot, 0.001, {intensity: 0, ease:Linear.easeNone},"+=0.08");
+           tl.to(stageSpot1, 0.001, {intensity: 1, ease:Linear.easeNone},);
+           tl.to(stageSpot1, 0.001, {intensity: 0, ease:Linear.easeNone},"+=0.08");
+           tl.to(stageSpot2, 0.001, {intensity: 1, ease:Linear.easeNone},);
+           tl.to(stageSpot2, 0.001, {intensity: 0, ease:Linear.easeNone},"+=0.08");
+           tl.to(stageSpot3, 0.001, {intensity: 1, ease:Linear.easeNone},);
+           tl.to(stageSpot3, 0.001, {intensity: 0, ease:Linear.easeNone},"+=0.08");
+
+
+*/
+
+
+
+
+           tl.to(stageSpot, 0.001, {intensity: 1, ease:Linear.easeNone},177);
+           tl.to(stageSpot, 0.001, {intensity: 0, ease:Linear.easeNone},"+=0.05");
+           tl.to(stageSpot1, 0.001, {intensity: 1, ease:Linear.easeNone},);
+           tl.to(stageSpot1, 0.001, {intensity: 0, ease:Linear.easeNone},"+=0.05");
+           tl.to(stageSpot2, 0.001, {intensity: 1, ease:Linear.easeNone},);
+           tl.to(stageSpot2, 0.001, {intensity: 0, ease:Linear.easeNone},"+=0.05");
+           tl.to(stageSpot3, 0.001, {intensity: 1, ease:Linear.easeNone},);
+           
+           tl.to(stageSpot3, 0.001, {intensity: 0, ease:Linear.easeNone},"+=0.05");
+           tl.to(stageSpot, 0.001, {intensity: 2, ease:Linear.easeNone},);
+           tl.to(stageSpot, 0.001, {intensity: 0, ease:Linear.easeNone},"+=0.05");
+           tl.to(stageSpot1, 0.001, {intensity: 2, ease:Linear.easeNone},);
+           tl.to(stageSpot1, 0.001, {intensity: 0, ease:Linear.easeNone},"+=0.05");
+           tl.to(stageSpot2, 0.001, {intensity: 2, ease:Linear.easeNone},);
+           tl.to(stageSpot2, 0.001, {intensity: 0, ease:Linear.easeNone},"+=0.05");
+           tl.to(stageSpot3, 0.001, {intensity: 2, ease:Linear.easeNone},);
+           tl.to(stageSpot3, 0.001, {intensity: 0, ease:Linear.easeNone},"+=0.05");
+
+           tl.to(stageSpot, 0.001, {intensity: 4, ease:Linear.easeNone},);
+           tl.to(stageSpot, 0.001, {intensity: 0, ease:Linear.easeNone},"+=0.05");
+           tl.to(stageSpot1, 0.001, {intensity: 4, ease:Linear.easeNone},);
+           tl.to(stageSpot1, 0.001, {intensity: 0, ease:Linear.easeNone},"+=0.05");
+           tl.to(stageSpot2, 0.001, {intensity: 4, ease:Linear.easeNone},);
+           tl.to(stageSpot2, 0.001, {intensity: 0, ease:Linear.easeNone},"+=0.05");
+           tl.to(stageSpot3, 0.001, {intensity: 4, ease:Linear.easeNone},);
+           tl.to(stageSpot3, 0.001, {intensity: 0, ease:Linear.easeNone},"+=0.05");
+
+           tl.to(stageSpot, 0.001, {intensity: 5, ease:Linear.easeNone},);
+           tl.to(stageSpot, 0.001, {intensity: 0, ease:Linear.easeNone},"+=0.05");
+           tl.to(stageSpot1, 0.001, {intensity: 5, ease:Linear.easeNone},);
+           tl.to(stageSpot1, 0.001, {intensity: 0, ease:Linear.easeNone},"+=0.05");
+           tl.to(stageSpot2, 0.001, {intensity: 5, ease:Linear.easeNone},);
+           tl.to(stageSpot2, 0.001, {intensity: 0, ease:Linear.easeNone},"+=0.05");
+           tl.to(stageSpot3, 0.001, {intensity: 20, ease:Linear.easeNone},);
+           tl.to(stageSpot3, 0.001, {intensity: 0, ease:Linear.easeNone},"+=0.05");
+
+           tl.to(stageSpot, 0.001, {intensity: 10, ease:Linear.easeNone},);
+           tl.to(stageSpot, 0.001, {intensity: 0, ease:Linear.easeNone},"+=0.05");
+           tl.to(stageSpot1, 0.001, {intensity: 10, ease:Linear.easeNone},);
+           tl.to(stageSpot1, 0.001, {intensity: 0, ease:Linear.easeNone},"+=0.05");
+           tl.to(stageSpot2, 0.001, {intensity: 10, ease:Linear.easeNone},);
+           tl.to(stageSpot2, 0.001, {intensity: 0, ease:Linear.easeNone},"+=0.05");
+           tl.to(stageSpot3, 0.001, {intensity: 10, ease:Linear.easeNone},);
+           tl.to(stageSpot3, 0.001, {intensity: 0, ease:Linear.easeNone},"+=0.05");
+
+           tl.to(stageSpot, 0.001, {intensity: 12, ease:Linear.easeNone},);
+           tl.to(stageSpot, 0.001, {intensity: 0, ease:Linear.easeNone},"+=0.05");
+           tl.to(stageSpot1, 0.001, {intensity: 12, ease:Linear.easeNone},);
+           tl.to(stageSpot1, 0.001, {intensity: 0, ease:Linear.easeNone},"+=0.05");
+           tl.to(stageSpot2, 0.001, {intensity: 12, ease:Linear.easeNone},);
+           tl.to(stageSpot2, 0.001, {intensity: 0, ease:Linear.easeNone},"+=0.05");
+           tl.to(stageSpot3, 0.001, {intensity: 12, ease:Linear.easeNone},);
+           tl.to(stageSpot3, 0.001, {intensity: 0, ease:Linear.easeNone},"+=0.05");
+
+           tl.to(stageSpot, 0.001, {intensity: 15, ease:Linear.easeNone},);
+           tl.to(stageSpot, 0.001, {intensity: 0, ease:Linear.easeNone},"+=0.05");
+           tl.to(stageSpot1, 0.001, {intensity: 15, ease:Linear.easeNone},);
+           tl.to(stageSpot1, 0.001, {intensity: 0, ease:Linear.easeNone},"+=0.05");
+           tl.to(stageSpot2, 0.001, {intensity: 15, ease:Linear.easeNone},);
+           tl.to(stageSpot2, 0.001, {intensity: 0, ease:Linear.easeNone},"+=0.05");
+           tl.to(stageSpot3, 0.001, {intensity: 15, ease:Linear.easeNone},);
+           
+           tl.to(stageSpot3, 0.001, {intensity: 0, ease:Linear.easeNone},"+=0.05");
+           tl.to(stageSpot, 0.001, {intensity: 18, ease:Linear.easeNone},);
+           tl.to(stageSpot, 0.001, {intensity: 0, ease:Linear.easeNone},"+=0.05");
+           tl.to(stageSpot1, 0.001, {intensity: 18, ease:Linear.easeNone},);
+           tl.to(stageSpot1, 0.001, {intensity: 0, ease:Linear.easeNone},"+=0.05");
+           tl.to(stageSpot2, 0.001, {intensity: 18, ease:Linear.easeNone},);
+           tl.to(stageSpot2, 0.001, {intensity: 0, ease:Linear.easeNone},"+=0.05");
+           tl.to(stageSpot3, 0.001, {intensity: 18, ease:Linear.easeNone},);
+           tl.to(stageSpot3, 0.001, {intensity: 0, ease:Linear.easeNone},"+=0.05");
+
+           tl.to(stageSpot, 0.001, {intensity: 20, ease:Linear.easeNone},);
+           tl.to(stageSpot, 0.001, {intensity: 0, ease:Linear.easeNone},"+=0.05");
+           tl.to(stageSpot1, 0.001, {intensity: 20, ease:Linear.easeNone},);
+           tl.to(stageSpot1, 0.001, {intensity: 0, ease:Linear.easeNone},"+=0.05");
+           tl.to(stageSpot2, 0.001, {intensity: 20, ease:Linear.easeNone},);
+           tl.to(stageSpot2, 0.001, {intensity: 0, ease:Linear.easeNone},"+=0.05");
+           tl.to(stageSpot3, 0.001, {intensity: 15, ease:Linear.easeNone},);
+           tl.to(stageSpot3, 0.001, {intensity: 0, ease:Linear.easeNone},"+=0.05");
+
+           tl.to(stageSpot, 0.001, {intensity: 20, ease:Linear.easeNone},);
+           tl.to(stageSpot, 0.001, {intensity: 0, ease:Linear.easeNone},"+=0.05");
+           tl.to(stageSpot1, 0.001, {intensity: 20, ease:Linear.easeNone},);
+           tl.to(stageSpot1, 0.001, {intensity: 0, ease:Linear.easeNone},"+=0.05");
+           tl.to(stageSpot2, 0.001, {intensity: 20, ease:Linear.easeNone},);
+           tl.to(stageSpot2, 0.001, {intensity: 0, ease:Linear.easeNone},"+=0.05");
+           tl.to(stageSpot3, 0.001, {intensity: 20, ease:Linear.easeNone},);
+           tl.to(stageSpot3, 0.001, {intensity: 0, ease:Linear.easeNone},"+=0.05");
+
+           tl.to(stageSpot, 0.001, {intensity: 23, ease:Linear.easeNone},);
+           tl.to(stageSpot, 0.001, {intensity: 0, ease:Linear.easeNone},"+=0.05");
+           tl.to(stageSpot1, 0.001, {intensity: 23, ease:Linear.easeNone},);
+           tl.to(stageSpot1, 0.001, {intensity: 0, ease:Linear.easeNone},"+=0.05");
+           tl.to(stageSpot2, 0.001, {intensity: 23, ease:Linear.easeNone},);
+           tl.to(stageSpot2, 0.001, {intensity: 0, ease:Linear.easeNone},"+=0.05");
+           tl.to(stageSpot3, 0.001, {intensity: 23, ease:Linear.easeNone},);
+           tl.to(stageSpot3, 0.001, {intensity: 0, ease:Linear.easeNone},"+=0.05");
+
+           tl.to(stageSpot, 0.001, {intensity: 26, ease:Linear.easeNone},);
+           tl.to(stageSpot, 0.001, {intensity: 0, ease:Linear.easeNone},"+=0.05");
+           tl.to(stageSpot1, 0.001, {intensity: 26, ease:Linear.easeNone},);
+           tl.to(stageSpot1, 0.001, {intensity: 0, ease:Linear.easeNone},"+=0.05");
+           tl.to(stageSpot2, 0.001, {intensity: 26, ease:Linear.easeNone},);
+           tl.to(stageSpot2, 0.001, {intensity: 0, ease:Linear.easeNone},"+=0.05");
+           tl.to(stageSpot3, 0.001, {intensity: 26, ease:Linear.easeNone},);
+           tl.to(stageSpot3, 0.001, {intensity: 0, ease:Linear.easeNone},"+=0.05");
+
+           tl.to(stageSpot, 0.001, {intensity: 28, ease:Linear.easeNone},);
+           tl.to(stageSpot, 0.001, {intensity: 0, ease:Linear.easeNone},"+=0.05");
+           tl.to(stageSpot1, 0.001, {intensity: 28, ease:Linear.easeNone},);
+           tl.to(stageSpot1, 0.001, {intensity: 0, ease:Linear.easeNone},"+=0.05");
+           tl.to(stageSpot2, 0.001, {intensity: 28, ease:Linear.easeNone},);
+           tl.to(stageSpot2, 0.001, {intensity: 0, ease:Linear.easeNone},"+=0.05");
+           tl.to(stageSpot3, 0.001, {intensity: 28, ease:Linear.easeNone},);
+           tl.to(stageSpot3, 0.001, {intensity: 0, ease:Linear.easeNone},"+=0.05");
+
+           tl.to(stageSpot, 0.001, {intensity: 30, ease:Linear.easeNone},);
+           tl.to(stageSpot, 0.001, {intensity: 0, ease:Linear.easeNone},"+=0.05");
+           tl.to(stageSpot1, 0.001, {intensity: 30, ease:Linear.easeNone},);
+           tl.to(stageSpot1, 0.001, {intensity: 0, ease:Linear.easeNone},"+=0.05");
+           tl.to(stageSpot2, 0.001, {intensity: 30, ease:Linear.easeNone},);
+           tl.to(stageSpot2, 0.001, {intensity: 0, ease:Linear.easeNone},"+=0.05");
+           tl.to(stageSpot3, 0.001, {intensity: 30, ease:Linear.easeNone},);
+           tl.to(stageSpot3, 0.001, {intensity: 0, ease:Linear.easeNone},"+=0.05");
+
+           tl.to(testLight6.color, 0.001, {r: 0.1, g:0.1, b:1, ease: Expo.easeOut},);
+           tl.to(testLight7.color, 0.001, {r: 0.1, g:0.1, b:1, ease: Expo.easeOut},);
+           tl.to(testLight8.color, 0.001, {r: 0.1, g:0.1, b:1, ease: Expo.easeOut},);
+           tl.to(stagesurfacemtl.emissive, 0.001, {r: 0.1, g:0.1, b:1, ease: Expo.easeOut},);
+
+           
+
+           tl.to(testLight6, 0.01, {intensity: 150, ease: Expo.easeOut},);
+           tl.to(testLight7, 0.01, {intensity: 150, ease: Expo.easeOut},);
+           tl.to(testLight8, 0.01, {intensity: 150, ease: Expo.easeOut},);
+           
+           tl.to(testLight6, 0.01, {intensity: 18, ease: Expo.easeOut},"+=0.1");
+           tl.to(testLight7, 0.01, {intensity: 18, ease: Expo.easeOut},"+=0.1");
+           tl.to(testLight8, 0.01, {intensity: 18, ease: Expo.easeOut},"+=0.1");
+
+
+
+
+
+
+
+
+
+
 
         }
 
@@ -229,25 +572,9 @@
             videoalpha.play();
             video.play();
             videoscreen.play();
-
         }
 
-
-
-
-
         function init(){
-
-
-            //window.addEventListener('touchstart', function() {
-            //    //the user touched the screen!
-            //    onHandset = true
-            //})
-
-
-            //if (window.DeviceOrientationEvent) {
-            //onHandset = true
-            //}
 
             var overlay = document.getElementById( 'overlay' );
 			overlay.remove();
@@ -271,29 +598,11 @@
                 RESOURCES_LOADED = true;
                 var count1 = { var : 0};
 
-
-
                 addLights();
                 startTimeline();
 
-//
-                //tl.to(mesh.position, .5, {x: 2, ease: Expo.easeOut});
-                //tl.to(mesh.rotation, .5, {y: Math.PI*.5, ease: Expo.easeOut}, "=-1.5");
-
-                //videoalpha.play();
-                //video.play();
-
             }
 
-            //var sphereSize = 40;
-            //var pointLightHelper = new THREE.PointLightHelper( testLight7, sphereSize );
-            //scene.add( pointLightHelper );
-
-            //startTimeline();
-
-
-            
-   
 
             var spotLight = new THREE.SpotLight(0x3333ff);
             spotLight.intensity = 1;
@@ -317,6 +626,8 @@
             //var floordis = textureLoader.load('assets/floor_dis2.jpg');
             var walltex = textureLoader.load('assets/wall_tex2.jpg');
             var ceilingtex = textureLoader.load('assets/ceilingtex.jpg');
+            var ceilingnormaltex = textureLoader.load('assets/ceilingnormaltex.jpg');
+
             var curtaintex = textureLoader.load('assets/noisetex.jpg');
             var curtainnormaltex = textureLoader.load('assets/leathernormaltex.jpg');
             var stagetex = textureLoader.load('assets/noisenormaltex.jpg');
@@ -339,7 +650,12 @@
 
             ceilingtex.wrapS = THREE.RepeatWrapping;
             ceilingtex.wrapT = THREE.RepeatWrapping;
-            ceilingtex.repeat.set(2,2);
+            ceilingtex.repeat.set(20,20);
+
+            ceilingnormaltex.wrapS = THREE.RepeatWrapping;
+            ceilingnormaltex.wrapT = THREE.RepeatWrapping;
+            ceilingnormaltex.repeat.set(10,10);
+
             
 
             //var plane = new THREE.PlaneGeometry(1200,1200,10,10);
@@ -358,7 +674,7 @@
             //scene.add(floorplane);    
 
             
-
+            
             ////////////// hologram
             
             video = document.getElementById( 'video' );
@@ -367,16 +683,16 @@
             var vidplane = new THREE.PlaneGeometry(193,193,10,10);
             var vidtexture = new THREE.VideoTexture( video );
 
+
+
             videoalpha = document.getElementById( 'videoalpha' );
             videoalpha.load();
 			
-            
-            //videoalpha.play();
-            //video.play();
-
             var vidalphatexture = new THREE.VideoTexture( videoalpha );
+
+
             
-            var vidplanemtl = new THREE.MeshStandardMaterial(loadingManager);
+            var vidplanemtl = new THREE.MeshPhongMaterial(loadingManager);
             vidplanemtl.map = vidtexture;
             vidplanemtl.alphaTest = 0.5;
             vidplanemtl.alphaMap = vidalphatexture;
@@ -398,7 +714,7 @@
             var vidscreenplane = new THREE.PlaneGeometry(60,60,10,10);
             var vidscreentexture = new THREE.VideoTexture( videoscreen );
             
-            var vidscreenplanemtl = new THREE.MeshStandardMaterial(loadingManager);
+            var vidscreenplanemtl = new THREE.MeshStandardMaterial();
             vidscreenplanemtl.map = vidscreentexture;
             vidscreenplanemtl.alphaTest = 0;
             vidscreenplanemtl.transparent = true;
@@ -410,16 +726,18 @@
 
 
 
-            var vidscreenplanemesh = new THREE.Mesh(vidscreenplane, vidscreenplanemtl);
-            vidscreenplanemesh.position.set/*(-100,500,0); //*/(-829, 413, 899);
-            vidscreenplanemesh.rotation.set(0.3,2.5,-1.7)//(-0.663, 3.333, -1.57);
+            //var vidscreenplanemesh = new THREE.Mesh(vidscreenplane, vidscreenplanemtl);
+            //vidscreenplanemesh.position.set(-100,500,0); //(-829, 413, 899);
+            //vidscreenplanemesh.rotation.set(0.3,2.5,-1.7)//(-0.663, 3.333, -1.57);
             //scene.add(vidscreenplanemesh);  
 
-
-            var sphere = new THREE.SphereBufferGeometry();
-            var box = new THREE.BoxHelper( vidscreenplanemesh, 0xffff00 );
+            
+            //var sphere = new THREE.SphereBufferGeometry();
+            //var box = new THREE.BoxHelper( vidscreenplanemesh, 0xffff00 );
             //scene.add( box );
 
+
+            
 
             ////////////////////   floor
 
@@ -451,7 +769,7 @@
                 map : ceilingtex,
                 //shininess : 0,
                 color: 0x191919,
-                normalMap: curtainnormaltex,
+                //normalMap: curtainnormaltex,
             });
 
             loader = new THREE.OBJLoader(loadingManager);
@@ -533,15 +851,19 @@
 
             var barmtl = new THREE.MeshStandardMaterial({
                 //map : ceilingtex,
-                metalness : 1,
-                roughness : 1,
+                metalness : 0.95,
+                roughness : 0,
                 color: 0x8c8c8c,
+                normalMap: ceilingnormaltex,
+                normalScale: new THREE.Vector2( 0, 0.4 )
+
+
                 //emissiveIntensity: 100
 
             });
 
             loader = new THREE.OBJLoader(loadingManager);
-            loader.load( 'assets/newbar.obj', function ( barmesh ) {
+            loader.load( 'assets/newbar1.obj', function ( barmesh ) {
                             
 
                 barmesh.traverse( function ( node ) {
@@ -614,7 +936,7 @@
             });
 
             loader = new THREE.OBJLoader(loadingManager);
-            loader.load( 'assets/newtvlightmetal.obj', function ( tvlightsmesh ) {
+            loader.load( 'assets/newtvlightmetal3.obj', function ( tvlightsmesh ) {
                             
 
                 tvlightsmesh.traverse( function ( node ) {
@@ -641,7 +963,7 @@
             });
 
             loader = new THREE.OBJLoader(loadingManager);
-            loader.load( 'assets/newlighttops.obj', function ( lighttopsmesh ) {
+            loader.load( 'assets/newlighttops1.obj', function ( lighttopsmesh ) {
                             
 
                 lighttopsmesh.traverse( function ( node ) {
@@ -717,14 +1039,14 @@
 
             ////////////////////   stage surface
             
-            var stagesurfacemtl = new THREE.MeshStandardMaterial({
+            stagesurfacemtl = new THREE.MeshStandardMaterial({
                 //map : curtaintex,
                 metalness: 0,
                 roughness : 1,
                 color: 0x000000,
                 emissiveMap: vidscreentexture,
                 emissiveIntensity: 1,
-                emissive: 0x1a1aff,
+                emissive: 'rgb(26%,26%,255%)'//0x1a1aff,
 
 
             });
@@ -743,42 +1065,43 @@
                 scene.add( stagesurfacemesh );
             });  
 
-            ////////////////////   fan cases
+            ////////////////////   fan case 1
 
-            var fancasemtl = new THREE.MeshPhongMaterial({
+            var fancase1mtl = new THREE.MeshPhongMaterial({
                 map : ceilingtex,
                 shininess : 20,
                 color: 0xbfbfbf,
-                //emissiveIntensity: 100
 
             });
 
             loader = new THREE.OBJLoader(loadingManager);
-            loader.load( 'assets/newfancases.obj', function ( fancasemesh ) {
+            loader.load( 'assets/newfancase1.obj', function ( fancase1mesh ) {
                             
 
-                fancasemesh.traverse( function ( node ) {
+                fancase1mesh.traverse( function ( node ) {
 
-                    if ( node.isMesh ) node.material = fancasemtl;             
+                    if ( node.isMesh ) node.material = fancase1mtl;             
 
                 } );
 
-                fancasemesh.position.y = 300;
-                scene.add( fancasemesh );
+                fancase1mesh.position.set(-58,501,1);
+                fancase1mesh.rotation.set(2.059,0.174,-0.418)//(0.174,2.059,0.418);
+
+                fancase1 = fancase1mesh;
+                scene.add( fancase1 );
             }); 
 
-            ////////////////////   fan1
+            ////////////////////  fan 1
 
             var fan1mtl = new THREE.MeshPhongMaterial({
                 map : ceilingtex,
                 shininess : 20,
-                color: 0xbfbfbf,
-                //emissiveIntensity: 100
+                color: 0x0008ff //0xbfbfbf,
 
             });
 
             loader = new THREE.OBJLoader(loadingManager);
-            loader.load( 'assets/newfan1.obj', function ( fan1mesh ) {
+            loader.load( 'assets/newfanblades1.obj', function ( fan1mesh ) {
                             
 
                 fan1mesh.traverse( function ( node ) {
@@ -787,29 +1110,65 @@
 
                 } );
 
-                fan1mesh.position.set(0,300,0);
 
-                //fan1mesh.position.set(-317,585,516);
-                //fan1mesh.rotation.set(1.6219,2.0266,0.7611);
+                fan1mesh.position.set(-58,501,1);
+                fan1mesh.rotation.set(0.1905,2.0607,0.4307);
 
                 fan1 = fan1mesh;
-
-                scene.add( fan1 );
+                //fancase1.add( fan1 );
             });
 
-            
-            ////////////////////  fan2
+            //scene.add( fan1 );
 
-            var fan2mtl = new THREE.MeshPhongMaterial({
+
+
+            pivot = new THREE.Group();
+            pivot.position.set( 0.0, 0.0, 0 );
+            scene.add( pivot );
+            pivot.add( fan1 )
+
+            scene.add( new THREE.AxesHelper() );
+
+
+
+
+
+            ////////////////////   fan case 2
+
+            var fancase2mtl = new THREE.MeshPhongMaterial({
                 map : ceilingtex,
                 shininess : 20,
                 color: 0xbfbfbf,
-                //emissiveIntensity: 100
 
             });
 
             loader = new THREE.OBJLoader(loadingManager);
-            loader.load( 'assets/newfan2.obj', function ( fan2mesh ) {
+            loader.load( 'assets/newfancase1.obj', function ( fancase2mesh ) {
+                            
+
+                fancase2mesh.traverse( function ( node ) {
+
+                    if ( node.isMesh ) node.material = fancase2mtl;             
+
+                } );
+
+                fancase2mesh.position.set(-317,585,516);
+                fancase2mesh.rotation.set(116 * Math.PI / 180, 92 * Math.PI / 180, -223 * Math.PI / 180);
+
+                scene.add( fancase2mesh );
+            }); 
+
+            ////////////////////   fan 2
+
+            var fan2mtl = new THREE.MeshPhongMaterial({
+                map : ceilingtex,
+                shininess : 20,
+                color: 0xFF00000 //0xbfbfbf
+
+            });
+
+            loader = new THREE.OBJLoader(loadingManager);
+            loader.load( 'assets/newfanblades2.obj', function ( fan2mesh ) {
                             
 
                 fan2mesh.traverse( function ( node ) {
@@ -820,17 +1179,14 @@
 
                 fan2mesh.position.set(0,300,0);
 
-                //fan2mesh.position.set(-58,501,1);
-                //fan2mesh.rotation.set(0.1905,2.0607,0.4307);
+                fan2mesh.position.set(-317,585,516);
+                fan2mesh.rotation.set(1.6219,2.0266,0.7611);
 
                 fan2 = fan2mesh;
+
                 scene.add( fan2 );
             });
-
-
-
-
-
+            
           
             
             //camera.position.set(400, player.height, -500);
@@ -839,6 +1195,7 @@
             renderer = new THREE.WebGLRenderer({ antialias: true });
             
             renderer.shadowMap.enabled = true;
+            //renderer.gammaOutput = true;
             renderer.shadowMap.type = THREE.PCFSoftShadowMap;
             
             renderer.setSize( window.innerWidth, window.innerHeight );
@@ -887,7 +1244,7 @@
 
             if (RESOURCES_LOADED == false){
                 requestAnimationFrame(animate);
-
+                detectTouch();
                 loadingScreen.box.rotation.x -= 0.04;
                 loadingScreen.box.rotation.y -= 0.04;
                 loadingScreen.box.position.y = Math.sin(loadingScreen.box.position.x);
