@@ -103,6 +103,9 @@
         var fan1parent1 = new THREE.Group();
         var fan2parent = new THREE.Group();
         var fan2parent1 = new THREE.Group();
+        var LOADING_MANAGER = null;
+        var RESOURCES_LOADED = false;
+
         
 
 
@@ -118,26 +121,7 @@
         };
         
 
-        var LOADING_MANAGER = null;
-        var RESOURCES_LOADED = false;
-        /*
-        function detectTouch() {
-            window.addEventListener('touchstart', function() {
-                //the user touched the screen!
-                onHandset = true
-                console.log("On touchscreen = ", onHandset);
-
-            })
-
-        }*/
-
-        //const anotherFunction = () => {
-        //    if (window.USER_IS_TOUCHING == true) {
-        //        //touchscreen-specific code
-        //        console.log("touchscreen");
-        //    }
-        //}
-
+        
 
 
         function addLights() {            
@@ -372,6 +356,12 @@
            tl.to(stagesurfacemtl.emissive, 3, {r: 0.1, g:0.1, b:1, ease: Expo.easeOut},54);
 
 
+           tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},72);
+           tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},72);
+           tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},72);
+           tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut},72);
+
+
            tl.to(stageSpot, 0.001, {intensity: 30, ease:Linear.easeNone},72);
            tl.to(stageSpot, 0.001, {intensity: 0, ease:Linear.easeNone},72.05);
            tl.to(stageSpot1, 0.001, {intensity: 30, ease:Linear.easeNone},72.05);
@@ -380,6 +370,31 @@
            tl.to(stageSpot2, 0.001, {intensity: 0, ease:Linear.easeNone},72.15);
            tl.to(stageSpot3, 0.001, {intensity: 30, ease:Linear.easeNone},72.15);
            tl.to(stageSpot3, 0.001, {intensity: 0, ease:Linear.easeNone},72.2);
+           tl.to(stageSpot, 0.001, {intensity: 30, ease:Linear.easeNone},72.2);
+           tl.to(stageSpot, 0.001, {intensity: 0, ease:Linear.easeNone},72.25);
+           tl.to(stageSpot1, 0.001, {intensity: 30, ease:Linear.easeNone},72.25);
+           tl.to(stageSpot1, 0.001, {intensity: 0, ease:Linear.easeNone},72.30);
+           tl.to(stageSpot2, 0.001, {intensity: 30, ease:Linear.easeNone},72.30);
+           tl.to(stageSpot2, 0.001, {intensity: 0, ease:Linear.easeNone},72.35);
+           tl.to(stageSpot3, 0.001, {intensity: 30, ease:Linear.easeNone},72.35);
+           tl.to(stageSpot3, 0.001, {intensity: 0, ease:Linear.easeNone},72.40);
+
+           tl.to(testLight6, 0.001, {intensity: 70, ease: Expo.easeOut},);
+           tl.to(testLight7, 0.001, {intensity: 70, ease: Expo.easeOut},);
+           tl.to(testLight8, 0.001, {intensity: 70, ease: Expo.easeOut},);
+           tl.to(stagesurfacemtl.emissive, 0.001, {r: 0.1, g:0.1, b:1, ease: Expo.easeOut},);
+
+           tl.to(testLight6, 1, {intensity: 18, ease: Expo.easeOut},);
+           tl.to(testLight7, 1, {intensity: 18, ease: Expo.easeOut},);
+           tl.to(testLight8, 1, {intensity: 18, ease: Expo.easeOut},);
+           //tl.to(stagesurfacemtl.emissive, 18, {r: 0.1, g:0.1, b:1, ease: Expo.easeOut},);
+
+
+
+
+
+
+
 
 
            tl.to(testLight6.color, 3, {r: 1, g:0.1, b:0.1, ease: Expo.easeOut},91);
@@ -713,7 +728,6 @@
             
             renderer.shadowMap.enabled = true;
             renderer.shadowMap.type = THREE.PCFSoftShadowMap;
-            
             renderer.setSize( window.innerWidth, window.innerHeight );
             
             document.body.appendChild(renderer.domElement);
@@ -758,7 +772,7 @@
 
 
                 controls.target = new THREE.Vector3(700,498,50);
-                camera.position.set(900, 498, -20);
+                camera.position.set(1000, 498, -20);
 
                 controls.minDistance = 0;
                 controls.maxDistance = 3000;
@@ -778,14 +792,8 @@
 
             }
 
-
-
-
-
             var overlay = document.getElementById( 'overlay' );
 			overlay.remove();
-
-            
 
             loadingScreen.box.position.set(0,0,5);
             loadingScreen.camera.lookAt(loadingScreen.box.position);
@@ -1543,7 +1551,6 @@
 
             if (RESOURCES_LOADED == false){
                 requestAnimationFrame(animate);
-                //detectTouch();
                 loadingScreen.box.rotation.x -= 0.04;
                 loadingScreen.box.rotation.y -= 0.04;
                 loadingScreen.box.position.y = Math.sin(loadingScreen.box.position.x);
@@ -1626,7 +1633,7 @@
             
             renderer.render(scene, camera);
         }
-
+        /*
         function keyDown(event){
             keyboard[event.keyCode] = true;
         }
@@ -1637,9 +1644,9 @@
 
         window.addEventListener('keydown', keyDown);
         window.addEventListener('keyup', keyUp);
-
+        
         //window.onload = init;
-
+        */
     var startButton = document.getElementById( 'startButton' );
 		startButton.addEventListener( 'click', function () {
                 var inputpassword = document.getElementById("myPwd").value;
