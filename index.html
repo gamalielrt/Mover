@@ -78,6 +78,7 @@
         var spotLightdistance = 0;
         var spotLightdecay = 0;
         var count1 = {var:0};
+        
 
         var loadingScreen = {
             scene: new THREE.Scene(),
@@ -301,7 +302,7 @@
 
 
         }
-
+        
         function startTimeline() {
            var tl = new TimelineMax();
            //tl.to(count1, 10, {var: 10, ease: Expo.easeOut});
@@ -415,7 +416,7 @@
 
 
 
-           tl.to(stageSpot, 0.001, {intensity: 1, ease:Linear.easeNone},185);
+           tl.to(stageSpot, 0.001, {intensity: 1, ease:Linear.easeNone},179);
            tl.to(stageSpot, 0.001, {intensity: 0, ease:Linear.easeNone},"+=0.05");
            tl.to(stageSpot1, 0.001, {intensity: 1, ease:Linear.easeNone},);
            tl.to(stageSpot1, 0.001, {intensity: 0, ease:Linear.easeNone},"+=0.05");
@@ -541,26 +542,120 @@
            tl.to(stageSpot3, 0.001, {intensity: 30, ease:Linear.easeNone},);
            tl.to(stageSpot3, 0.001, {intensity: 0, ease:Linear.easeNone},"+=0.05");
 
-           tl.to(testLight6.color, 0.001, {r: 0.1, g:0.1, b:1, ease: Expo.easeOut},);
+           tl.to(stageSpot, 0.001, {intensity: 33, ease:Linear.easeNone},);
+           tl.to(stageSpot, 0.001, {intensity: 0, ease:Linear.easeNone},"+=0.05");
+           tl.to(stageSpot1, 0.001, {intensity: 33, ease:Linear.easeNone},);
+           tl.to(stageSpot1, 0.001, {intensity: 0, ease:Linear.easeNone},"+=0.05");
+           tl.to(stageSpot2, 0.001, {intensity: 33, ease:Linear.easeNone},);
+           tl.to(stageSpot2, 0.001, {intensity: 0, ease:Linear.easeNone},"+=0.05");
+           tl.to(stageSpot3, 0.001, {intensity: 33, ease:Linear.easeNone},);
+           tl.to(stageSpot3, 0.001, {intensity: 0, ease:Linear.easeNone},"+=0.05");
+
+           tl.to(stageSpot, 0.001, {intensity: 36, ease:Linear.easeNone},);
+           tl.to(stageSpot, 0.001, {intensity: 0, ease:Linear.easeNone},"+=0.05");
+           tl.to(stageSpot1, 0.001, {intensity: 36, ease:Linear.easeNone},);
+           tl.to(stageSpot1, 0.001, {intensity: 0, ease:Linear.easeNone},"+=0.05");
+           tl.to(stageSpot2, 0.001, {intensity: 36, ease:Linear.easeNone},);
+           tl.to(stageSpot2, 0.001, {intensity: 0, ease:Linear.easeNone},"+=0.05");
+           tl.to(stageSpot3, 0.001, {intensity: 36, ease:Linear.easeNone},);
+           tl.to(stageSpot3, 0.001, {intensity: 0, ease:Linear.easeNone},"+=0.05");
+
+           tl.to(stageSpot, 0.001, {intensity: 40, ease:Linear.easeNone},);
+           tl.to(stageSpot, 0.001, {intensity: 0, ease:Linear.easeNone},"+=0.05");
+           tl.to(stageSpot1, 0.001, {intensity: 40, ease:Linear.easeNone},);
+           tl.to(stageSpot1, 0.001, {intensity: 0, ease:Linear.easeNone},"+=0.05");
+           tl.to(stageSpot2, 0.001, {intensity: 40, ease:Linear.easeNone},);
+           tl.to(stageSpot2, 0.001, {intensity: 0, ease:Linear.easeNone},"+=0.05");
+           tl.to(stageSpot3, 0.001, {intensity: 40, ease:Linear.easeNone},);
+           tl.to(stageSpot3, 0.001, {intensity: 0, ease:Linear.easeNone},"+=0.05");
+
+           tl.to(stageSpot, 0.001, {intensity: 40, ease:Linear.easeNone},);
+           tl.to(stageSpot, 0.001, {intensity: 0, ease:Linear.easeNone},"+=0.05");
+           tl.to(stageSpot1, 0.001, {intensity: 40, ease:Linear.easeNone},);
+           tl.to(stageSpot1, 0.001, {intensity: 0, ease:Linear.easeNone},"+=0.05");
+           tl.to(stageSpot2, 0.001, {intensity: 40, ease:Linear.easeNone},);
+           tl.to(stageSpot2, 0.001, {intensity: 0, ease:Linear.easeNone},"+=0.05");
+           tl.to(stageSpot3, 0.001, {intensity: 40, ease:Linear.easeNone},);
+           tl.to(stageSpot3, 0.001, {intensity: 0, ease:Linear.easeNone},"+=0.05");
+
+
+           tl.to(testLight6.color, 0.001, {r: 1, g:0.1, b:0.1, ease: Expo.easeOut},);
+           tl.to(testLight7.color, 0.001, {r: 0.1, g:0.1, b:1, ease: Expo.easeOut},);
+           tl.to(testLight8.color, 0.001, {r: 0.1, g:0.1, b:1, ease: Expo.easeOut},);
+           tl.to(stagesurfacemtl.emissive, 0.001, {r: 1, g:0.1, b:0.1, ease: Expo.easeOut},);
+
+           
+
+           tl.to(testLight6, 0.1, {intensity: 150, ease: Expo.easeOut},);
+           tl.to(testLight7, 0.1, {intensity: 150, ease: Expo.easeOut},);
+           tl.to(testLight8, 0.1, {intensity: 150, ease: Expo.easeOut},);
+           
+           tl.to(testLight6, 1, {intensity: 18, ease: Expo.easeOut},"+=0.1");
+           tl.to(testLight7, 1, {intensity: 18, ease: Expo.easeOut},);
+           tl.to(testLight8, 1, {intensity: 18, ease: Expo.easeOut},);
+
+           tl.to(testLight6.color, 0.001, {r: 0.1, g:0.1, b:1, ease: Expo.easeOut},"+=4");
+           tl.to(testLight7.color, 0.001, {r: 0.1, g:1, b:0.1, ease: Expo.easeOut},);
+           tl.to(testLight8.color, 0.001, {r: 0.1, g:0.1, b:1, ease: Expo.easeOut},);
+           tl.to(stagesurfacemtl.emissive, 0.001, {r: 0.1, g:1, b:0.1, ease: Expo.easeOut},);
+
+           tl.to(testLight6, 0.1, {intensity: 150, ease: Expo.easeOut},);
+           tl.to(testLight7, 0.1, {intensity: 150, ease: Expo.easeOut},);
+           tl.to(testLight8, 0.1, {intensity: 150, ease: Expo.easeOut},);
+           
+           tl.to(testLight6, 1, {intensity: 18, ease: Expo.easeOut},"+=0.1");
+           tl.to(testLight7, 1, {intensity: 18, ease: Expo.easeOut},);
+           tl.to(testLight8, 1, {intensity: 18, ease: Expo.easeOut},);
+
+
+           tl.to(testLight6.color, 0.001, {r: 1, g:0.1, b:0.1, ease: Expo.easeOut},"+=4");
+           tl.to(testLight7.color, 0.001, {r: 1, g:0.1, b:0.1, ease: Expo.easeOut},);
+           tl.to(testLight8.color, 0.001, {r: 0.1, g:1, b:0.1, ease: Expo.easeOut},);
+           tl.to(stagesurfacemtl.emissive, 0.001, {r: 1, g:0.1, b:0.1, ease: Expo.easeOut},);
+
+           tl.to(testLight6, 0.1, {intensity: 150, ease: Expo.easeOut},);
+           tl.to(testLight7, 0.1, {intensity: 150, ease: Expo.easeOut},);
+           tl.to(testLight8, 0.1, {intensity: 150, ease: Expo.easeOut},);
+           
+           tl.to(testLight6, 1, {intensity: 18, ease: Expo.easeOut},"+=0.1");
+           tl.to(testLight7, 1, {intensity: 18, ease: Expo.easeOut},);
+           tl.to(testLight8, 1, {intensity: 18, ease: Expo.easeOut},);
+
+
+           tl.to(testLight6.color, 0.001, {r: 0.1, g:1, b:0.1, ease: Expo.easeOut},"+=4");
            tl.to(testLight7.color, 0.001, {r: 0.1, g:0.1, b:1, ease: Expo.easeOut},);
            tl.to(testLight8.color, 0.001, {r: 0.1, g:0.1, b:1, ease: Expo.easeOut},);
            tl.to(stagesurfacemtl.emissive, 0.001, {r: 0.1, g:0.1, b:1, ease: Expo.easeOut},);
 
+           tl.to(testLight6, 0.1, {intensity: 150, ease: Expo.easeOut},);
+           tl.to(testLight7, 0.1, {intensity: 150, ease: Expo.easeOut},);
+           tl.to(testLight8, 0.1, {intensity: 150, ease: Expo.easeOut},);
            
+           tl.to(testLight6, 1, {intensity: 18, ease: Expo.easeOut},"+=0.1");
+           tl.to(testLight7, 1, {intensity: 18, ease: Expo.easeOut},);
+           tl.to(testLight8, 1, {intensity: 18, ease: Expo.easeOut},);
 
-           tl.to(testLight6, 0.01, {intensity: 150, ease: Expo.easeOut},);
-           tl.to(testLight7, 0.01, {intensity: 150, ease: Expo.easeOut},);
-           tl.to(testLight8, 0.01, {intensity: 150, ease: Expo.easeOut},);
+
+           tl.to(testLight6.color, 0.001, {r: 0.1, g:1, b:0.1, ease: Expo.easeOut},"+=4");
+           tl.to(testLight7.color, 0.001, {r: 0.1, g:1, b:0.1, ease: Expo.easeOut},);
+           tl.to(testLight8.color, 0.001, {r: 0.1, g:1, b:0.1, ease: Expo.easeOut},);
+           tl.to(stagesurfacemtl.emissive, 0.001, {r: 0.1, g:1, b:0.1, ease: Expo.easeOut},);
+
+           tl.to(testLight6, 0.1, {intensity: 150, ease: Expo.easeOut},);
+           tl.to(testLight7, 0.1, {intensity: 150, ease: Expo.easeOut},);
+           tl.to(testLight8, 0.1, {intensity: 150, ease: Expo.easeOut},);
            
-           tl.to(testLight6, 0.01, {intensity: 18, ease: Expo.easeOut},"+=0.1");
-           tl.to(testLight7, 0.01, {intensity: 18, ease: Expo.easeOut},"+=0.1");
-           tl.to(testLight8, 0.01, {intensity: 18, ease: Expo.easeOut},"+=0.1");
+           tl.to(testLight6, 1, {intensity: 10, ease: Expo.easeOut},"+=0.1");
+           tl.to(testLight7, 1, {intensity: 10, ease: Expo.easeOut},);
+           tl.to(testLight8, 1, {intensity: 10, ease: Expo.easeOut},);
 
 
 
 
 
 
+
+            
 
 
 
@@ -679,6 +774,7 @@
             
             video = document.getElementById( 'video' );
             video.load();
+            
             
             var vidplane = new THREE.PlaneGeometry(193,193,10,10);
             var vidtexture = new THREE.VideoTexture( video );
@@ -1063,7 +1159,17 @@
 
                 stagesurfacemesh.position.y = 300;
                 scene.add( stagesurfacemesh );
-            });  
+            }); 
+
+            var fan1boxgeo = new THREE.BoxGeometry(5,10,5);
+            var fan1boxmtl = new THREE.MeshLambertMaterial();
+
+            fan1box = new THREE.Mesh(fan1boxgeo, fan1boxmtl);
+
+            fan1box.position.set(-58,501,1);
+            fan1box.rotation.set(2.059,0.174,-0.418)//(0.174,2.059,0.418);
+
+            //scene.add(fan1box);
 
             ////////////////////   fan case 1
 
@@ -1093,6 +1199,8 @@
 
             ////////////////////  fan 1
 
+            var fan1axis = new THREE.Vector3( 1, 1, 0 ).normalize();
+
             var fan1mtl = new THREE.MeshPhongMaterial({
                 map : ceilingtex,
                 shininess : 20,
@@ -1115,7 +1223,7 @@
                 fan1mesh.rotation.set(0.1905,2.0607,0.4307);
 
                 fan1 = fan1mesh;
-                //fancase1.add( fan1 );
+                //scene.add( fan1 );
             });
 
             //scene.add( fan1 );
@@ -1127,7 +1235,7 @@
             scene.add( pivot );
             pivot.add( fan1 )
 
-            scene.add( new THREE.AxesHelper() );
+            //scene.add( new THREE.AxesHelper() );
 
 
 
@@ -1184,7 +1292,7 @@
 
                 fan2 = fan2mesh;
 
-                scene.add( fan2 );
+                //scene.add( fan2 );
             });
             
           
