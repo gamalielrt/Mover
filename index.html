@@ -741,8 +741,8 @@
 
 
             var controls = new THREE.OrbitControls( camera, renderer.domElement );
-
-            if (window.USER_IS_TOUCHING == true) {
+            
+            //if (window.USER_IS_TOUCHING == true) {
                 //touchscreen-specific code
                 console.log("touchscreen");
 
@@ -764,7 +764,7 @@
                 controls.dampingFactor = 0.1;
 
                 controls.update();
-                
+              /*  
             } else {
 
                 console.log("computer");
@@ -792,7 +792,7 @@
                 controls.dampingFactor = 0.1;
                 controls.update();
 
-            }
+            }*/
 
             var overlay = document.getElementById( 'overlay' );
 			overlay.remove();
