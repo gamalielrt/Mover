@@ -119,8 +119,14 @@
             camera: new THREE.PerspectiveCamera(40, window.innerWidth / window.innerHeight, 0.1,100),
             box: new THREE.Mesh(
                 new THREE.BoxGeometry(0.2,0.2,0.2),
-                new THREE.MeshBasicMaterial({ color: 0x4444ff})
+                new THREE.MeshBasicMaterial({ color: 0x4444ff, transparent: true, opacity: 0})
+            ),
+
+            wirebox: new THREE.Mesh(
+                new THREE.BoxGeometry(0.2,0.001,0.2, ),
+                new THREE.MeshBasicMaterial({ color: 0xff9900, wireframe: true})
             )
+
         };
         
 
@@ -359,10 +365,10 @@
            tl.to(stagesurfacemtl.emissive, 3, {r: 0.1, g:0.1, b:1, ease: Expo.easeOut},54);
 
 
-           tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},72);
-           tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},72);
-           tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},72);
-           tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut},72);
+           tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},70);
+           tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},70);
+           tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},70);
+           tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut},70);
 
 
            tl.to(stageSpot, 0.001, {intensity: 30, ease:Linear.easeNone},72);
@@ -385,18 +391,18 @@
            tl.to(testLight6, 0.001, {intensity: 70, ease: Expo.easeOut},);
            tl.to(testLight7, 0.001, {intensity: 70, ease: Expo.easeOut},);
            tl.to(testLight8, 0.001, {intensity: 70, ease: Expo.easeOut},);
-           tl.to(testLight6, 0.001, {distance: 700, ease: Expo.easeOut},);
-           tl.to(testLight7, 0.001, {distance: 700, ease: Expo.easeOut},);
-           tl.to(testLight8, 0.001, {distance: 700, ease: Expo.easeOut},);
+           tl.to(testLight6, 0.001, {distance: 600, ease: Expo.easeOut},);
+           tl.to(testLight7, 0.001, {distance: 600, ease: Expo.easeOut},);
+           tl.to(testLight8, 0.001, {distance: 600, ease: Expo.easeOut},);
 
            tl.to(stagesurfacemtl.emissive, 0.001, {r: 0.1, g:0.1, b:1, ease: Expo.easeOut},);
 
-           tl.to(testLight6, 0.4, {intensity: 18, ease: Expo.easeOut},);
-           tl.to(testLight7, 0.4, {intensity: 18, ease: Expo.easeOut},);
-           tl.to(testLight8, 0.4, {intensity: 18, ease: Expo.easeOut},);
-           tl.to(testLight6, 0.4, {distance: 450, ease: Expo.easeOut},);
-           tl.to(testLight7, 0.4, {distance: 450, ease: Expo.easeOut},);
-           tl.to(testLight8, 0.4, {distance: 450, ease: Expo.easeOut},);
+           tl.to(testLight6, 0.04, {intensity: 18, ease: Expo.easeOut},);
+           tl.to(testLight7, 0.04, {intensity: 18, ease: Expo.easeOut},);
+           tl.to(testLight8, 0.04, {intensity: 18, ease: Expo.easeOut},);
+           tl.to(testLight6, 0.04, {distance: 450, ease: Expo.easeOut},);
+           tl.to(testLight7, 0.04, {distance: 450, ease: Expo.easeOut},);
+           tl.to(testLight8, 0.04, {distance: 450, ease: Expo.easeOut},);
 
            //tl.to(stagesurfacemtl.emissive, 18, {r: 0.1, g:0.1, b:1, ease: Expo.easeOut},);
 
@@ -434,6 +440,9 @@
            tl.to(testLight7, 15, {intensity: 0, ease: Expo.easeOut},155);
            tl.to(testLight8, 15, {intensity: 0, ease: Expo.easeOut},155);
            tl.to(stagesurfacemtl.emissive, 15, {r: 0, g:0, b:0, ease: Expo.easeOut},155);
+
+           tl.to(stageSpot, 7, {intensity: 10, ease:Linear.easeNone},160);
+
 /* 
            tl.to(stageSpot, 0.001, {intensity: 1, ease:Linear.easeNone},171);
            tl.to(stageSpot, 0.001, {intensity: 0, ease:Linear.easeNone},"+=0.08");
@@ -2552,15 +2561,22 @@
             loadingScreen.scene.add(loadingScreen.box);
 
             loadingManager = new THREE.LoadingManager();
+            var count = 2;
 
             loadingManager.onProgress = function(item,loaded,total){
                 console.log(item,loaded,total);
+                loadingScreen.scene.add(loadingScreen.wirebox);
+                loadingScreen.wirebox.position.set(0,0,5);
+
+                loadingScreen.wirebox.scale.x = count;
+                count += 0.7;
+
             };
 
             loadingManager.onLoad = function() {
                 console.log("loaded all resources");
                 RESOURCES_LOADED = true;
-                var count1 = { var : 0};
+                //var count1 = { var : 0};
 
                 addLights();
                 startTimeline();
@@ -3313,10 +3329,10 @@
 
             if (RESOURCES_LOADED == false){
                 requestAnimationFrame(animate);
-                loadingScreen.box.rotation.x -= 0.04;
-                loadingScreen.box.rotation.y -= 0.04;
-                loadingScreen.box.position.y = Math.sin(loadingScreen.box.position.x);
-                if (loadingScreen.box.position.x < -10 ) loadingScreen.box.position.x = 10;
+                //loadingScreen.box.rotation.x -= 0.04;
+                //loadingScreen.box.rotation.y -= 0.04;
+                //loadingScreen.box.position.y = Math.sin(loadingScreen.box.position.x);
+                //if (loadingScreen.box.position.x < -10 ) loadingScreen.box.position.x = 10;
 
                 renderer.render(loadingScreen.scene, loadingScreen.camera);
                 
