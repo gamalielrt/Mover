@@ -45,6 +45,26 @@
 
     <script>
 
+        //USER_IS_TOUCHING == false;
+
+
+        const onFirstTouch = () => {
+            
+            //add a variable to the window object so we can use this globally in our script
+            window.USER_IS_TOUCHING = true;
+            
+            //adds a class to the body so you can define different styles in the css for touchscreens
+            document.body.classList.add('touchscreen');
+            
+            //Once the user has touched the screen once we know it's a touchscreen so we don't have to trigger the function again!
+            window.removeEventListener('touchstart',onFirstTouch);
+            
+        }
+
+        //window.addEventListener('touchstart',onFirstTouch);
+
+
+
         
 
 
@@ -83,6 +103,7 @@
         var fan1parent1 = new THREE.Group();
         var fan2parent = new THREE.Group();
         var fan2parent1 = new THREE.Group();
+        
 
 
         
@@ -95,10 +116,11 @@
                 new THREE.MeshBasicMaterial({ color: 0x4444ff})
             )
         };
+        
 
         var LOADING_MANAGER = null;
         var RESOURCES_LOADED = false;
-
+        /*
         function detectTouch() {
             window.addEventListener('touchstart', function() {
                 //the user touched the screen!
@@ -107,7 +129,16 @@
 
             })
 
-        }
+        }*/
+
+        //const anotherFunction = () => {
+        //    if (window.USER_IS_TOUCHING == true) {
+        //        //touchscreen-specific code
+        //        console.log("touchscreen");
+        //    }
+        //}
+
+
 
         function addLights() {            
             
@@ -678,11 +709,82 @@
 
         function init(){
 
-            var overlay = document.getElementById( 'overlay' );
-			overlay.remove();
+            renderer = new THREE.WebGLRenderer({ antialias: true });
+            
+            renderer.shadowMap.enabled = true;
+            renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+            
+            renderer.setSize( window.innerWidth, window.innerHeight );
+            
+            document.body.appendChild(renderer.domElement);
 
             scene = new THREE.Scene();
             camera = new THREE.PerspectiveCamera( 40, window.innerWidth / window.innerHeight, 0.1, 3000 );
+
+
+            window.addEventListener('touchstart',onFirstTouch);
+
+            var controls = new THREE.OrbitControls( camera, renderer.domElement );
+
+            if (window.USER_IS_TOUCHING == true) {
+                //touchscreen-specific code
+                console.log("touchscreen");
+
+                //var controls = new THREE.OrbitControls( camera, renderer.domElement );
+
+                controls.target = new THREE.Vector3(-260,550,260);
+                camera.position.set(900, 498, -20);
+
+                controls.minDistance = 0;
+                controls.maxDistance = 1200;
+
+                controls.maxPolarAngle = 1.7;
+                controls.minPolarAngle = -2;
+
+                controls.keyPanSpeed = 50;
+                controls.PanSpeed = 50;
+
+                controls.enableDamping = false;
+                controls.dampingFactor = 0.1;
+
+                controls.update();
+                
+            } else {
+
+                console.log("computer");
+
+
+                //var controls = new THREE.OrbitControls( camera, renderer.domElement );
+
+
+                controls.target = new THREE.Vector3(700,498,50);
+                camera.position.set(900, 498, -20);
+
+                controls.minDistance = 0;
+                controls.maxDistance = 3000;
+
+                controls.maxPolarAngle = 2;
+                controls.minPolarAngle = -2;
+
+                controls.keyPanSpeed = 50;
+                controls.PanSpeed = 50;
+
+                controls.keyPanSpeed = 50;
+                controls.PanSpeed = 50;
+
+                controls.enableDamping = false;
+                controls.dampingFactor = 0.1;
+                controls.update();
+
+            }
+
+
+
+
+
+            var overlay = document.getElementById( 'overlay' );
+			overlay.remove();
+
             
 
             loadingScreen.box.position.set(0,0,5);
@@ -1361,41 +1463,67 @@
             //camera.position.set(400, player.height, -500);
             //camera.lookAt(new THREE.Vector3(0,player.height,0));
             
-            renderer = new THREE.WebGLRenderer({ antialias: true });
-            
-            renderer.shadowMap.enabled = true;
-            //renderer.gammaOutput = true;
-            renderer.shadowMap.type = THREE.PCFSoftShadowMap;
-            
-            renderer.setSize( window.innerWidth, window.innerHeight );
-            
-            document.body.appendChild(renderer.domElement);
 
             //var controls = new OrbitControls( camera, renderer.domElement );
 
             //if (window.DeviceOrientationEvent) {
                 //onHandset = true //change
             //}
-
-            if ( onHandset == true){
+            /*
+            if (window.USER_IS_TOUCHING == true) {
+                //touchscreen-specific code
+                console.log("touchscreen");
 
                 var controls = new THREE.OrbitControls( camera, renderer.domElement );
+
+                controls.target = new THREE.Vector3(-260,550,260);
+                camera.position.set(900, 498, -20);
+
+                controls.minDistance = 0;
+                controls.maxDistance = 1200;
+
+                controls.maxPolarAngle = 1.7;
+                controls.minPolarAngle = -2;
+
+                controls.keyPanSpeed = 50;
+                controls.PanSpeed = 50;
+
                 controls.enableDamping = false;
                 controls.dampingFactor = 0.1;
 
-                //controls.minDistance = 0;
-                //controls.maxDistance = 3000;
+                controls.update();
+            
+            } else if ( window.USER_IS_TOUCHING == false){
+
+                console.log("computer");
+
+
+                var controls = new THREE.OrbitControls( camera, renderer.domElement );
+
+
+                controls.target = new THREE.Vector3(700,498,50);
+                camera.position.set(900, 498, -20);
+
+                controls.minDistance = 0;
+                controls.maxDistance = 3000;
 
                 controls.maxPolarAngle = 2;
                 controls.minPolarAngle = -2;
 
                 controls.keyPanSpeed = 50;
                 controls.PanSpeed = 50;
+
+                controls.keyPanSpeed = 50;
+                controls.PanSpeed = 50;
+
+                controls.enableDamping = false;
+                controls.dampingFactor = 0.1;
                 //controls.zoomSpeed = 50;
 
-
-                controls.target = new THREE.Vector3(700,498,50);
-                camera.position.set(900, 498, -20);
+                //controls.target = new THREE.Vector3(-260,550,260);
+                //camera.position.set(900, 498, -20);
+                //controls.minDistance = 0;
+                //controls.maxDistance = 1200;
 
                 //camera.lookAt(new THREE.Vector3(-269, 343, 228));
 
@@ -1404,8 +1532,10 @@
                 controls.update();
 
             }
+            */
+            
 
-            console.log(onHandset);
+            //console.log(onHandset);
             //animate();
         };
 
@@ -1413,7 +1543,7 @@
 
             if (RESOURCES_LOADED == false){
                 requestAnimationFrame(animate);
-                detectTouch();
+                //detectTouch();
                 loadingScreen.box.rotation.x -= 0.04;
                 loadingScreen.box.rotation.y -= 0.04;
                 loadingScreen.box.position.y = Math.sin(loadingScreen.box.position.x);
@@ -1458,7 +1588,7 @@
             //console.log(result.browser);
             //console.log(result.device);
             //console.log(result.os);
-
+            /*
             if ( onHandset == false ) {
                 
                 // Keyboard movement inputs
@@ -1490,7 +1620,7 @@
             } else if ( onHandset == true) {
                 //controls.update();
 
-            }
+            }*/
 
             //contols.update();
             
@@ -1514,6 +1644,7 @@
 		startButton.addEventListener( 'click', function () {
                 var inputpassword = document.getElementById("myPwd").value;
                 if (inputpassword == password) {
+
                     init();
 		            animate();
 
