@@ -29,10 +29,10 @@ function startTimeline() {
     tl.to(stagesurfacemtl.emissive, 3, {r: 0.1, g:0.1, b:1, ease: Expo.easeOut},54);
 
 
-    tl.to(testLight6, 0.6, {intensity: 0, ease: Expo.easeOut},70);
-    tl.to(testLight7, 0.6, {intensity: 0, ease: Expo.easeOut},70);
-    tl.to(testLight8, 0.6, {intensity: 0, ease: Expo.easeOut},70);
-    tl.to(stagesurfacemtl.emissive, 0.6, {r: 0, g:0, b:0, ease: Expo.easeOut},70);
+    tl.to(testLight6, 1, {intensity: 0, ease: Expo.easeOut},70);
+    tl.to(testLight7, 1, {intensity: 0, ease: Expo.easeOut},70);
+    tl.to(testLight8, 1, {intensity: 0, ease: Expo.easeOut},70);
+    tl.to(stagesurfacemtl.emissive, 1, {r: 0, g:0, b:0, ease: Expo.easeOut},70);
 
 
     tl.to(stageSpot, 0.001, {intensity: 30, ease:Linear.easeNone},72);

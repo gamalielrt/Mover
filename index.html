@@ -22,6 +22,7 @@
     </div>
     <body style="background-color:#000000;">
     <script src="js/three.js"></script>
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/102/three.js"></script>-->
     <script src="js/MTLLoader.js"></script>
     <script src="js/OBJLoader.js"></script>
     <script src="js/OrbitControls.js"></script>
@@ -50,7 +51,7 @@
         //USER_IS_TOUCHING == false;
 
 
-        const onFirstTouch = () => {
+        /*const onFirstTouch = () => {
             
             //add a variable to the window object so we can use this globally in our script
             window.USER_IS_TOUCHING = true;
@@ -63,7 +64,7 @@
             
         }
 
-        window.addEventListener('touchstart',onFirstTouch);
+        window.addEventListener('touchstart',onFirstTouch); */
 
 
         //window.addEventListener('touchstart',onFirstTouch);
@@ -362,64 +363,28 @@
 
 
 
-            var controls = new THREE.OrbitControls( camera, renderer.domElement );
+            controls = new THREE.OrbitControls( camera, renderer.domElement );
             
-            //if (window.USER_IS_TOUCHING == true) {
-                //touchscreen-specific code
-                console.log("touchscreen");
 
-                controls.autoRotate = true;
-	            controls.autoRotateSpeed = 2.0; // 30 seconds per round when fps is 60
+            controls.autoRotate = true;
+	        controls.autoRotateSpeed = 0.5; // 30 seconds per round when fps is 60
 
+            controls.target = new THREE.Vector3(-260,550,260);
+            camera.position.set(900, 498, -20);
 
-                //var controls = new THREE.OrbitControls( camera, renderer.domElement );
+            controls.minDistance = 0;
+            controls.maxDistance = 1200;
 
-                controls.target = new THREE.Vector3(-260,550,260);
-                camera.position.set(900, 498, -20);
+            controls.maxPolarAngle = 1.7;
+            controls.minPolarAngle = -2;
 
-                controls.minDistance = 0;
-                controls.maxDistance = 1200;
+            controls.keyPanSpeed = 50;
+            controls.PanSpeed = 50;
 
-                controls.maxPolarAngle = 1.7;
-                controls.minPolarAngle = -2;
+            controls.enableDamping = true;
+            controls.dampingFactor = 1;
 
-                controls.keyPanSpeed = 50;
-                controls.PanSpeed = 50;
-
-                controls.enableDamping = false;
-                controls.dampingFactor = 1;
-
-                controls.update();
-              /*  
-            } else {
-
-                console.log("computer");
-
-
-                //var controls = new THREE.OrbitControls( camera, renderer.domElement );
-
-
-                controls.target = new THREE.Vector3(700,498,50);
-                camera.position.set(1000, 498, -20);
-
-                controls.minDistance = 0;
-                controls.maxDistance = 3000;
-
-                controls.maxPolarAngle = 2;
-                controls.minPolarAngle = -2;
-
-                controls.keyPanSpeed = 50;
-                controls.PanSpeed = 50;
-
-                controls.keyPanSpeed = 50;
-                controls.PanSpeed = 50;
-
-                controls.enableDamping = false;
-                controls.dampingFactor = 0.1;
-                controls.update();
-
-            }*/
-            
+            controls.update();            
 
             var overlay = document.getElementById( 'overlay' );
 			overlay.remove();
@@ -447,7 +412,6 @@
                 //var count1 = { var : 0};
 
                 addLights();
-                //playVideo();
                 startTimeline();
 
             }
@@ -751,8 +715,6 @@
                 normalScale: new THREE.Vector2( 0, 0.5 )
 
             });
-
-            //chairtopmtl.normalMap = curtainnormaltex;
 
 
 
@@ -1124,6 +1086,7 @@
 
             });
             
+            
           
             
             //camera.position.set(400, player.height, -500);
@@ -1202,7 +1165,7 @@
             
 
             //console.log(onHandset);
-            //animate();
+            animate();
 
             window.addEventListener( 'resize', onWindowResize, false );
         };
@@ -1216,7 +1179,6 @@
         }
 
         function animate(){
-            //controls.update();
 
 
             if (RESOURCES_LOADED == false){
@@ -1226,6 +1188,9 @@
                 //loadingScreen.box.position.y = Math.sin(loadingScreen.box.position.x);
                 //if (loadingScreen.box.position.x < -10 ) loadingScreen.box.position.x = 10;
 
+                //controls.update();
+
+
                 renderer.render(loadingScreen.scene, loadingScreen.camera);
                 
                 return;
@@ -1234,18 +1199,10 @@
             }
 
             if (RESOURCES_LOADED == true) {
-                fan1parent1.rotation.y += 0.01;
-                fan2parent1.rotation.y += 0.02;
-                //contols.update();
-
-                
-
+                //fan1parent1.rotation.y += 0.01;
+                //fan2parent1.rotation.y += 0.02;
             }
 
-            if (startSpin == true) {
-                //contols.update();
-                
-            }
 
             requestAnimationFrame(animate);
 
@@ -1309,7 +1266,7 @@
 
             }*/
 
-            //contols.update();
+            controls.update();
             
             renderer.render(scene, camera);
         }
@@ -1333,7 +1290,7 @@
                 if (inputpassword == password) {
 
                     init();
-		            animate();
+		            //animate();
 
                 };
 		}, false );
