@@ -113,6 +113,7 @@
         var RESOURCES_LOADED = false;
         var startSpin = Boolean;
         var playvid = Boolean;
+        var vidnotplaying = true;
 
         
 
@@ -1187,13 +1188,16 @@
         }
 
         function animate(){
-            if (videoalpha.currentTime >= 1){
+            if (vidnotplaying == true & videoalpha.currentTime >= 1){
                 playvid = true;
-            }
+            //}
 
-            if (playvid == true){
+            //if (playvid == true){
                 video.play();
-                console.log(playvid);
+                videoalpha.currentTime = 1;
+                console.log(vidnotplaying);
+
+                vidnotplaying = false;
             }
 
 
