@@ -386,7 +386,7 @@ function startTimeline() {
     tl.to(testLight7, 0.01, {intensity: 150, ease: Expo.easeOut},);
     tl.to(testLight8, 0.01, {intensity: 150, ease: Expo.easeOut},);
     
-    tl.to(testLight6, 0.1, {intensity: 10, ease: Expo.easeOut},"+=0.1");
+    tl.to(testLight6, 0.1, {intensity: 10, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.1, {intensity: 10, ease: Expo.easeOut},);
     tl.to(testLight8, 0.1, {intensity: 10, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 1, {r: 0, g:0, b:0, ease: Expo.easeOut});

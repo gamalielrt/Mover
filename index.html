@@ -349,11 +349,11 @@
 
             renderer = new THREE.WebGLRenderer({ antialias: true });
             
-            renderer.shadowMap.enabled = true;
-            renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+            //renderer.shadowMap.enabled = true;
+            //renderer.shadowMap.type = THREE.PCFSoftShadowMap;
             //renderer.setSize( window.innerWidth, window.innerHeight );
 
-            renderer.setPixelRatio( window.devicePixelRatio );
+            renderer.setPixelRatio( window.devicePixelRatio* 0.5 );
 			renderer.setSize( window.innerWidth, window.innerHeight );
             
             document.body.appendChild(renderer.domElement);
@@ -593,7 +593,7 @@
             
 
             ////////////////////   floor
-
+            
             var floormtl = new THREE.MeshLambertMaterial({
                 map : walltex,
                 color: 0x0d0d0d
@@ -619,7 +619,7 @@
 
             ////////////////////   walls
             
-
+            
             var wallscentremtl = new THREE.MeshLambertMaterial({
                 map : walltex,
                 //shininess : 0,
@@ -648,7 +648,7 @@
 
             var centremtl = new THREE.MeshLambertMaterial({
                 map : walltex,
-                shininess : 1,
+                //shininess : 1,
                 color: 0x191919,
                 //normalMap: centernormaltex,
                 //normalScale: new THREE.Vector2( 0, 1 )
@@ -668,6 +668,8 @@
                 centremesh.position.y = 300;
                 scene.add( centremesh );
             });
+
+            
 
             
 
@@ -894,7 +896,7 @@
             });  
 
             ////////////////////   cables
-
+            
 
             var cablesmtl = new THREE.MeshPhongMaterial({
                 //map : ceilingtex,
@@ -1199,8 +1201,8 @@
             }
 
             if (RESOURCES_LOADED == true) {
-                //fan1parent1.rotation.y += 0.01;
-                //fan2parent1.rotation.y += 0.02;
+                fan1parent1.rotation.y += 0.01;
+                fan2parent1.rotation.y += 0.02;
             }
 
 
