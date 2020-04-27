@@ -30,7 +30,7 @@
     <!--<script src="js/TweenMax.min.js"></script>-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
 
-    <video id="videoalpha"  crossOrigin="anonymous" playsinline style="display:none" preload="auto">
+    <video id="videoalpha"  crossOrigin="anonymous" playsinline style="display:none">
         <!--<source src="assets/drinkdrivealpha.webm" type='video/webm; codecs="vp8, vorbis"'>-->
         <source src="assets/draft9alpha.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
     </video>
@@ -40,7 +40,7 @@
         <source src="assets/draft10.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
     </video>
 
-    <video id="videoscreen"  crossOrigin="anonymous"  playsinline style="display:none"preload>
+    <video id="videoscreen"  crossOrigin="anonymous"  playsinline style="display:none">
         <!--<source src="assets/drinkdrive.webm" type='video/webm; codecs="vp8, vorbis"'>-->
         <source src="assets/draft8screens.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
     </video>
@@ -1274,6 +1274,8 @@
             controls.update();
             
             renderer.render(scene, camera);
+
+            console.log(video.currentTime, videoalpha.currentTime)
         }
         /*
         function keyDown(event){
