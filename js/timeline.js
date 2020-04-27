@@ -106,6 +106,8 @@ function startTimeline() {
     tl.to(stagesurfacemtl.emissive, 15, {r: 0, g:0, b:0, ease: Expo.easeOut},142);
 
     tl.to(stageSpot, 7, {intensity: 0.5, ease:Linear.easeNone},145);
+    tl.to(stageSpot2, 7, {intensity: 0.5, ease:Linear.easeNone},145);
+
 
 /* 
     tl.to(stageSpot, 0.001, {intensity: 1, ease:Linear.easeNone},171);

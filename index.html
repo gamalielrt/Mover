@@ -26,6 +26,7 @@
     <script src="js/OBJLoader.js"></script>
     <script src="js/OrbitControls.js"></script>
     <script src="js/timeline.js"></script>
+    <!--<script src="js/TweenMax.min.js"></script>-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
 
     <video id="videoalpha"  crossOrigin="anonymous" playsinline style="display:none">
@@ -472,17 +473,19 @@
             textureLoader = new THREE.TextureLoader(loadingManager);
             //var floortex = textureLoader.load('assets/floor_tex.jpg');
             //var floordis = textureLoader.load('assets/floor_dis2.jpg');
-            var walltex = textureLoader.load('assets/wall_tex2.jpg');
+
+            
+            //var walltex = textureLoader.load('assets/wall_tex2.jpg');
             var ceilingtex = textureLoader.load('assets/ceilingtex.jpg');
 
             var walltex = textureLoader.load('assets/ceilingtex.jpg');
 
-            var floortex = textureLoader.load('assets/ceilingtex.jpg');
+            //var floortex = textureLoader.load('assets/ceilingtex.jpg');
 
 
 
-            var centertex = textureLoader.load('assets/ceilingtex.jpg');
-            var centernormaltex = textureLoader.load('assets/ceilingnormaltex.jpg');
+            //var centertex = textureLoader.load('assets/ceilingtex.jpg');
+            //var centernormaltex = textureLoader.load('assets/ceilingnormaltex.jpg');
 
 
 
@@ -490,8 +493,8 @@
 
             var curtaintex = textureLoader.load('assets/noisetex.jpg');
             var curtainnormaltex = textureLoader.load('assets/leathernormaltex.jpg');
-            var stagetex = textureLoader.load('assets/noisenormaltex.jpg');
-
+            //var stagetex = textureLoader.load('assets/noisenormaltex.jpg');
+            
 
             //var stagetex = textureLoader.load('assets/stagetex.jpg');
             var video;
@@ -516,21 +519,21 @@
             ceilingnormaltex.wrapT = THREE.RepeatWrapping;
             ceilingnormaltex.repeat.set(10,10);
 
-            centertex.wrapS = THREE.RepeatWrapping;
-            centertex.wrapT = THREE.RepeatWrapping;
-            centertex.repeat.set(2,20);
+            //centertex.wrapS = THREE.RepeatWrapping;
+            //centertex.wrapT = THREE.RepeatWrapping;
+            //centertex.repeat.set(2,20);
 
-            centernormaltex.wrapS = THREE.RepeatWrapping;
-            centernormaltex.wrapT = THREE.RepeatWrapping;
-            centernormaltex.repeat.set(1,1);
+            //centernormaltex.wrapS = THREE.RepeatWrapping;
+            //centernormaltex.wrapT = THREE.RepeatWrapping;
+            //centernormaltex.repeat.set(1,1);
 
             walltex.wrapS = THREE.RepeatWrapping;
             walltex.wrapT = THREE.RepeatWrapping;
             walltex.repeat.set(5,20);
 
-            floortex.wrapS = THREE.RepeatWrapping;
-            floortex.wrapT = THREE.RepeatWrapping;
-            floortex.repeat.set(5,5);
+            //floortex.wrapS = THREE.RepeatWrapping;
+            //floortex.wrapT = THREE.RepeatWrapping;
+            //floortex.repeat.set(5,5);
 
 
 
@@ -628,7 +631,7 @@
             ////////////////////   floor
 
             var floormtl = new THREE.MeshLambertMaterial({
-                map : floortex,
+                map : walltex,
                 color: 0x0d0d0d
 
             });
@@ -680,11 +683,11 @@
             
 
             var centremtl = new THREE.MeshLambertMaterial({
-                map : centertex,
+                map : walltex,
                 shininess : 1,
                 color: 0x191919,
-                normalMap: centernormaltex,
-                normalScale: new THREE.Vector2( 0, 1 )
+                //normalMap: centernormaltex,
+                //normalScale: new THREE.Vector2( 0, 1 )
 
             });
 
@@ -849,7 +852,7 @@
             ////////////////////   tv + light metal
 
             var tvlightsmtl = new THREE.MeshStandardMaterial({
-                map : floortex,
+                map : walltex,
                 metalness : 0.5,
                 color: 0x595959,
                 //emissiveIntensity: 100
@@ -1019,7 +1022,7 @@
             ////////////////////   fan case 1
 
             var fancase1mtl = new THREE.MeshPhongMaterial({
-                map : floortex,
+                map : walltex,
                 shininess : 20,
                 color: 0xbfbfbf,
 
@@ -1046,7 +1049,7 @@
 
 
             var fan1mtl = new THREE.MeshPhongMaterial({
-                map : floortex,
+                map : walltex,
                 shininess : 20,
                 color: 0xbfbfbf,
 
@@ -1072,7 +1075,7 @@
             ////////////////////   fan case 2
 
             var fancase2mtl = new THREE.MeshPhongMaterial({
-                map : floortex,
+                map : walltex,
                 shininess : 20,
                 color: 0xbfbfbf,
 
@@ -1097,7 +1100,7 @@
             ////////////////////   fan 2
 
             var fan2mtl = new THREE.MeshPhongMaterial({
-                map : floortex,
+                map : walltex,
                 shininess : 20,
                 color: 0xbfbfbf
 
