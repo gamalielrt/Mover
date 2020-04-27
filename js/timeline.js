@@ -1,13 +1,20 @@
+function syncVideo() {
+    videoalpha.currentTime = 1;
+    video.currentTime = 1;
+    console.log("syncVideo");
+}
+
+
 function startTimeline() {
     var tl = new TimelineMax();
     //tl.to(count1, 10, {var: 10, ease: Expo.easeOut});
     //tl.to(lightCount, 5, {var: 100, onUpdate: updateLights, ease: Expo.easeOut});
     tl.to(testLight, 5, {intensity: 1, ease: Expo.easeOut},8);
-    tl.to(testLight1, 5, {intensity: 1, onUpdate: playVideo(),ease: Expo.easeOut},8);
+    tl.to(testLight1, 5, {intensity: 1, ease: Expo.easeOut},8);
     tl.to(testLight3, 5, {intensity: 1, ease: Expo.easeOut},8);
     tl.to(testLight4, 5, {intensity: 1, ease: Expo.easeOut},8);
     tl.to(testLight5, 5, {intensity: 1, ease: Expo.easeOut},8);
-    tl.to(testLight2, 5, {intensity: 1, onUpdate: playVideo(),ease: Expo.easeOut},8);
+    tl.to(testLight2, 5, {intensity: 1, ease: Expo.easeOut},8);
 
     tl.to(testLight6, 7, {intensity: 18, ease: Expo.easeOut},8);
     tl.to(testLight7, 7, {intensity: 18, ease: Expo.easeOut},8);
@@ -15,10 +22,10 @@ function startTimeline() {
 
     //tl.to(testLight9, 7, {intensity: 50, ease: Expo.easeOut},8);
 
+    //onUpdate: syncVideo()
 
 
-
-    tl.to(testLight6.color, 3, {r: 1, g:0.1, b:0.1, ease: Expo.easeOut},40);
+    tl.to(testLight6.color, 3, {r: 1, g:0.1, b:0.1, onUpdate: syncVideo(),ease: Expo.easeOut},40);
     tl.to(testLight7.color, 3, {r: 1, g:0.1, b:0.1, ease: Expo.easeOut},40);
     tl.to(testLight8.color, 3, {r: 1, g:0.1, b:0.1, ease: Expo.easeOut},40);
     tl.to(stagesurfacemtl.emissive, 3, {r: 1, g:0.1, b:0.1, ease: Expo.easeOut},40);
