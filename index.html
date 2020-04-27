@@ -341,10 +341,13 @@
 
         function playVideo() {
             videoalpha.play();
-            video.play();
+            if (videoalpha.currentTime >= 1){
+                video.play();
+
+            }
             videoscreen.play();
-            video.currentTime = 1;
-            videoalpha.currentTime = 1;
+            //video.currentTime = 1;
+            //videoalpha.currentTime = 1;
 
         }
 
