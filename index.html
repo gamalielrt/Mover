@@ -341,10 +341,9 @@
 
         function playVideo() {
             videoalpha.play();
-            if (videoalpha.currentTime >= 1){
-                video.play();
-
-            }
+            //if (videoalpha.currentTime >= 1){
+            //    video.play();
+            //}
             videoscreen.play();
             //video.currentTime = 1;
             //videoalpha.currentTime = 1;
@@ -1187,6 +1186,10 @@
         }
 
         function animate(){
+            if (videoalpha.currentTime >= 1){
+                video.play();
+            }
+
 
 
             if (RESOURCES_LOADED == false){
