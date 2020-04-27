@@ -419,7 +419,7 @@
                 //var count1 = { var : 0};
 
                 addLights();
-                startTimeline();
+                //startTimeline();
 
             }
 
@@ -564,6 +564,8 @@
             vidplanemesh1.position.set(-260, 530, 220);
             vidplanemesh1.rotation.y = 5.44;
             scene.add(vidplanemesh1); 
+
+            playVideo();
 
             
             
@@ -1196,6 +1198,8 @@
                 video.play();
                 videoalpha.currentTime = 1;
                 video.currentTime = 1;
+                startTimeline();
+
 
 
                 console.log(vidnotplaying);
