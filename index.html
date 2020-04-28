@@ -36,7 +36,7 @@
 
     <video id="video"  crossOrigin="anonymous" playsinline style="display:none">
         <!--<source src="assets/drinkdrive.webm" type='video/webm; codecs="vp8, vorbis"'>-->
-        <source src="assets/draft14_1024.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+        <source src="assets/draft16.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
     </video>
 
     <video id="videoscreen"  crossOrigin="anonymous"  playsinline style="display:none">
@@ -544,14 +544,14 @@
             var vidplane = new THREE.PlaneGeometry(193,193,10,10);
             var vidtexture = new THREE.VideoTexture( video );
 
-            vidtexture.wrapS = THREE.RepeatWrapping;
-            vidtexture.wrapT = THREE.RepeatWrapping;
-            vidtexture.repeat.set(0.5,0.5)
-            vidtexture.offset.set(0,0.49);
+            //vidtexture.wrapS = THREE.RepeatWrapping;
+            //vidtexture.wrapT = THREE.RepeatWrapping;
+            //vidtexture.repeat.set(0.5,0.5)
+            //vidtexture.offset.set(0,0.49);
 
 
 
-
+            /*
             videoalpha = document.getElementById( 'video' );
             videoalpha.load();
 			
@@ -561,6 +561,7 @@
             vidalphatexture.wrapT = THREE.RepeatWrapping;
             vidalphatexture.repeat.set(0.5,0.5)
             vidalphatexture.offset.set(0,-0.01);
+            */
 
 
 
@@ -589,6 +590,7 @@
             
             
             /////////////////// tv screens
+            
 
             videoscreen = document.getElementById( 'videoscreen' );
             videoscreen.load();
@@ -1320,7 +1322,7 @@
             
             renderer.render(scene, camera);
 
-            console.log(video.currentTime, videoalpha.currentTime)
+            //console.log(video.currentTime, videoalpha.currentTime)
         }
         /*
         function keyDown(event){
