@@ -1,8 +1,8 @@
-const syncVideo = () => {
-    videoalpha.currentTime = 1;
-    video.currentTime = 1;
-    console.log("syncVideo");
-}
+//const syncVideo = () => {
+//    videoalpha.currentTime = 1;
+//    video.currentTime = 1;
+//    console.log("syncVideo");
+//}
 
 
 function startTimeline() {

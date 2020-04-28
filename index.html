@@ -36,7 +36,7 @@
 
     <video id="video"  crossOrigin="anonymous" playsinline style="display:none">
         <!--<source src="assets/drinkdrive.webm" type='video/webm; codecs="vp8, vorbis"'>-->
-        <source src="assets/draft13_1024.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+        <source src="assets/draft14_1024.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
     </video>
 
     <video id="videoscreen"  crossOrigin="anonymous"  playsinline style="display:none">
@@ -345,7 +345,7 @@
             //if (videoalpha.currentTime >= 1){
             //    video.play();
             //}
-            videoscreen.play();
+            //videoscreen.play();
             //video.currentTime = 1;
             //videoalpha.currentTime = 1;
 
@@ -567,8 +567,8 @@
             
             var vidplanemtl = new THREE.MeshPhongMaterial(loadingManager);
             vidplanemtl.map = vidtexture;
-            vidplanemtl.alphaTest = 0;
-            vidplanemtl.alphaMap = vidalphatexture;
+            vidplanemtl.alphaTest = 0.1;
+            vidplanemtl.alphaMap = vidtexture;
             vidplanemtl.transparent = true;
             vidplanemtl.opacity = 1;
 
