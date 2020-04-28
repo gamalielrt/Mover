@@ -26,7 +26,7 @@ function startTimeline() {
 
 
     tl.to(testLight6.color, 3, {r: 1, g:0.1, b:0.1 ,ease: Expo.easeOut},40);
-    tl.to(testLight7.color, 3, {r: 1, g:0.1, b:0.1, onComplete: syncVideo(), ease: Expo.easeOut},40);
+    tl.to(testLight7.color, 3, {r: 1, g:0.1, b:0.1, /*onComplete: syncVideo(),*/ ease: Expo.easeOut},40);
     tl.to(testLight8.color, 3, {r: 1, g:0.1, b:0.1, ease: Expo.easeOut},40);
     tl.to(stagesurfacemtl.emissive, 3, {r: 1, g:0.1, b:0.1, ease: Expo.easeOut},40);
 
