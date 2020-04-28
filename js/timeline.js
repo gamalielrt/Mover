@@ -7,6 +7,9 @@
 
 function startTimeline() {
     var tl = new TimelineMax();
+    tl.add(playVideo);
+
+
     //tl.to(count1, 10, {var: 10, ease: Expo.easeOut});
     //tl.to(lightCount, 5, {var: 100, onUpdate: updateLights, ease: Expo.easeOut});
     tl.to(testLight, 5, {intensity: 1, ease: Expo.easeOut},8);
