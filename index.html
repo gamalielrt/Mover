@@ -10,18 +10,39 @@
 
 </head>
 <body>
-
     <div id="overlay">
-        <div>
-          <!--<p>
-            <label>Password</label>
-            <input type = "password"
-                    id = "myPwd"
-                    value = "" />
-          </p>-->
         <button id="startButton">Enter</button>
-        </div>
     </div>
+
+    <div id="loadingtext">
+        <p id="line1">Paragraph 1</p>
+        <p id="line2">Paragraph 2</p>
+        <p id="line3">Paragraph 3</p>
+        <p id="line4">Paragraph 4</p>
+        <p id="line5">Paragraph 5</p>
+        <p id="line6">Paragraph 6</p>
+        <p id="line7">Paragraph 7</p>
+        <p id="line8">Paragraph 8</p>
+        <p id="line9">Paragraph 9</p>
+        <p id="line10">Paragraph 10</p>
+        <p id="line11">Paragraph 11</p>
+        <p id="line12">Paragraph 12</p>
+        <p id="line13">Paragraph 13</p>
+        <p id="line14">Paragraph 14</p>
+        <p id="line15">Paragraph 15</p>
+        <p id="line16">Paragraph 16</p>
+        <p id="line17">Paragraph 17</p>
+        <p id="line18">Paragraph 18</p>
+        <p id="line19">Paragraph 19</p>
+        <p id="line20">Paragraph 20</p>
+        <p id="line21">Paragraph 21</p>
+        <p id="line22">Paragraph 22</p>
+        <p id="line23">Paragraph 23</p>
+        <p id="line24">Paragraph 24</p>
+        <p id="line25">Paragraph 25</p>
+        <p id="line26">Paragraph 26</p>
+    </div>
+
 
     <!--<iframe src="https://open.spotify.com/follow/1/?uri=spotify:artist:1MhltDUGKPSasS3MwMSdpE&size=basic&theme=light&show-count=0" width="200" 
         height="25" scrolling="no" frameborder="0" style="border:none; overflow:hidden;" allowtransparency="true"></iframe>-->
@@ -76,6 +97,67 @@
 
 
         
+        var loadingtext = document.getElementById( 'loadingtext' );
+        loadingtext.style.display = "none";
+        var line1 = document.getElementById( 'line1' );
+        line1.style.display = "none";
+        var line2 = document.getElementById( 'line2' );
+        line2.style.display = "none";
+        var line3 = document.getElementById( 'line3' );
+        line3.style.display = "none";
+        var line4 = document.getElementById( 'line4' );
+        line4.style.display = "none";
+        var line5 = document.getElementById( 'line5' );
+        line5.style.display = "none";
+        var line6 = document.getElementById( 'line6' );
+        line6.style.display = "none";
+        var line7 = document.getElementById( 'line7' );
+        line7.style.display = "none";
+        var line8 = document.getElementById( 'line8' );
+        line8.style.display = "none";
+        var line8 = document.getElementById( 'line9' );
+        line9.style.display = "none";
+        var line10 = document.getElementById( 'line10' );
+        line10.style.display = "none";
+        var line11 = document.getElementById( 'line11' );
+        line11.style.display = "none";
+        var line12 = document.getElementById( 'line12' );
+        line12.style.display = "none";
+        var line13 = document.getElementById( 'line13' );
+        line13.style.display = "none";
+        var line14 = document.getElementById( 'line14' );
+        line14.style.display = "none";
+        var line15 = document.getElementById( 'line15' );
+        line15.style.display = "none";
+        var line16 = document.getElementById( 'line16' );
+        line16.style.display = "none";
+        var line17 = document.getElementById( 'line17' );
+        line17.style.display = "none";
+        var line18 = document.getElementById( 'line18' );
+        line18.style.display = "none";
+        var line19 = document.getElementById( 'line19' );
+        line19.style.display = "none";
+        var line20 = document.getElementById( 'line20' );
+        line20.style.display = "none";
+        var line21 = document.getElementById( 'line21' );
+        line21.style.display = "none";
+        var line22 = document.getElementById( 'line22' );
+        line22.style.display = "none";
+        var line23 = document.getElementById( 'line23' );
+        line23.style.display = "none";
+        var line24 = document.getElementById( 'line24' );
+        line24.style.display = "none";
+        var line25 = document.getElementById( 'line25' );
+        line25.style.display = "none";
+        var line26 = document.getElementById( 'line26' );
+        line26.style.display = "none";
+
+        //addLine = function(linenumber) {
+        //    line26.style.display = "block";
+        //    
+        //}
+
+
 
 
 
@@ -136,7 +218,7 @@
             wiremtl: new THREE.MeshBasicMaterial({ color: 0xff9900, wireframe: true}),
 
             wirebox: new THREE.Mesh(
-                new THREE.PlaneGeometry(5,5,1,1), new THREE.MeshBasicMaterial({ color: 0xff9900, wireframe: false})),
+                new THREE.BoxGeometry(3,3,5), new THREE.MeshBasicMaterial({ color: 0xff9900, wireframe: false})),
 
             textloader : new THREE.OBJLoader(),
 
@@ -357,16 +439,8 @@
             //    video.play();
             //}
             videoscreen.play();
-            //video.currentTime = 1;
-            //videoalpha.currentTime = 1;
 
         }
-
-        //function syncVideo() {
-        //    videoalpha.currentTime = 1;
-        //    video.currentTime = 1;
-        //    console.log("syncVideo");
-        //}
 
 
         function init(){
@@ -411,7 +485,8 @@
             controls.update();            
 
             var overlay = document.getElementById( 'overlay' );
-			overlay.remove();
+            overlay.remove();
+            
 
             loadingScreen.box.position.set(0,0,5);
             loadingScreen.camera.position.set(-1000,0,5);
@@ -434,7 +509,7 @@
 
 
                 loadingtext = loadingtextmesh;
-                loadingScreen.scene.add(loadingtext);
+                //loadingScreen.scene.add(loadingtext);
 
 
 
@@ -448,14 +523,32 @@
 
             loadingManager = new THREE.LoadingManager();
             var count = 2;
+            var textcount = 1
+            //loadingScreen.scene.add(loadingScreen.wirebox);
+            loadingScreen.wirebox.position.set(0,-40,-50);
+
+            addLine = function(linenumber) {
+                window[linenumber].style.display = "block";
+                console.log(linenumber)
+
+            }
+
+
 
             loadingManager.onProgress = function(item,loaded,total){
                 console.log(item,loaded,total);
-                loadingScreen.scene.add(loadingScreen.wirebox);
-                loadingScreen.wirebox.position.set(0,0,0);
+                //loadingScreen.scene.add(loadingScreen.wirebox);
+                //loadingScreen.wirebox.position.set(0,-30,0);
 
-                loadingScreen.wirebox.scale.x = count;
-                count += 0.6;
+                loadingScreen.wirebox.scale.z = count;
+                loadingScreen.wirebox.position.z += 2*count;
+
+
+
+                count += 2.5;
+                textcount += 1;
+                addLine("line" + loaded)
+
 
             };
 
@@ -467,6 +560,9 @@
                 addLights();
                 startTimeline();
                 //playVideo();
+                var loadingtext = document.getElementById( 'loadingtext' );
+
+                loadingtext.style.display = "none";
 
             }
 
@@ -1274,7 +1370,8 @@
 
             if (RESOURCES_LOADED == false){
                 requestAnimationFrame(animate);
-                loadingScreen.wirebox.rotation.x -= 0.04;
+                
+                //loadingScreen.wirebox.rotation.x -= 0.04;
                 //loadingScreen.box.rotation.y -= 0.04;
                 //loadingScreen.box.position.y = Math.sin(loadingScreen.box.position.x);
                 //if (loadingScreen.box.position.x < -10 ) loadingScreen.box.position.x = 10;
@@ -1378,9 +1475,13 @@
         //window.onload = init;
         */
     var startButton = document.getElementById( 'startButton' );
+        //startButton.style.display = "none";
 		startButton.addEventListener( 'click', function () {
                 //var inputpassword = document.getElementById("myPwd").value;
                 //if (inputpassword == password) {
+                    var loadingtext = document.getElementById( 'loadingtext' );
+                    loadingtext.style.display = "block";
+
 
                     init();
                     
