@@ -22,30 +22,33 @@
         <p id="line1" hidden >Running diagnostics..............</p>
         <p id="line2" hidden >Running VR test..................</p>
         <p id="line3" hidden >Creating VR map..................</p>
-        <p id="line4" hidden >Checking user ID.................</p>
+        <p id="line4" hidden >Check user ID....................</p>
         <p id="line5" hidden >Obtaining user IP address........</p>
-        <p id="line6" hidden >Gaining accses to camera.........</p>
-        <p id="line7" hidden >Scanning retinas.................</p>
-        <p id="line8" hidden >Creating user profile ID.........</p>
-        <p id="line9" hidden >Store user data...................</p>
-        <p id="line10" hidden >Checking for barred individuals...</p>
-        <p id="line11" hidden >Cross-referencing database........</p>
-        <p id="line12" hidden >Paragraph 12</p>
-        <p id="line13" hidden >Paragraph 13</p>
-        <p id="line14" hidden >Paragraph 14</p>
-        <p id="line15" hidden >Paragraph 15</p>
-        <p id="line16" hidden >Paragraph 16</p>
-        <p id="line17" hidden >Paragraph 17</p>
-        <p id="line18" hidden >Paragraph 18</p>
-        <p id="line19" hidden >Paragraph 19</p>
-        <p id="line20" hidden >Paragraph 20</p>
-        <p id="line21" hidden >Paragraph 21</p>
-        <p id="line22" hidden >Paragraph 22</p>
-        <p id="line23" hidden >Paragraph 23</p>
+        <p id="line6" hidden >Check IP is within legal zone/s..</p>
+        <p id="line7" hidden >Obtaining visual permissions.....</p>
+        <p id="line8" hidden >Scanning retinas................ </p>
+        <p id="line9" hidden >Running thumbprint test......... </p>
+        <p id="line10" hidden >Establishing pulse rate..........</p>
+        <p id="line11" hidden >Bot check .......................</p>
+        <p id="line12" hidden >Creating user profile ID.........</p>
+        <p id="line13" hidden >Store user data..................</p>
+        <p id="line14" hidden >Checking for barred individuals..</p>
+        <p id="line15" hidden >Cross-referencing database.......</p>
+        <p id="line16" hidden >POSSIBLE MATCHES~OVERRIDE?(Y/N)..</p>
+        <p id="line17" hidden >Checking for guestlist...........</p>
+        <p id="line18" hidden >Checking VIP status..............</p>
+        <p id="line19" hidden >Offensive weapons check..........</p>
+        <p id="line20" hidden >Illicit substances check.........</p>
+        <p id="line21" hidden >Fruit and Veg check..............</p>
+        <p id="line22" hidden >Dresscode requirements check.....</p>
+        <p id="line23" hidden >----> ACCESS GRANTED.............</p>
         <!--<p id="line24" hidden >Paragraph 24</p>-->
         <!--<p id="line25" hidden >Paragraph 25</p>-->
         <!--<p id="line26" hidden >Paragraph 26</p>-->
     </div>
+
+
+
 
 
     <!--<iframe src="https://open.spotify.com/follow/1/?uri=spotify:artist:1MhltDUGKPSasS3MwMSdpE&size=basic&theme=light&show-count=0" width="200" 
@@ -576,7 +579,12 @@
 
             addLine = function(linenumber,prevlinenumber) {
                 window[linenumber].style.display = "block";
-                window[prevlinenumber].textContent = window[prevlinenumber].textContent + "[COMPLETE]"
+                if (linenumber = 17) {
+                    window[prevlinenumber].textContent = window[prevlinenumber].textContent + "[COMPLETE]"
+
+                } else {
+                    window[prevlinenumber].textContent = window[prevlinenumber].textContent + "[OVERRIDDEN]"
+                }
                 console.log(linenumber, prevlinenumber)
 
             }
