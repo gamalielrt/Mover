@@ -11,7 +11,8 @@
 </head>
 <body>
     <div id="overlay">
-        <button id="startButton">Enter</button>
+        <p> press enter to start......</p>
+        <button id="startButton">[enter]</button>
     </div>
 
     <div id="loadingtext">
@@ -483,9 +484,6 @@
             controls.dampingFactor = 1;
 
             controls.update();            
-
-            var overlay = document.getElementById( 'overlay' );
-            overlay.remove();
             
 
             loadingScreen.box.position.set(0,0,5);
@@ -561,8 +559,10 @@
                 startTimeline();
                 //playVideo();
                 var loadingtext = document.getElementById( 'loadingtext' );
-
                 loadingtext.style.display = "none";
+                var overlay = document.getElementById( 'overlay' );
+                overlay.remove();
+
 
             }
 

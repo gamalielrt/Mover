@@ -4,14 +4,18 @@ body {
     color : #FFA500;
     font-family : monospace;
     line-height: 0.5;
+    font-size: 12px;
+
 }
 
 canvas {
     display: block;
+    z-index: -1;
+
 }
 
 #loadingtext {
-    color: blue;
+    z-index: 1;
 
 }
 
@@ -19,12 +23,16 @@ canvas {
     background-color: rgb(0, 0, 0); /* Green */
     border: none;
     color:  #FFA500;
-    padding: 10px 22px;
+    padding: 0px 0px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 12px;
     font-family : monospace;
+    transition-duration: 0.0s;
 
 }
-
+#startButton:hover {
+    background-color: #FFA500; /* Green */
+    color: rgb(0, 0, 0);
+}
