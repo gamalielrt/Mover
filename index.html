@@ -11,8 +11,11 @@
 </head>
 <body>
     <div id="overlay">
-        <label> Secure Connection Established /// press enter to start...       </label>
-        <button id="startButton">[enter]</button>
+        <label id="introtext"> </label>
+        <label hidden id="buttonHide">
+            <button  id="startButton" >[enter]</button>
+
+        </label>
     </div>
 
     <div id="loadingtext">
@@ -73,6 +76,24 @@
 
 
     <script>
+
+            var i = 0;
+            var introTxt = 'Secure Connection Established /// Press enter to start...'; /* The text */
+            var introTypeSpeed = 50; /* The speed/duration of the effect in milliseconds */
+
+            function typeWriterIntro() {
+                if (i < introTxt.length) {
+                    document.getElementById("introtext").innerHTML += introTxt.charAt(i);
+                    i++;
+                    setTimeout(typeWriterIntro, introTypeSpeed);
+                    if ( i == introTxt.length) {
+                        var buttonHide = document.getElementById( 'buttonHide' );
+                        buttonHide.style.display = "block";
+
+                    }
+                }
+            }
+            typeWriterIntro();   
 
         //USER_IS_TOUCHING == false;
 
@@ -513,6 +534,34 @@
 
             });
             //loadingScreen.loadingtext.scale.set(0.1,0.1,0.1);
+
+            var para1 = 'Secure Connection Established /// Press enter to start...';
+            var para2 = 'Secure Connection Established /// Press enter to start...';
+            var para3 = 'Secure Connection Established /// Press enter to start...';
+            var para4 = 'Secure Connection Established /// Press enter to start...';
+            var para5 = 'Secure Connection Established /// Press enter to start...';
+            var para6 = 'Secure Connection Established /// Press enter to start...';
+            var para7 = 'Secure Connection Established /// Press enter to start...';
+            var para8 = 'Secure Connection Established /// Press enter to start...';
+            var para9 = 'Secure Connection Established /// Press enter to start...';
+            var para10 = 'Secure Connection Established /// Press enter to start...';
+            var para11 = 'Secure Connection Established /// Press enter to start...';
+            var para12 = 'Secure Connection Established /// Press enter to start...';
+            var para13 = 'Secure Connection Established /// Press enter to start...';
+            var para14 = 'Secure Connection Established /// Press enter to start...';
+            var para15 = 'Secure Connection Established /// Press enter to start...';
+            var para16 = 'Secure Connection Established /// Press enter to start...';
+            var para17 = 'Secure Connection Established /// Press enter to start...';
+            var para18 = 'Secure Connection Established /// Press enter to start...';
+            var para19 = 'Secure Connection Established /// Press enter to start...';
+            var para20 = 'Secure Connection Established /// Press enter to start...';
+            var para21 = 'Secure Connection Established /// Press enter to start...';
+            var para22 = 'Secure Connection Established /// Press enter to start...';
+            var para23 = 'Secure Connection Established /// Press enter to start...';
+
+
+
+
             
 
 
@@ -531,6 +580,19 @@
 
             }
 
+            //var i = 0;
+            //var txt = 'Lorem ipsum typing effect!'; /* The text */
+            //var typeSpeed = 100; /* The speed/duration of the effect in milliseconds */
+            
+            //function typeWriter(paranumber) {
+            //    if (i < window[paranumber].length) {
+            //        document.getElementById("introtext").innerHTML += window[paranumber].charAt(i);
+            //        i++;
+            //        setTimeout(typeWriter, typeSpeed);
+            //    }
+            //}
+            //typeWriter();
+
 
 
             loadingManager.onProgress = function(item,loaded,total){
@@ -546,6 +608,7 @@
                 count += 2.5;
                 textcount += 1;
                 addLine("line" + loaded)
+                //typeWriter("para" + loaded)
 
 
             };
