@@ -19,17 +19,17 @@
     </div>
 
     <div id="loadingtext">
-        <p id="line1" hidden >Paragraph 1</p>
-        <p id="line2" hidden >Paragraph 2</p>
-        <p id="line3" hidden >Paragraph 3</p>
-        <p id="line4" hidden >Paragraph 4</p>
-        <p id="line5" hidden >Paragraph 5</p>
-        <p id="line6" hidden >Paragraph 6</p>
-        <p id="line7" hidden >Paragraph 7</p>
-        <p id="line8" hidden >Paragraph 8</p>
-        <p id="line9" hidden >Paragraph 9</p>
-        <p id="line10" hidden >Paragraph 10</p>
-        <p id="line11" hidden >Paragraph 11</p>
+        <p id="line1" hidden >Running diagnostics..............</p>
+        <p id="line2" hidden >Running VR test..................</p>
+        <p id="line3" hidden >Creating VR map..................</p>
+        <p id="line4" hidden >Checking user ID.................</p>
+        <p id="line5" hidden >Obtaining user IP address........</p>
+        <p id="line6" hidden >Gaining accses to camera.........</p>
+        <p id="line7" hidden >Scanning retinas.................</p>
+        <p id="line8" hidden >Creating user profile ID.........</p>
+        <p id="line9" hidden >Store user data...................</p>
+        <p id="line10" hidden >Checking for barred individuals...</p>
+        <p id="line11" hidden >Cross-referencing database........</p>
         <p id="line12" hidden >Paragraph 12</p>
         <p id="line13" hidden >Paragraph 13</p>
         <p id="line14" hidden >Paragraph 14</p>
@@ -42,9 +42,9 @@
         <p id="line21" hidden >Paragraph 21</p>
         <p id="line22" hidden >Paragraph 22</p>
         <p id="line23" hidden >Paragraph 23</p>
-        <p id="line24" hidden >Paragraph 24</p>
-        <p id="line25" hidden >Paragraph 25</p>
-        <p id="line26" hidden >Paragraph 26</p>
+        <!--<p id="line24" hidden >Paragraph 24</p>-->
+        <!--<p id="line25" hidden >Paragraph 25</p>-->
+        <!--<p id="line26" hidden >Paragraph 26</p>-->
     </div>
 
 
@@ -535,29 +535,29 @@
             });
             //loadingScreen.loadingtext.scale.set(0.1,0.1,0.1);
 
-            var para1 = 'Secure Connection Established /// Press enter to start...';
-            var para2 = 'Secure Connection Established /// Press enter to start...';
-            var para3 = 'Secure Connection Established /// Press enter to start...';
-            var para4 = 'Secure Connection Established /// Press enter to start...';
-            var para5 = 'Secure Connection Established /// Press enter to start...';
-            var para6 = 'Secure Connection Established /// Press enter to start...';
-            var para7 = 'Secure Connection Established /// Press enter to start...';
-            var para8 = 'Secure Connection Established /// Press enter to start...';
-            var para9 = 'Secure Connection Established /// Press enter to start...';
-            var para10 = 'Secure Connection Established /// Press enter to start...';
-            var para11 = 'Secure Connection Established /// Press enter to start...';
-            var para12 = 'Secure Connection Established /// Press enter to start...';
-            var para13 = 'Secure Connection Established /// Press enter to start...';
-            var para14 = 'Secure Connection Established /// Press enter to start...';
-            var para15 = 'Secure Connection Established /// Press enter to start...';
-            var para16 = 'Secure Connection Established /// Press enter to start...';
-            var para17 = 'Secure Connection Established /// Press enter to start...';
-            var para18 = 'Secure Connection Established /// Press enter to start...';
-            var para19 = 'Secure Connection Established /// Press enter to start...';
-            var para20 = 'Secure Connection Established /// Press enter to start...';
-            var para21 = 'Secure Connection Established /// Press enter to start...';
-            var para22 = 'Secure Connection Established /// Press enter to start...';
-            var para23 = 'Secure Connection Established /// Press enter to start...';
+            //var para1 = 'Secure Connection Established /// Press enter to start...';
+            //var para2 = 'Secure Connection Established /// Press enter to start...';
+            //var para3 = 'Secure Connection Established /// Press enter to start...';
+            //var para4 = 'Secure Connection Established /// Press enter to start...';
+            //var para5 = 'Secure Connection Established /// Press enter to start...';
+            //var para6 = 'Secure Connection Established /// Press enter to start...';
+            //var para7 = 'Secure Connection Established /// Press enter to start...';
+            //var para8 = 'Secure Connection Established /// Press enter to start...';
+            //var para9 = 'Secure Connection Established /// Press enter to start...';
+            //var para10 = 'Secure Connection Established /// Press enter to start...';
+            //var para11 = 'Secure Connection Established /// Press enter to start...';
+            //var para12 = 'Secure Connection Established /// Press enter to start...';
+            //var para13 = 'Secure Connection Established /// Press enter to start...';
+            //var para14 = 'Secure Connection Established /// Press enter to start...';
+            //var para15 = 'Secure Connection Established /// Press enter to start...';
+            //var para16 = 'Secure Connection Established /// Press enter to start...';
+            //var para17 = 'Secure Connection Established /// Press enter to start...';
+            //var para18 = 'Secure Connection Established /// Press enter to start...';
+            //var para19 = 'Secure Connection Established /// Press enter to start...';
+            //var para20 = 'Secure Connection Established /// Press enter to start...';
+            //var para21 = 'Secure Connection Established /// Press enter to start...';
+            //var para22 = 'Secure Connection Established /// Press enter to start...';
+            //var para23 = 'Secure Connection Established /// Press enter to start...';
 
 
 
@@ -574,9 +574,10 @@
             //loadingScreen.scene.add(loadingScreen.wirebox);
             loadingScreen.wirebox.position.set(0,-40,-50);
 
-            addLine = function(linenumber) {
+            addLine = function(linenumber,prevlinenumber) {
                 window[linenumber].style.display = "block";
-                console.log(linenumber)
+                window[prevlinenumber].textContent = window[prevlinenumber].textContent + "[COMPLETE]"
+                console.log(linenumber, prevlinenumber)
 
             }
 
@@ -607,7 +608,7 @@
 
                 count += 2.5;
                 textcount += 1;
-                addLine("line" + loaded)
+                addLine("line" + loaded,"line" + (loaded-1) )
                 //typeWriter("para" + loaded)
 
 
