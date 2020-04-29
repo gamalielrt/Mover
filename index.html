@@ -35,11 +35,11 @@
         <p id="line14" hidden >Checking for barred individuals..</p>
         <p id="line15" hidden >Cross-referencing database.......</p>
         <p id="line16" hidden >POSSIBLE MATCHES~OVERRIDE?(Y/N)..</p>
-        <p id="line17" hidden >Checking for guestlist...........</p>
-        <p id="line18" hidden >Checking VIP status..............</p>
+        <p id="line17" hidden >Fruit and Veg check..............</p>
+        <p id="line18" hidden >Illicit substances check.........</p>
         <p id="line19" hidden >Offensive weapons check..........</p>
-        <p id="line20" hidden >Illicit substances check.........</p>
-        <p id="line21" hidden >Fruit and Veg check..............</p>
+        <p id="line20" hidden >Checking for guestlist...........</p>
+        <p id="line21" hidden >Checking VIP status..............</p>
         <p id="line22" hidden >Dresscode requirements check.....</p>
         <p id="line23" hidden >----> ACCESS GRANTED.............</p>
         <!--<p id="line24" hidden >Paragraph 24</p>-->
@@ -574,18 +574,19 @@
             loadingManager = new THREE.LoadingManager();
             var count = 2;
             var textcount = 1
+            var overrideint = 17
             //loadingScreen.scene.add(loadingScreen.wirebox);
             loadingScreen.wirebox.position.set(0,-40,-50);
 
-            addLine = function(linenumber,prevlinenumber) {
+            addLine = function(lineint, linenumber, prevlinenumber) {
                 window[linenumber].style.display = "block";
-                if (linenumber = 17) {
+                if (lineint <= overrideint) {
                     window[prevlinenumber].textContent = window[prevlinenumber].textContent + "[COMPLETE]"
 
                 } else {
                     window[prevlinenumber].textContent = window[prevlinenumber].textContent + "[OVERRIDDEN]"
                 }
-                console.log(linenumber, prevlinenumber)
+                console.log(linenumber, prevlinenumber, lineint)
 
             }
 
@@ -616,7 +617,7 @@
 
                 count += 2.5;
                 textcount += 1;
-                addLine("line" + loaded,"line" + (loaded-1) )
+                addLine(loaded, "line" + loaded,"line" + (loaded-1) )
                 //typeWriter("para" + loaded)
 
 
