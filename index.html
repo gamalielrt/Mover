@@ -13,12 +13,12 @@
 
     <div id="overlay">
         <div>
-          <p>
+          <!--<p>
             <label>Password</label>
             <input type = "password"
                     id = "myPwd"
                     value = "" />
-          </p>
+          </p>-->
         <button id="startButton">Enter</button>
         </div>
     </div>
@@ -87,7 +87,7 @@
         light1, sphereGeometry, sphereMaterial, 
         sphere, planeGeometry, planeMaterial, plane, textureloader, loader, 
         stageSpot, stageSpot1, stageSpot2, stageSpot3,stagesurfacemtl,
-        pivot, fancase1mtl, fancase1mesh, fan1mtl, fan1mesh, fan1;
+        pivot, fancase1mtl, fancase1mesh, fan1mtl, fan1mesh, fan1, loadingtextmesh;
         
 
         var password = "";
@@ -118,6 +118,8 @@
         var startSpin = Boolean;
         var playvid = Boolean;
         var vidnotplaying = true;
+        var textloader = new THREE.OBJLoader();
+
 
         
 
@@ -126,16 +128,20 @@
 
         var loadingScreen = {
             scene: new THREE.Scene(),
-            camera: new THREE.PerspectiveCamera(40, window.innerWidth / window.innerHeight, 0.1,100),
+            camera: new THREE.PerspectiveCamera(40, window.innerWidth / window.innerHeight, 0.1,10000),
             box: new THREE.Mesh(
                 new THREE.BoxGeometry(0.2,0.2,0.2),
                 new THREE.MeshBasicMaterial({ color: 0x4444ff, transparent: true, opacity: 0})
             ),
+            wiremtl: new THREE.MeshBasicMaterial({ color: 0xff9900, wireframe: true}),
 
             wirebox: new THREE.Mesh(
-                new THREE.BoxGeometry(0.001,0.001,0.001, ),
-                new THREE.MeshBasicMaterial({ color: 0xff9900, wireframe: true})
-            )
+                new THREE.PlaneGeometry(5,5,1,1), new THREE.MeshBasicMaterial({ color: 0xff9900, wireframe: false})),
+
+            textloader : new THREE.OBJLoader(),
+
+            loadingtext: new THREE.Object3D()
+
 
         };
         
@@ -408,8 +414,37 @@
 			overlay.remove();
 
             loadingScreen.box.position.set(0,0,5);
-            loadingScreen.camera.lookAt(loadingScreen.box.position);
+            loadingScreen.camera.position.set(-1000,0,5);
+
+            
+            //loadingScreen.camera.lookAt(loadingScreen.box.position);
+            
             loadingScreen.scene.add(loadingScreen.box);
+
+            textloader.load( 'assets/loadingtext3.obj', function (loadingtextmesh) {
+                loadingtextmesh.traverse( function ( node ) {                
+                    if ( node.isMesh ) node.material = new THREE.MeshBasicMaterial({ color: 0xff9900, wireframe: false});
+                })
+                //loadingtext.position.set(0,0,5);
+
+                //loadingScreen.scene.add(loadingtextmesh);
+                loadingtextmesh.rotation.y =  -90 * Math.PI / 180
+                loadingtextmesh.position.set(0,0,-30);
+                //loadingtextmesh.scale.set(0.2,0.2,0.2);
+
+
+                loadingtext = loadingtextmesh;
+                loadingScreen.scene.add(loadingtext);
+
+
+
+            });
+            //loadingScreen.loadingtext.scale.set(0.1,0.1,0.1);
+            
+
+
+            loadingScreen.camera.lookAt(loadingScreen.loadingtext.position);
+
 
             loadingManager = new THREE.LoadingManager();
             var count = 2;
@@ -417,7 +452,7 @@
             loadingManager.onProgress = function(item,loaded,total){
                 console.log(item,loaded,total);
                 loadingScreen.scene.add(loadingScreen.wirebox);
-                loadingScreen.wirebox.position.set(0,0,5);
+                loadingScreen.wirebox.position.set(0,0,0);
 
                 loadingScreen.wirebox.scale.x = count;
                 count += 0.6;
@@ -623,7 +658,6 @@
             //var sphere = new THREE.SphereBufferGeometry();
             //var box = new THREE.BoxHelper( vidscreenplanemesh, 0xffff00 );
             //scene.add( box );
-
 
             
 
@@ -1345,14 +1379,14 @@
         */
     var startButton = document.getElementById( 'startButton' );
 		startButton.addEventListener( 'click', function () {
-                var inputpassword = document.getElementById("myPwd").value;
-                if (inputpassword == password) {
+                //var inputpassword = document.getElementById("myPwd").value;
+                //if (inputpassword == password) {
 
                     init();
                     
 		            //animate();
 
-                };
+                //};
     	}, false );
             //window.onload = init;
 
