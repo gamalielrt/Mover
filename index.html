@@ -22,7 +22,7 @@
 <body>
     <div id="overlay">
         <label id="introtext"> </label><label id = "underscore">_</label><br>
-        <label id="introtext2"> </label><label>_</label>
+        <label id="introtext2"> </label><label id = "underscore2"></label>
 
         <label hidden id="buttonHide">
             <button  id="startButton" >[enter]</button>
@@ -53,6 +53,7 @@
         <p> <label id="line21" hidden >./Checking VIP status.............</label><label class = overriden id=resline21 hidden></label></p>
         <p> <label id="line22" hidden >./Dresscode requirements check....</label><label class = overriden id=resline22 hidden></label></p>
         <p> <label id="line23" hidden >----> ACCESS GRANTED..............</label><label class = overriden id=resline23 hidden></label></p>
+        <p> <label id = "underscore3" ></label></p>
         <!--<p id="line24" hidden >Paragraph 24</p>-->
         <!--<p id="line25" hidden >Paragraph 25</p>-->
         <!--<p id="line26" hidden >Paragraph 26</p>-->
@@ -107,12 +108,17 @@
 
             var i = 0;
             var ii = 0;
+            var iii = 0;
+            var iiii = 0;
 
             var introTxt = 'Console: Secure Connection Established /// <[STROBE WARNING]>';
             var introTxt2 =  'Press enter to start...'; 
             var lineonedone = false;
 
             var introTypeSpeed = 50; /* The speed/duration of the effect in milliseconds */
+            var flashSpeed = 10;
+            var upperFlashSpeed = 20;
+
 
             function typeWriterIntro() {
                 if (i < introTxt.length) {
@@ -125,6 +131,9 @@
                         //typeWriterIntro2();
                         typeWriterIntro2();   
                         document.getElementById("underscore").innerHTML = "";
+                        document.getElementById("underscore2").innerHTML = "_";
+
+
 
 
 
@@ -133,6 +142,48 @@
                     }
                 }
             }
+            function underFlash() {
+                if (iii <= flashSpeed){
+                            document.getElementById("underscore2").innerHTML = "_";
+                            iii++;
+                            //console.log(iii)
+                            setTimeout(underFlash, introTypeSpeed);
+
+
+                        } else if (iii >= flashSpeed){
+                            document.getElementById("underscore2").innerHTML = "";
+                            iii++;
+                            //console.log(iii)
+                            setTimeout(underFlash, introTypeSpeed);
+
+                        } if (iii >= upperFlashSpeed){
+                            iii = 0;
+                        }
+                        
+
+            }
+
+            function underFlash2() {
+                if (iiii <= flashSpeed){
+                    
+                    //var underscore2 = document.getElementById( 'underscore2' );
+                    //underscore2.style.display = "block";
+
+                    document.getElementById("underscore3").innerHTML = "_";
+                    iiii++;
+                    //console.log(iii)
+                    setTimeout(underFlash, introTypeSpeed)
+                } else if (iiii >= flashSpeed){
+                    document.getElementById("underscore3").innerHTML = "";
+                    iiii++;
+                    //console.log(iii)
+                    setTimeout(underFlash, introTypeSpeed)
+                } if (iiii >= upperFlashSpeed){
+                    //console.log("upper hit")
+                    iiii = 0;
+                }
+            }
+
             function typeWriterIntro2() {
                 if (ii < introTxt2.length) {
                     document.getElementById("introtext2").innerHTML += introTxt2.charAt(ii);
@@ -141,6 +192,8 @@
                     if ( ii == introTxt2.length) {
                         var buttonHide = document.getElementById( 'buttonHide' );
                         buttonHide.style.display = "block";
+                        underFlash();
+
 
                     }
                 }
@@ -1580,6 +1633,15 @@
                 //if (inputpassword == password) {
                     var loadingtext = document.getElementById( 'loadingtext' );
                     loadingtext.style.display = "block";
+                    document.getElementById("underscore2").innerHTML = "";
+
+                    var underscore2 = document.getElementById( 'underscore2' );
+                    underscore2.style.display = "none";
+
+
+                    document.getElementById("underscore3").innerHTML = "_";
+
+
 
 
                     init();
