@@ -21,7 +21,9 @@
 </head>
 <body>
     <div id="overlay">
-        <label id="introtext"> </label>
+        <label id="introtext"> </label><label id = "underscore">_</label><br>
+        <label id="introtext2"> </label><label>_</label>
+
         <label hidden id="buttonHide">
             <button  id="startButton" >[enter]</button>
 
@@ -104,7 +106,12 @@
     <script>
 
             var i = 0;
-            var introTxt = 'Console: Secure Connection Established /// Press enter to start...'; /* The text */
+            var ii = 0;
+
+            var introTxt = 'Console: Secure Connection Established /// <[STROBE WARNING]>';
+            var introTxt2 =  'Press enter to start...'; 
+            var lineonedone = false;
+
             var introTypeSpeed = 50; /* The speed/duration of the effect in milliseconds */
 
             function typeWriterIntro() {
@@ -113,6 +120,25 @@
                     i++;
                     setTimeout(typeWriterIntro, introTypeSpeed);
                     if ( i == introTxt.length) {
+                        //var buttonHide = document.getElementById( 'buttonHide' );
+                        //buttonHide.style.display = "block";
+                        //typeWriterIntro2();
+                        typeWriterIntro2();   
+                        document.getElementById("underscore").innerHTML = "";
+
+
+
+
+
+                    }
+                }
+            }
+            function typeWriterIntro2() {
+                if (ii < introTxt2.length) {
+                    document.getElementById("introtext2").innerHTML += introTxt2.charAt(ii);
+                    ii++;
+                    setTimeout(typeWriterIntro2, introTypeSpeed);
+                    if ( ii == introTxt2.length) {
                         var buttonHide = document.getElementById( 'buttonHide' );
                         buttonHide.style.display = "block";
 
