@@ -20,7 +20,7 @@ canvas {
 
 #loadingtext {
     z-index: 1;
-    line-height: 0.5;
+    line-height: 0;
 
 
 }
@@ -45,20 +45,41 @@ canvas {
 
 .completed{
     color : green;
+    position:relative;
+    left: 203px;
 }
 
 .overriden{
     color : red;
+    position:relative;
+    left: 203px;
+
 }
 #socials {
     z-index: 2;
-    float : right;
+    /*float : right;*/
     opacity: 0.3;
     position: absolute;
-    top: 8px;
-    right: 16px;
-
+    top: 0px;
+    /*right: 8px;*/
 }
+
+#leftsocials {
+    z-index: 2;
+    float : left;
+    position: static;
+    top: 0px;
+    left: 8px;
+}
+
+#rightsocials {
+    z-index: 2;
+    float : right;
+    position: fixed;
+    top: 8px;
+    right: 8px;
+}
+
 #spotify {
     right: 16px;
 }

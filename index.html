@@ -77,20 +77,25 @@
 
 <div id="container">
     <div id="socials" hidden>
-        <iframe id="spotify" src="https://open.spotify.com/follow/1/?uri=spotify:artist:1MhltDUGKPSasS3MwMSdpE&size=basic&theme=light&show-count=0" width="200" height="25" scrolling="no" frameborder="0" style="border:none; overflow:hidden;" allowtransparency="true"></iframe>
-         <a href="http://www.facebook.com/sweatnet" target="_top"><img src="assets/clubfacebook.png" style="width:20px;height:20px;"></a>
-        <a href="http://www.instagram.com/sweat_net" target="_top"><img src="assets/clubinstagram.png" style="width:20px;height:20px;"></a>
-        <a href="http://www.facebook.com/sweatnet" target="_top"><img src="assets/clubtwitter.png" style="width:20px;height:20px;"></a>
-        <a href="http://www.facebook.com/sweatnet" target="_top"><img src="assets/clubyoutube.png" style="width:20px;height:20px;"></a>
-        <a href="http://www.facebook.com/sweatnet" target="_top"><img src="assets/clubmailinglist.png" style="width:20px;height:20px;"></a>
-        <a href="http://www.facebook.com/sweatnet" target="_top"><img src="assets/clubshare.png" style="width:20px;height:20px;"></a>
+        <div id="leftsocials" >
+            <iframe id="spotify" src="https://open.spotify.com/follow/1/?uri=spotify:artist:1MhltDUGKPSasS3MwMSdpE&size=basic&theme=light&show-count=0" width="200" height="25" scrolling="no" frameborder="0" style="border:none; overflow:hidden;" allowtransparency="true"></iframe>
+        </div>
+        <div id="rightsocials" >
+        <a href="http://www.facebook.com/sweatnet" target="_top"><img src="assets/clubfacebook.png" style="width:18px;height:18px;"></a>
+        <a href="http://www.instagram.com/sweat_net" target="_top"><img src="assets/clubinstagram.png" style="width:18px;height:18px;"></a>
+        <a href="http://www.facebook.com/sweatnet" target="_top"><img src="assets/clubtwitter.png" style="width:18px;height:18px;"></a>
+        <a href="http://www.facebook.com/sweatnet" target="_top"><img src="assets/clubyoutube.png" style="width:18px;height:18px;"></a>
+        <a href="http://www.facebook.com/sweatnet" target="_top"><img src="assets/clubmailinglist.png" style="width:18px;height:18px;"></a>
+        <a href="http://www.facebook.com/sweatnet" target="_top"><img src="assets/clubshare.png" style="width:18px;height:18px;"></a>
+    </div>
+
     </div>
 
     <script>
 
             var i = 0;
             var introTxt = 'Console: Secure Connection Established /// Press enter to start...'; /* The text */
-            var introTypeSpeed = 50; /* The speed/duration of the effect in milliseconds */
+            var introTypeSpeed = 25; /* The speed/duration of the effect in milliseconds */
 
             function typeWriterIntro() {
                 if (i < introTxt.length) {
