@@ -406,6 +406,14 @@ function startTimeline() {
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
+    //strobe
+    //
+    //
+    //
+    //
+    //
+    //
+
     tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
@@ -696,2525 +704,2900 @@ function startTimeline() {
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+
+    //strobe 9
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+
+
 
+    tl.to(testLight6, 0.001, {intensity: 9, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 9, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 9, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:9, b:0, ease: Expo.easeOut});
+
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 9, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 9, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 9, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:9, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 9, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 9, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 9, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:9, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 9, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 9, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 9, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:9, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 9, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 9, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 9, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:9, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 9, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 9, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 9, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:9, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 9, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 9, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 9, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:9, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 9, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 9, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 9, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:9, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+        tl.to(testLight6, 0.001, {intensity: 9, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 9, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 9, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:9, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 9, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 9, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 9, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:9, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
-
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    
+    tl.to(testLight6, 0.001, {intensity: 9, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 9, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 9, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:9, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 9, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 9, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 9, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:9, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 9, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 9, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 9, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:9, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 9, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 9, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 9, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:9, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 9, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 9, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 9, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:9, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 9, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 9, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 9, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:9, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 9, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 9, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 9, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:9, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 9, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 9, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 9, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:9, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 9, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 9, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 9, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:9, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:1, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 9, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 9, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 9, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:9, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 9, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 9, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 9, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:9, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 9, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 9, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 9, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:9, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 9, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 9, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 9, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:9, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 9, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 9, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 9, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:9, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+        tl.to(testLight6, 0.001, {intensity: 9, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 9, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 9, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:9, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 9, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 9, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 9, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:9, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
-
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    
+    tl.to(testLight6, 0.001, {intensity: 9, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 9, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 9, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:9, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 9, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 9, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 9, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:9, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+
+    //strobe 8
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+
 
+
+    tl.to(testLight6, 0.001, {intensity: 8, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 8, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 8, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:8, b:0, ease: Expo.easeOut});
+
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 8, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 8, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 8, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:8, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 8, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 8, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 8, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:8, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 8, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 8, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 8, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:8, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 8, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 8, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 8, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:8, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 8, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 8, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 8, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:8, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 8, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 8, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 8, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:8, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 8, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 8, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 8, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:8, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 8, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 8, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 8, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:8, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 8, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 8, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 8, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:8, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 8, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 8, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 8, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:8, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 8, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 8, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 8, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:8, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 8, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 8, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 8, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:8, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 8, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 8, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 8, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:8, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 8, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 8, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 8, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:8, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 8, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 8, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 8, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:8, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 8, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 8, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 8, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:8, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 8, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 8, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 8, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:8, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 8, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 8, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 8, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:8, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 8, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 8, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 8, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:8, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 8, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 8, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 8, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:8, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 8, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 8, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 8, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:8, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 8, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 8, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 8, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:8, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 8, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 8, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 8, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:8, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 8, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 8, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 8, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:8, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 8, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 8, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 8, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:8, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 8, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 8, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 8, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:8, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    //strobe 7
+    //
+    //
+    //
+    //
+    //
+    //
 
+    tl.to(testLight6, 0.001, {intensity: 7, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 7, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 7, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:7, b:0, ease: Expo.easeOut});
+
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
-
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    
+    tl.to(testLight6, 0.001, {intensity: 7, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 7, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 7, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:7, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 7, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 7, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 7, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:7, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 7, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 7, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 7, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:7, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 7, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 7, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 7, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:7, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 7, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 7, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 7, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:7, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 7, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 7, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 7, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:7, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 7, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 7, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 7, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:7, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 7, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 7, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 7, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:7, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 7, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 7, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 7, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:7, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 7, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 7, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 7, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:7, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 7, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 7, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 7, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:7, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 7, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 7, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 7, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:7, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 7, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 7, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 7, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:7, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 7, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 7, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 7, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:7, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 7, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 7, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 7, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:7, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 7, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 7, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 7, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:7, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 7, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 7, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 7, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:7, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 7, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 7, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 7, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:7, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 7, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 7, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 7, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:7, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 7, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 7, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 7, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:7, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 7, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 7, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 7, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:7, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 7, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 7, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 7, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:7, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 7, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 7, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 7, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:7, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 7, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 7, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 7, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:7, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 7, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 7, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 7, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:7, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 7, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 7, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 7, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:7, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 7, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 7, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 7, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:7, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 7, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 7, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 7, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:7, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+
+    //strobe 6
+    //
+    //
+    //
+    //
+    //
+    //
 
+    tl.to(testLight6, 0.001, {intensity: 6, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 6, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 6, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:6, b:0, ease: Expo.easeOut});
+
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 6, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 6, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 6, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:6, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 6, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 6, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 6, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:6, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 6, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 6, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 6, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:6, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 6, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 6, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 6, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:6, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 6, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 6, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 6, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:6, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 6, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 6, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 6, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:6, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 6, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 6, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 6, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:6, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 6, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 6, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 6, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:6, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 6, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 6, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 6, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:6, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 6, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 6, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 6, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:6, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:1, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 6, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 6, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 6, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:6, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 6, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 6, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 6, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:6, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 6, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 6, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 6, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:6, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 6, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 6, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 6, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:6, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 6, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 6, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 6, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:6, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 6, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 6, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 6, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:6, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 6, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 6, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 6, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:6, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 6, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 6, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 6, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:6, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 6, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 6, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 6, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:6, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 6, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 6, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 6, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:6, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 6, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 6, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 6, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:6, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 6, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 6, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 6, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:6, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 6, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 6, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 6, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:6, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 6, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 6, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 6, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:6, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 6, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 6, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 6, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:6, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 6, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 6, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 6, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:6, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 6, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 6, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 6, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:6, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
 
+    //strobe 5
+    //
+    //
+    //
+    //
+    //
+    //
+
+    tl.to(testLight6, 0.001, {intensity: 5, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 5, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 5, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:5, b:0, ease: Expo.easeOut});
+
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 5, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 5, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 5, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:5, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 5, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 5, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 5, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:5, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 5, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 5, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 5, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:5, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 5, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 5, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 5, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:5, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 5, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 5, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 5, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:5, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 5, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 5, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 5, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:5, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 5, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 5, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 5, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:5, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 5, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 5, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 5, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:5, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 5, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 5, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 5, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:5, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 5, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 5, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 5, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:5, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 5, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 5, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 5, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:5, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 5, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 5, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 5, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:5, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 5, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 5, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 5, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:5, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 5, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 5, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 5, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:5, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 5, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 5, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 5, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:5, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 5, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 5, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 5, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:5, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 5, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 5, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 5, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:5, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 5, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 5, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 5, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:5, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 5, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 5, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 5, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:5, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 5, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 5, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 5, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:5, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 5, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 5, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 5, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:5, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 5, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 5, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 5, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:5, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 5, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 5, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 5, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:5, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+
+    //strobe 4
+    //
+    //
+    //
+    //
+    //
 
+    tl.to(testLight6, 0.001, {intensity: 4, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 4, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 4, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:4, b:0, ease: Expo.easeOut});
+
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 4, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 4, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 4, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:4, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 4, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 4, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 4, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:4, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 4, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 4, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 4, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:4, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 4, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 4, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 4, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:4, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 4, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 4, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 4, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:4, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 4, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 4, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 4, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:4, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 4, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 4, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 4, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:4, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 4, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 4, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 4, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:4, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 4, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 4, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 4, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:4, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 4, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 4, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 4, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:4, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 4, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 4, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 4, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:4, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 4, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 4, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 4, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:4, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 4, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 4, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 4, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:4, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 4, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 4, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 4, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:4, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 4, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 4, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 4, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:4, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 4, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 4, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 4, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:4, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 4, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 4, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 4, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:4, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 4, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 4, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 4, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:4, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 4, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 4, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 4, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:4, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 4, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 4, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 4, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:4, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 4, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 4, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 4, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:4, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 4, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 4, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 4, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:4, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 4, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 4, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 4, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:4, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 4, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 4, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 4, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:4, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 4, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 4, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 4, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:4, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    //strobe 3
+    //
+    //
+    //
+    //
+    //
+    //
+
+    tl.to(testLight6, 0.001, {intensity: 3, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 3, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 3, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:3, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 3, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 3, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 3, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:3, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 3, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 3, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 3, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:3, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 3, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 3, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 3, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:3, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 3, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 3, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 3, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:3, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 3, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 3, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 3, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:3, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 3, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 3, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 3, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:3, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 3, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 3, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 3, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:3, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 3, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 3, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 3, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:3, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 3, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 3, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 3, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:3, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 3, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 3, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 3, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:3, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 3, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 3, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 3, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:3, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 3, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 3, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 3, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:3, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 3, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 3, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 3, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:3, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 3, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 3, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 3, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:3, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 3, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 3, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 3, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:3, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 3, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 3, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 3, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:3, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 3, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 3, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 3, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:3, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 3, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 3, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 3, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:3, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 3, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 3, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 3, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:3, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 3, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 3, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 3, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:3, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 3, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 3, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 3, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:3, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 3, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 3, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 3, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:3, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 3, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 3, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 3, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:3, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 3, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 3, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 3, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:3, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 3, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 3, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 3, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:3, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 3, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 3, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 3, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:3, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+    tl.to(testLight6, 0.001, {intensity: 3, ease: Expo.easeOut},"+=0.05");
+    tl.to(testLight7, 0.001, {intensity: 3, ease: Expo.easeOut},);
+    tl.to(testLight8, 0.001, {intensity: 3, ease: Expo.easeOut},);
+    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:3, b:0, ease: Expo.easeOut});
 
     tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
     tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+// strobe 2
+//
+//
+//
+//
 
-    tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
+tl.to(testLight6, 0.001, {intensity: 2, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 2, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 2, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:2, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
+tl.to(testLight6, 0.001, {intensity: 2, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 2, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 2, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:2, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
+tl.to(testLight6, 0.001, {intensity: 2, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 2, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 2, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:2, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
+tl.to(testLight6, 0.001, {intensity: 2, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 2, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 2, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:2, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
+tl.to(testLight6, 0.001, {intensity: 2, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 2, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 2, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:2, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
+tl.to(testLight6, 0.001, {intensity: 2, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 2, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 2, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:2, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
+tl.to(testLight6, 0.001, {intensity: 2, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 2, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 2, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:2, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
+tl.to(testLight6, 0.001, {intensity: 2, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 2, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 2, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:2, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
+tl.to(testLight6, 0.001, {intensity: 2, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 2, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 2, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:2, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
+tl.to(testLight6, 0.001, {intensity: 2, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 2, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 2, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:2, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
+tl.to(testLight6, 0.001, {intensity: 2, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 2, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 2, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:2, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
+tl.to(testLight6, 0.001, {intensity: 2, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 2, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 2, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:2, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
+tl.to(testLight6, 0.001, {intensity: 2, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 2, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 2, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:2, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:1, b:0, ease: Expo.easeOut});
+tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
+tl.to(testLight6, 0.001, {intensity: 2, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 2, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 2, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:2, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
+tl.to(testLight6, 0.001, {intensity: 2, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 2, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 2, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:2, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
+tl.to(testLight6, 0.001, {intensity: 2, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 2, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 2, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:2, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
+tl.to(testLight6, 0.001, {intensity: 2, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 2, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 2, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:2, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
+tl.to(testLight6, 0.001, {intensity: 2, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 2, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 2, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:2, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
+tl.to(testLight6, 0.001, {intensity: 2, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 2, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 2, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:2, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
+tl.to(testLight6, 0.001, {intensity: 2, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 2, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 2, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:2, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
+tl.to(testLight6, 0.001, {intensity: 2, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 2, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 2, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:2, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
+tl.to(testLight6, 0.001, {intensity: 2, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 2, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 2, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:2, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
+tl.to(testLight6, 0.001, {intensity: 2, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 2, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 2, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:2, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
+tl.to(testLight6, 0.001, {intensity: 2, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 2, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 2, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:2, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
+tl.to(testLight6, 0.001, {intensity: 2, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 2, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 2, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:2, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
+tl.to(testLight6, 0.001, {intensity: 2, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 2, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 2, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:2, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
+tl.to(testLight6, 0.001, {intensity: 2, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 2, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 2, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:2, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
+tl.to(testLight6, 0.001, {intensity: 2, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 2, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 2, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:2, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
+tl.to(testLight6, 0.001, {intensity: 2, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 2, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 2, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:2, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
+tl.to(testLight6, 0.001, {intensity: 2, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 2, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 2, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:2, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
+// strobe 1
+//
+//
+//
+//
+//
+//
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+tl.to(testLight6, 0.001, {intensity: 1, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 1, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 1, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:1, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
+tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+tl.to(testLight6, 0.001, {intensity: 1, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 1, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 1, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:1, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
+tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
+tl.to(testLight6, 0.001, {intensity: 1, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 1, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 1, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:1, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
+tl.to(testLight6, 0.001, {intensity: 1, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 1, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 1, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:1, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
+tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
+tl.to(testLight6, 0.001, {intensity: 1, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 1, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 1, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:1, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
+tl.to(testLight6, 0.001, {intensity: 1, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 1, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 1, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:1, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
+tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
+tl.to(testLight6, 0.001, {intensity: 1, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 1, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 1, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:1, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
+tl.to(testLight6, 0.001, {intensity: 1, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 1, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 1, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:1, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
+tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
+tl.to(testLight6, 0.001, {intensity: 1, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 1, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 1, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:1, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
+tl.to(testLight6, 0.001, {intensity: 1, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 1, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 1, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:1, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
+tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
+tl.to(testLight6, 0.001, {intensity: 1, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 1, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 1, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:1, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
+tl.to(testLight6, 0.001, {intensity: 1, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 1, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 1, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:1, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
+tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
+tl.to(testLight6, 0.001, {intensity: 1, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 1, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 1, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:1, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
+tl.to(testLight6, 0.001, {intensity: 1, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 1, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 1, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:1, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
+tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
+tl.to(testLight6, 0.001, {intensity: 1, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 1, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 1, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:1, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
+tl.to(testLight6, 0.001, {intensity: 1, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 1, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 1, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:1, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
+tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
+tl.to(testLight6, 0.001, {intensity: 1, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 1, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 1, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:1, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
+tl.to(testLight6, 0.001, {intensity: 1, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 1, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 1, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:1, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
+tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
+tl.to(testLight6, 0.001, {intensity: 1, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 1, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 1, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:1, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
+tl.to(testLight6, 0.001, {intensity: 1, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 1, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 1, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:1, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
+tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
+tl.to(testLight6, 0.001, {intensity: 1, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 1, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 1, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:1, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
+tl.to(testLight6, 0.001, {intensity: 1, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 1, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 1, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:1, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
+tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
+tl.to(testLight6, 0.001, {intensity: 1, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 1, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 1, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:1, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
+tl.to(testLight6, 0.001, {intensity: 1, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 1, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 1, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:1, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
+tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
+tl.to(testLight6, 0.001, {intensity: 1, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 1, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 1, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:1, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
+tl.to(testLight6, 0.001, {intensity: 1, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 1, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 1, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:1, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
+tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
+tl.to(testLight6, 0.001, {intensity: 1, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 1, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 1, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:1, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
+tl.to(testLight6, 0.001, {intensity: 1, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 1, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 1, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:1, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
+tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
+tl.to(testLight6, 0.001, {intensity: 1, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 1, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 1, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:1, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
+//strobe 0.5
+//
+//
+//
+//
+//
+//
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+tl.to(testLight6, 0.001, {intensity: 0.5, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 0.5, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 0.5, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0.5, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
+tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+tl.to(testLight6, 0.001, {intensity: 0.5, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 0.5, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 0.5, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0.5, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
+tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+tl.to(testLight6, 0.001, {intensity: 0.5, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 0.5, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 0.5, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0.5, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
+tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+tl.to(testLight6, 0.001, {intensity: 0.5, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 0.5, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 0.5, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0.5, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
+tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+tl.to(testLight6, 0.001, {intensity: 0.5, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 0.5, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 0.5, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0.5, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
+tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+tl.to(testLight6, 0.001, {intensity: 0.5, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 0.5, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 0.5, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0.5, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
+tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+tl.to(testLight6, 0.001, {intensity: 0.5, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 0.5, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 0.5, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0.5, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
+tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+tl.to(testLight6, 0.001, {intensity: 0.5, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 0.5, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 0.5, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0.5, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
+tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+tl.to(testLight6, 0.001, {intensity: 0.5, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 0.5, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 0.5, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0.5, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
+tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+tl.to(testLight6, 0.001, {intensity: 0.5, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 0.5, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 0.5, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0.5, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
+tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+tl.to(testLight6, 0.001, {intensity: 0.5, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 0.5, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 0.5, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0.5, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
+tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+tl.to(testLight6, 0.001, {intensity: 0.5, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 0.5, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 0.5, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0.5, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
+tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+tl.to(testLight6, 0.001, {intensity: 0.5, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 0.5, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 0.5, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0.5, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
+tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+tl.to(testLight6, 0.001, {intensity: 0.5, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 0.5, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 0.5, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0.5, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
+tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 10, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 10, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:10, b:0, ease: Expo.easeOut});
+tl.to(testLight6, 0.001, {intensity: 0.5, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 0.5, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 0.5, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0.5, b:0, ease: Expo.easeOut});
 
-    tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
-    tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
-    tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
-    tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
+tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
+
+tl.to(testLight6, 0.001, {intensity: 0.5, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 0.5, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 0.5, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0.5, b:0, ease: Expo.easeOut});
+
+tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
+
+tl.to(testLight6, 0.001, {intensity: 0.5, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 0.5, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 0.5, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0.5, b:0, ease: Expo.easeOut});
+
+tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
+
+tl.to(testLight6, 0.001, {intensity: 0.5, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 0.5, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 0.5, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0.5, b:0, ease: Expo.easeOut});
+
+tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
+
+tl.to(testLight6, 0.001, {intensity: 0.5, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 0.5, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 0.5, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0.5, b:0, ease: Expo.easeOut});
+
+tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
+
+tl.to(testLight6, 0.001, {intensity: 0.5, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 0.5, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 0.5, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0.5, b:0, ease: Expo.easeOut});
+
+tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
+
+tl.to(testLight6, 0.001, {intensity: 0.5, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 0.5, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 0.5, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0.5, b:0, ease: Expo.easeOut});
+
+tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
+
+tl.to(testLight6, 0.001, {intensity: 0.5, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 0.5, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 0.5, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0.5, b:0, ease: Expo.easeOut});
+
+tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
+
+tl.to(testLight6, 0.001, {intensity: 0.5, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 0.5, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 0.5, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0.5, b:0, ease: Expo.easeOut});
+
+tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
+
+tl.to(testLight6, 0.001, {intensity: 0.5, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 0.5, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 0.5, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0.5, b:0, ease: Expo.easeOut});
+
+tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
+
+tl.to(testLight6, 0.001, {intensity: 0.5, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 0.5, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 0.5, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0.5, b:0, ease: Expo.easeOut});
+
+tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
+
+tl.to(testLight6, 0.001, {intensity: 0.5, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 0.5, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 0.5, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0.5, b:0, ease: Expo.easeOut});
+
+tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
+
+tl.to(testLight6, 0.001, {intensity: 0.5, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 0.5, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 0.5, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0.5, b:0, ease: Expo.easeOut});
+
+tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
+
+tl.to(testLight6, 0.001, {intensity: 0.5, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 0.5, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 0.5, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0.5, b:0, ease: Expo.easeOut});
+
+tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
+
+tl.to(testLight6, 0.001, {intensity: 0.5, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 0.5, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 0.5, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0.5, b:0, ease: Expo.easeOut});
+
+tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
+
+tl.to(testLight6, 0.001, {intensity: 0.5, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 0.5, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 0.5, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0.5, b:0, ease: Expo.easeOut});
+
+tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
+
+tl.to(testLight6, 0.001, {intensity: 0.5, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 0.5, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 0.5, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0.5, b:0, ease: Expo.easeOut});
+
+tl.to(testLight6, 0.001, {intensity: 0, ease: Expo.easeOut},"+=0.05");
+tl.to(testLight7, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(testLight8, 0.001, {intensity: 0, ease: Expo.easeOut},);
+tl.to(stagesurfacemtl.emissive, 0.001, {r: 0, g:0, b:0, ease: Expo.easeOut});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
