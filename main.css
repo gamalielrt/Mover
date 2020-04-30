@@ -14,6 +14,10 @@ canvas {
 
 }
 
+#container {
+    position: relative;
+}
+
 #loadingtext {
     z-index: 1;
     line-height: 0.5;
@@ -37,4 +41,24 @@ canvas {
 #startButton:hover {
     background-color: #FFA500; /* Green */
     color: rgb(0, 0, 0);
+}
+
+.completed{
+    color : green;
+}
+
+.overriden{
+    color : red;
+}
+#socials {
+    z-index: 2;
+    float : right;
+    opacity: 0.3;
+    position: absolute;
+    top: 8px;
+    right: 16px;
+
+}
+#spotify {
+    right: 16px;
 }
