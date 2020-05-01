@@ -202,10 +202,18 @@
                 }
             }
             typeWriterIntro(); 
-
+            var stime = 0;
+            var opacityset = 0;
             function socialsOpacity1() {
-                var socials = document.getElementById( 'socials' );
-                socials.style.opacity = 0.05;
+                //console.log("opacity started")
+                if (stime <= 30) {
+                    opacityset += 0.01                
+                    var socials = document.getElementById( 'socials' );
+                    socials.style.opacity = opacityset;
+                    stime ++;
+                    //console.log(socials.style.opacity, stime, opacityset)
+                    setTimeout(socialsOpacity1, 3000);
+                }
 
             }
             function socialsOpacity2() {

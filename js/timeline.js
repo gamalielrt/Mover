@@ -12,7 +12,7 @@ function startTimeline() {
 
     //tl.to(count1, 10, {var: 10, ease: Expo.easeOut});
     //tl.to(lightCount, 5, {var: 100, onUpdate: updateLights, ease: Expo.easeOut});
-    tl.to(testLight, 5, {intensity: 1, ease: Expo.easeOut},8);
+    tl.to(testLight, 5, {intensity: 1, /*onComplete:socialsOpacity1,*/ ease: Expo.easeOut},8);
     tl.to(testLight1, 5, {intensity: 1, ease: Expo.easeOut},8);
     tl.to(testLight3, 5, {intensity: 1, ease: Expo.easeOut},8);
     tl.to(testLight4, 5, {intensity: 1, ease: Expo.easeOut},8);
@@ -24,7 +24,7 @@ function startTimeline() {
     tl.to(testLight8, 7, {intensity: 18, ease: Expo.easeOut},8);
     //var socials = document.getElementById( "socials" );
 
-    //tl.add(socialsOpacity1(),8);
+    //tl.add(socialsOpacity1,8);
     //tl.to(socials.style, 1, {opacity: 1, ease: Expo.easeOut},8);
 
 
@@ -34,6 +34,7 @@ function startTimeline() {
     //onUpdate:socialsOpacity1();
 
 
+    tl.add(socialsOpacity1,40);
 
     tl.to(testLight6.color, 3, {r: 1, g:0.1, b:0.1 ,ease: Expo.easeOut},40);
     tl.to(testLight7.color, 3, {r: 1, g:0.1, b:0.1, /*onComplete: syncVideo(),*/ ease: Expo.easeOut},40);
@@ -95,7 +96,7 @@ function startTimeline() {
 
 
 
-    tl.to(testLight6.color, 3, {r: 1, g:0.1, b:0.1, onUpdate:socialsOpacity1, ease: Expo.easeOut},91);
+    tl.to(testLight6.color, 3, {r: 1, g:0.1, b:0.1, /*onUpdate:socialsOpacity1*/ ease: Expo.easeOut},91);
     tl.to(testLight7.color, 3, {r: 1, g:0.1, b:0.1, ease: Expo.easeOut},91);
     tl.to(testLight8.color, 3, {r: 1, g:0.1, b:0.1, ease: Expo.easeOut},91);
     tl.to(stagesurfacemtl.emissive, 3, {r: 1, g:0.1, b:0.1, ease: Expo.easeOut},91);
@@ -105,7 +106,7 @@ function startTimeline() {
     tl.to(testLight8.color, 3, {r: 0.1, g:0.1, b:1, ease: Expo.easeOut},100);
     tl.to(stagesurfacemtl.emissive, 3, {r: 0.1, g:0.1, b:1, ease: Expo.easeOut},100);
 
-    tl.to(testLight6.color, 3, {r: 1, g:0.1, b:0.1, onUpdate:socialsOpacity2, ease: Expo.easeOut},131);
+    tl.to(testLight6.color, 3, {r: 1, g:0.1, b:0.1, /*onUpdate:socialsOpacity2*/ ease: Expo.easeOut},131);
     tl.to(testLight7.color, 3, {r: 1, g:0.1, b:0.1, ease: Expo.easeOut},131);
     tl.to(testLight8.color, 3, {r: 1, g:0.1, b:0.1, ease: Expo.easeOut},131);
     tl.to(stagesurfacemtl.emissive, 3, {r: 1, g:0.1, b:0.1, ease: Expo.easeOut},131);
@@ -335,7 +336,7 @@ function startTimeline() {
     tl.to(stageSpot3, 0.001, {intensity: 0, ease:Linear.easeNone},"+=0.05");
 
 
-    tl.to(testLight6.color, 0.001, {r: 1, g:0.1, b:0.1, onUpdate:socialsOpacity3, ease: Expo.easeOut},);
+    tl.to(testLight6.color, 0.001, {r: 1, g:0.1, b:0.1, /*onUpdate:socialsOpacity3*/ ease: Expo.easeOut},);
     tl.to(testLight7.color, 0.001, {r: 0.1, g:0.1, b:1, ease: Expo.easeOut},);
     tl.to(testLight8.color, 0.001, {r: 0.1, g:0.1, b:1, ease: Expo.easeOut},);
     tl.to(stagesurfacemtl.emissive, 0.001, {r: 1, g:0.1, b:0.1, ease: Expo.easeOut},);
