@@ -101,13 +101,13 @@ canvas {
     z-index: 3;
     position: fixed;
     top: 50%;
-    left: 45%;
+    left: 50%;
 }
 
 #pinch{
     z-index: 3;
     position: fixed;
     top: 50%;
-    left: 55%;
+    left: 50%;
 }
 
