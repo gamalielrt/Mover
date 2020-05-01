@@ -91,21 +91,27 @@
         <source src="assets/screen10.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
     </video>
 
-<div id="container">
-    <div id="socials" hidden>
-        <div id="leftsocials" >
-            <iframe id="spotify" src="https://open.spotify.com/follow/1/?uri=spotify:artist:1MhltDUGKPSasS3MwMSdpE&size=basic&theme=light&show-count=0" width="200" height="25" scrolling="no" frameborder="0" style="border:none; overflow:hidden;" allowtransparency="true"></iframe>
+    <div id="container">
+        <div id="socials" hidden>
+            <div id="leftsocials" >
+                <iframe id="spotify" src="https://open.spotify.com/follow/1/?uri=spotify:artist:1MhltDUGKPSasS3MwMSdpE&size=basic&theme=light&show-count=0" width="200" height="25" scrolling="no" frameborder="0" style="border:none; overflow:hidden;" allowtransparency="true"></iframe>
+            </div>
+            <div id="rightsocials" >
+            <a href="http://www.facebook.com/sweatnet" target="_blank"><img src="assets/clubfacebook.png" style="width:18px;height:18px;"></a>
+            <a href="http://www.instagram.com/sweat_net" target="_blank"><img src="assets/clubinstagram.png" style="width:18px;height:18px;"></a>
+            <a href="http://www.twitter.com/sweat_net" target="_blank"><img src="assets/clubtwitter.png" style="width:18px;height:18px;"></a>
+            <a href="http://www.youtube.com/sweatnet" target="_blank"><img src="assets/clubyoutube.png" style="width:18px;height:18px;"></a>
+            <!--<a href="" target="_blank">--><img src="assets/clubmailinglist.png" style="width:18px;height:18px;"><!--</a>-->
+            <!--<a href="" target="_blank">--><img src="assets/clubshare.png" style="width:18px;height:18px;"><!--</a>-->
         </div>
-        <div id="rightsocials" >
-        <a href="http://www.facebook.com/sweatnet" target="_blank"><img src="assets/clubfacebook.png" style="width:18px;height:18px;"></a>
-        <a href="http://www.instagram.com/sweat_net" target="_blank"><img src="assets/clubinstagram.png" style="width:18px;height:18px;"></a>
-        <a href="http://www.twitter.com/sweat_net" target="_blank"><img src="assets/clubtwitter.png" style="width:18px;height:18px;"></a>
-        <a href="http://www.youtube.com/sweatnet" target="_blank"><img src="assets/clubyoutube.png" style="width:18px;height:18px;"></a>
-        <!--<a href="" target="_blank">--><img src="assets/clubmailinglist.png" style="width:18px;height:18px;"><!--</a>-->
-        <!--<a href="" target="_blank">--><img src="assets/clubshare.png" style="width:18px;height:18px;"><!--</a>-->
     </div>
+    <div id = "gestures" hidden>
+        <div id = "drag"><img src = "assets/icondrag.png"></div>
+        <div id = "pinch"><img src = "assets/iconpinch.png"></div>
+        <canvas id="canvas"></canvas>
 
     </div>
+
 
     <script>
 
@@ -201,6 +207,46 @@
                     }
                 }
             }
+            /*var ctime = 0;
+            var copacityset = 0;
+
+            function canvasOpacity() {
+                console.log("opacity started")
+                if (ctime <= 10) {
+                    copacityset += 0.01                
+                    var canvas = document.getElementById( 'canvas' );
+                    canvas.style.opacity = copacityset;
+                    ctime ++;
+                    //console.log(socials.style.opacity, stime, opacityset)
+                    setTimeout(canvasOpacity, 1000);
+                }
+
+            }*/
+
+            var gtime = 10;
+            var gopacityset = 0.3;
+
+            function gesturesOpacity() {
+                console.log("gestures opacity started")
+                if (gtime < 100) {
+                    gopacityset -= 0.01                
+                    var gestures = document.getElementById( 'gestures' );
+                    gestures.style.opacity = gopacityset;
+                    gtime ++;
+                    console.log(gtime)
+                    setTimeout(gesturesOpacity, 50);
+                } if (gtime == 100){
+                    clearTimeout(gtime);
+                    console.log("gestures opacity done")
+                    gestures.remove();
+
+
+
+                }
+
+            }
+
+
             typeWriterIntro(); 
             var stime = 0;
             var opacityset = 0;
@@ -216,7 +262,7 @@
                 }
 
             }
-            function socialsOpacity2() {
+            /*function socialsOpacity2() {
                 var socials = document.getElementById( 'socials' );
                 socials.style.opacity = 0.15;
 
@@ -226,7 +272,7 @@
                 var socials = document.getElementById( 'socials' );
                 socials.style.opacity = 0.3;
 
-            }
+            }*/
 
 
             //socialsOpacity1();
@@ -744,6 +790,9 @@
                 overlay.remove();
                 var socials = document.getElementById( 'socials' );
                 socials.style.display = "block";
+                var gestures = document.getElementById( 'gestures' );
+                gestures.style.display = "block";
+
 
                 window.scrollTo(0, 0); 
 

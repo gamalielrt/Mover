@@ -8,6 +8,9 @@
 function startTimeline() {
     var tl = new TimelineMax();
     tl.add(playVideo);
+    //tl.add(canvasOpacity);
+
+    tl.add(gesturesOpacity,3);
 
 
     //tl.to(count1, 10, {var: 10, ease: Expo.easeOut});
@@ -34,7 +37,7 @@ function startTimeline() {
     //onUpdate:socialsOpacity1();
 
 
-    tl.add(socialsOpacity1,40);
+    //tl.add(socialsOpacity1,40);
 
     tl.to(testLight6.color, 3, {r: 1, g:0.1, b:0.1 ,ease: Expo.easeOut},40);
     tl.to(testLight7.color, 3, {r: 1, g:0.1, b:0.1, /*onComplete: syncVideo(),*/ ease: Expo.easeOut},40);
@@ -94,6 +97,7 @@ function startTimeline() {
 
 
 
+    tl.add(socialsOpacity1,90);
 
 
     tl.to(testLight6.color, 3, {r: 1, g:0.1, b:0.1, /*onUpdate:socialsOpacity1*/ ease: Expo.easeOut},91);

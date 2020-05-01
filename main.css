@@ -10,9 +10,18 @@ body {
 
 canvas {
     display: block;
-    z-index: -1;
+    opacity:1;
+
 
 }
+
+#canvas {
+    z-index: -1;
+    opacity:0;
+    position: absolute;
+
+}
+
 
 #container {
     position: relative;
@@ -83,3 +92,22 @@ canvas {
 #spotify {
     right: 16px;
 }
+
+#gestures {
+    opacity:0.3;
+}
+
+#drag{
+    z-index: 3;
+    position: fixed;
+    top: 50%;
+    left: 45%;
+}
+
+#pinch{
+    z-index: 3;
+    position: fixed;
+    top: 50%;
+    left: 55%;
+}
+
