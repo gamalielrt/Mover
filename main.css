@@ -95,7 +95,7 @@ canvas {
 
 #gestures {
     opacity:0.3;
-    position:fixed;
+    position:relative;
     top: 50%;
     left: 50%;
 
