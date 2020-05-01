@@ -95,22 +95,24 @@ canvas {
 
 #gestures {
     opacity:0.3;
-    position:static;
+    position:fixed;
     top: 50%;
     left: 50%;
+    /*margin-top: -50px;
+    margin-left: 60px;*/
 
 }
 
 #drag{
     z-index: 3;
-    /*position: fixed;
+    /*position: absolute;
     top: 50%;
     left: 50%;*/
 }
 
 #pinch{
     z-index: 3;
-    /*position: fixed;
+    /*position: relative;
     top: 50%;
     left: 50%;*/
 }
